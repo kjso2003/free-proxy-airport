@@ -7,11 +7,26 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-07-25T21:53:24.684736+00:00'
+generated-at: '2026-07-25T22:52:57.652634+00:00'
 proxies:
 - name: 🇺🇸US美國丨yoyapai.com_7
   type: vless
   server: 172.64.153.159
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸US美國丨yoyapai.com_9
+  type: vless
+  server: 162.159.38.101
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -38,21 +53,6 @@ proxies:
     path: /de
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
-  udp: true
-- name: 🇺🇸US美國丨yoyapai.com_9
-  type: vless
-  server: 162.159.38.101
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
   udp: true
 - name: 美國丨yoyapai.com
   type: vless
@@ -84,6 +84,16 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
+- name: 美國節點
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸US美國丨yoyapai.com_5
   type: vless
   server: 108.162.196.3
@@ -112,16 +122,6 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 美國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
@@ -229,15 +229,18 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 德國法蘭克福丨yoyapai.com
-  type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: tunel1.washing.help
+- name: 俄羅斯丨yoyapai.com
+  type: vless
+  server: 90.156.254.164
+  port: 19562
+  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+    short-id: 9e
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
   udp: true
 - name: CA加拿大丨yoyapai.com_8
   type: vless
@@ -254,6 +257,16 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
+- name: 德國法蘭克福丨yoyapai.com
+  type: hysteria2
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: tunel1.washing.help
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
+  udp: true
 - name: CA加拿大丨yoyapai.com_20
   type: vless
   server: 162.159.21.206
@@ -269,54 +282,27 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: FR法國丨yoyapai.com_10
-  type: vless
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
+- name: 英國
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
-- name: FR法國丨yoyapai.com
-  type: vless
-  server: yx.cloudflare.182682.xyz
+- name: 中國臺灣丨yoyapai.com
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
   udp: true
 - name: CA加拿大丨yoyapai.com_18
   type: vless
   server: 162.159.1.170
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: FR法國丨yoyapai.com_3
-  type: vless
-  server: cf.130519.xyz
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -344,9 +330,24 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 英國
+- name: CA加拿大丨yoyapai.com_19
+  type: vless
+  server: 162.159.42.182
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 英國節點
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -354,10 +355,10 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: CA加拿大丨yoyapai.com_19
+- name: CA加拿大丨yoyapai.com_1
   type: vless
-  server: 162.159.42.182
-  port: 443
+  server: 162.159.4.221
+  port: 8443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   servername: t1s1.rittbo.kdns.fr
@@ -384,37 +385,12 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: CA加拿大丨yoyapai.com_1
-  type: vless
-  server: 162.159.4.221
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
 - name: 🇳🇱_NL荷蘭丨yoyapai.com
   type: ss
   server: 82.38.31.35
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-  skip-cert-verify: true
-  udp: true
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
   skip-cert-verify: true
   udp: true
 - name: CA加拿大丨yoyapai.com_12
@@ -500,16 +476,6 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 荷蘭丨yoyapai.com
-  type: hysteria2
-  server: hy2.aspidnet.xyz
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-  udp: true
 - name: CA加拿大丨yoyapai.com_4
   type: vless
   server: 172.64.145.2
@@ -524,6 +490,16 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
+  udp: true
+- name: 荷蘭丨yoyapai.com
+  type: hysteria2
+  server: hy2.aspidnet.xyz
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
   udp: true
 - name: 巴西聖保羅丨yoyapai.com
   type: trojan
@@ -650,13 +626,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美國丨yoyapai.com_7
-  - 美國丨yoyapai.com_18
   - 🇺🇸US美國丨yoyapai.com_9
+  - 美國丨yoyapai.com_18
   - 美國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com_1
+  - 美國節點
   - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸US美國丨yoyapai.com_8
-  - 美國節點
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com_2
   - 🇺🇸US美國丨yoyapai.com_4
@@ -664,28 +640,27 @@ proxy-groups:
   - CA加拿大丨yoyapai.com_13
   - CA加拿大丨yoyapai.com_14
   - CA加拿大丨yoyapai.com
-  - 德國法蘭克福丨yoyapai.com
+  - 俄羅斯丨yoyapai.com
   - CA加拿大丨yoyapai.com_8
+  - 德國法蘭克福丨yoyapai.com
   - CA加拿大丨yoyapai.com_20
-  - FR法國丨yoyapai.com_10
-  - FR法國丨yoyapai.com
-  - CA加拿大丨yoyapai.com_18
-  - FR法國丨yoyapai.com_3
-  - CA加拿大丨yoyapai.com_15
   - 英國
+  - 中國臺灣丨yoyapai.com
+  - CA加拿大丨yoyapai.com_18
+  - CA加拿大丨yoyapai.com_15
   - CA加拿大丨yoyapai.com_19
-  - CA加拿大丨yoyapai.com_7
-  - CA加拿大丨yoyapai.com_1
-  - 🇳🇱_NL荷蘭丨yoyapai.com
   - 英國節點
+  - CA加拿大丨yoyapai.com_1
+  - CA加拿大丨yoyapai.com_7
+  - 🇳🇱_NL荷蘭丨yoyapai.com
   - CA加拿大丨yoyapai.com_12
   - CA加拿大丨yoyapai.com_5
   - CA加拿大丨yoyapai.com_16
   - 台湾省台北市丨yoyapai.com
   - CA加拿大丨yoyapai.com_22
   - CA加拿大丨yoyapai.com_17
-  - 荷蘭丨yoyapai.com
   - CA加拿大丨yoyapai.com_4
+  - 荷蘭丨yoyapai.com
   - 巴西聖保羅丨yoyapai.com
   - CA加拿大丨yoyapai.com_10
   - CA加拿大丨yoyapai.com_6
@@ -700,8 +675,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美國丨yoyapai.com_7
-  - 美國丨yoyapai.com_18
   - 🇺🇸US美國丨yoyapai.com_9
+  - 美國丨yoyapai.com_18
   - 美國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
@@ -710,8 +685,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美國丨yoyapai.com_7
-  - 美國丨yoyapai.com_18
   - 🇺🇸US美國丨yoyapai.com_9
+  - 美國丨yoyapai.com_18
   - 美國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
@@ -720,13 +695,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美國丨yoyapai.com_7
-  - 美國丨yoyapai.com_18
   - 🇺🇸US美國丨yoyapai.com_9
+  - 美國丨yoyapai.com_18
   - 美國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com_1
+  - 美國節點
   - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸US美國丨yoyapai.com_8
-  - 美國節點
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com_2
   - 🇺🇸US美國丨yoyapai.com_4
@@ -735,15 +710,14 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 巴西聖保羅丨yoyapai.com
-  - 美國節點
   - 英國
+  - 美國節點
   - 英國節點
-  - CA加拿大丨yoyapai.com_12
+  - 巴西聖保羅丨yoyapai.com
+  - CA加拿大丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com_9
+  - 🇺🇸US美國丨yoyapai.com_8
   - CA加拿大丨yoyapai.com_9
-  - CA加拿大丨yoyapai.com_14
-  - CA加拿大丨yoyapai.com_16
-  - CA加拿大丨yoyapai.com_3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
