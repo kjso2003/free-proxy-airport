@@ -7,8 +7,21 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-07-28T22:01:45.344599+00:00'
+generated-at: '2026-07-28T23:29:33.744885+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG
+  server: 45.192.223.27
+  port: 443
+  type: trojan
+  password: 521314
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: cindy58.ceoiii.com
   port: 36809
@@ -36,19 +49,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 45.192.223.27
-  port: 443
-  type: trojan
-  password: 521314
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 30
   server: securitytrails.com
   port: 2083
@@ -67,6 +67,35 @@ proxies:
     mode: auto
     x-padding-bytes: 100-1000
   udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 162.159.38.129
+  port: 443
+  type: vless
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+- name: 🇺🇸 美国 | USA 8
+  server: 104.18.152.246
+  port: 443
+  type: vless
+  uuid: c19735a7-ff97-a112-3f07-60e500f7719b
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ldggej--MiTiVPN---MiTiVPN-o.KingCloud-1.ir
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/De
+    headers:
+      Host: l-j-pjj-MiTiVPN---MiTiVPN-o.KingCloud-1.ir
+  udp: true
 - name: 美國丨yoyapai.com_17
   type: trojan
   server: 167.82.101.251
@@ -82,19 +111,6 @@ proxies:
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
   udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: 162.159.38.129
-  port: 443
-  type: vless
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt
-    headers:
-      Host: learn00.evany.de5.net
 - name: 🇺🇸 美国 | USA 9
   server: 156.146.38.195
   port: 1080
@@ -115,61 +131,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 104.18.152.246
-  port: 443
-  type: vless
-  uuid: c19735a7-ff97-a112-3f07-60e500f7719b
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ldggej--MiTiVPN---MiTiVPN-o.KingCloud-1.ir
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/De
-    headers:
-      Host: l-j-pjj-MiTiVPN---MiTiVPN-o.KingCloud-1.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: ad-010.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  tls: true
-  servername: ad-010.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.zen2bswa.info
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 162.159.44.58
-  port: 8443
-  type: vless
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt
-    headers:
-      Host: learn00.evany.de5.net
-- name: 🇺🇸 美国 | USA 24
-  server: apic.dnso.ccwu.cc
-  port: 59265
-  type: hysteria2
-  password: 1ecqm05bcdfcckq5
-  auth: 1ecqm05bcdfcckq5
-  sni: apic.dnso.ccwu.cc
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: bjmye80g9o99qohl
 - name: 🇺🇸 美国 | USA 6
   server: 104.18.7.178
   port: 2083
@@ -185,6 +146,32 @@ proxies:
     headers:
       Host: swsjh--MiTiVPN---MiTiVPN-ao.kingnetwork.ir
   udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: 162.159.44.58
+  port: 8443
+  type: vless
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+- name: 🇺🇸 美国 | USA 21
+  server: t1.hhaakk9922.com
+  port: 36787
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+  tls: true
+  servername: t1.hhaakk9922.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ljfxz
+  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: www.wto.org
   port: 2095
@@ -197,19 +184,19 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 154.193.55.183
-  port: 443
+- name: 🇺🇸 美国 | USA 33
+  server: ad-010.zen2bswa.info
+  port: 8443
   type: vless
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: c76ba2c2fb172e8b
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  network: tcp
+  servername: ad-010.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-010.zen2bswa.info
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.17.147.22
@@ -225,6 +212,32 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de
     headers:
       Host: ikk---7-MiTiVPN----o.kingnetwork.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: apic.dnso.ccwu.cc
+  port: 59265
+  type: hysteria2
+  password: 1ecqm05bcdfcckq5
+  auth: 1ecqm05bcdfcckq5
+  sni: apic.dnso.ccwu.cc
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: bjmye80g9o99qohl
+- name: 🇺🇸 美国 | USA 4
+  server: 154.193.55.183
+  port: 443
+  type: vless
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: c76ba2c2fb172e8b
+  servername: storage.yandex.net
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 154.64.228.51
@@ -263,20 +276,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: ad-013.zen2bswa.info
-  port: 8443
-  type: vless
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  servername: ad-013.zen2bswa.info
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-013.zen2bswa.info
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 192.200.160.27
   port: 443
@@ -305,30 +304,20 @@ proxies:
     headers:
       Host: ikk---7-MiTiVPN----o.aPp-cLoud.IR
   udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: apie.dnso.ccwu.cc
-  port: 41310
-  type: hysteria2
-  password: 1ecqm05bcdfcckq5
-  auth: 1ecqm05bcdfcckq5
-  sni: apie.dnso.ccwu.cc
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: i86l1bpowgpaq9e5
-- name: 🇺🇸 美国 | USA 28
-  server: apie.dnso.ccwu.cc
-  port: 10033
-  type: hysteria2
-  password: 1ecqm05bcdfcckq5
-  auth: 1ecqm05bcdfcckq5
-  sni: apie.dnso.ccwu.cc
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: u2frj8pd2sze7le7
+- name: 🇺🇸 美国 | USA 27
+  server: ad-013.zen2bswa.info
+  port: 8443
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.zen2bswa.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-013.zen2bswa.info
+  udp: true
 - name: 美国丨yoyapai.com_2
   type: vless
   server: fn.fifapes.monster
@@ -364,17 +353,18 @@ proxies:
     headers:
       Host: forfreeuse.sub-flow.online
   udp: true
-- name: 🇩🇪 德国 | DEU 22
-  server: 151.101.56.7
-  port: 80
+- name: 俄羅斯丨yoyapai.com
   type: vless
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+  server: 90.156.254.164
+  port: 19562
+  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+    short-id: 9e
+  skip-cert-verify: true
   udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: hkdcrtc-e.catcat321.com
@@ -383,12 +373,6 @@ proxies:
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   sni: de.catxstar.com
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 195.58.48.19
-  port: 10921
-  type: ss
-  cipher: aes-256-gcm
-  password: fbaf33bcffe53cf9
 - name: 🇳🇱 荷兰 | NLD 8
   server: login.netraidly.ru
   port: 40443
@@ -402,6 +386,13 @@ proxies:
   servername: deepl.com
   client-fingerprint: qq
   network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 6
+  server: 89.249.74.188
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: XF0klw7870vXn3uQIxe19Q
   udp: true
 - name: 🇩🇪 德国 | DEU 27
   server: 152.228.134.105
@@ -433,6 +424,16 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api.v1.StreamService
   udp: true
+- name: 英國
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 中國臺灣丨yoyapai.com
   type: hysteria2
   server: vpn-tw-002.fastervpn.world
@@ -461,6 +462,34 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: cfe685726eea2c4b
+- name: 巴西聖保羅丨yoyapai.com
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
+  udp: true
+- name: 🇧🇿 BZ_155
+  server: 45.135.235.27
+  port: 443
+  type: trojan
+  password: 521314
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  udp: true
 - name: 🇩🇪 德国 | DEU 28
   server: fj260205.freechatup.com
   port: 27726
@@ -470,25 +499,37 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 | KOR 3
-  server: t1.hhaakk9922.com
-  port: 46785
-  type: vless
-  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+- name: 🇳🇱 荷兰 | NLD 4
+  server: apjhdggyx.com
+  port: 443
+  type: vmess
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: t1.hhaakk9922.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  udp: true
+  skip-cert-verify: true
+  servername: apjhdggyx.com
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
 - name: 🇺🇦 乌克兰 | UKR
   server: oplosgru-c.catcat321.com
   port: 20066
   type: trojan
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   sni: hk.catxstar.com
+  skip-cert-verify: true
+  udp: true
+- name: 英國節點
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪 德国 | DEU 23
@@ -526,29 +567,6 @@ proxies:
   auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-ca-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇧🇿 BZ_155
-  server: 45.135.235.27
-  port: 443
-  type: trojan
-  password: 521314
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  udp: true
-- name: 英國
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪 德国 | DEU 19
   server: 188.241.241.32
   port: 2053
@@ -597,32 +615,26 @@ proxies:
     headers:
       Host: ov186.ochmaybrooooo.online
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 157.22.19.5
-  port: 443
-  type: vless
-  uuid: c97b2158-64c9-1f55-8167-72970d347288
-  tls: true
-  reality-opts:
-    public-key: wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: download.nvidia.com
-    mode: auto
-  udp: true
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 台湾省台北市丨yoyapai.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   skip-cert-verify: true
   udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 167.233.118.44
+  port: 22006
+  type: vless
+  uuid: 5d509a60-737f-4dd5-ab57-4396361a1011
+  tls: true
+  reality-opts:
+    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
+    short-id: c6e19c434dc87df7
+  servername: login.yahoo.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇩🇪 德国 | DEU 8
   server: 5.83.129.90
   port: 54177
@@ -637,18 +649,20 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 167.233.118.44
-  port: 22006
+- name: 🇵🇭 菲律宾 | PHL
+  server: 45.196.201.250
+  port: 443
   type: vless
-  uuid: 5d509a60-737f-4dd5-ab57-4396361a1011
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
-    short-id: c6e19c434dc87df7
-  servername: login.yahoo.com
+    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+    short-id: c6ef72e4635d15a5
+  servername: storage.yandex.net
   client-fingerprint: chrome
   network: tcp
+  udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: 92.118.205.238
   port: 8443
@@ -670,6 +684,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇹🇭 泰国 | THA 2
+  server: 47.81.56.202
+  port: 44617
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lhuULRwO4slM6k262pAC4cbq5A1H6z8eaOHV27vi7Yw=
+  udp: true
 - name: 荷蘭丨yoyapai.com
   type: hysteria2
   server: hy2.aspidnet.xyz
@@ -679,6 +700,19 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 193.227.99.27
+  port: 443
+  type: trojan
+  password: 521314
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
   udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: fj260305.freechatup.com
@@ -724,6 +758,31 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
+- name: 🇫🇷 法国 | FRA
+  server: 199.232.170.214
+  port: 80
+  type: vless
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?Telegram-WangCai2🇨🇳
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 91.193.58.36
+  port: 443
+  type: trojan
+  password: 521314
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  udp: true
 - name: 🇮🇩 印尼 | IDN
   server: oplosgru-c.catcat321.com
   port: 20056
@@ -757,6 +816,23 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 169.40.32.216
+  port: 443
+  type: vless
+  uuid: cb71a24c-85bf-4251-8a42-7300f5122067
+  tls: true
+  reality-opts:
+    public-key: 1Fs7XrW1oMep_TGpbpiS3HOLZrGYMUzDmtMEShOoIGc
+    short-id: 6a480648c1
+  servername: www.samsung.com
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v2/sync
+    host: www.samsung.com
+    mode: auto
+  udp: true
 - name: 🇲🇽 墨西哥 | MEX
   server: cindy50.ceoiii.com
   port: 36801
@@ -771,34 +847,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 193.227.99.27
-  port: 443
-  type: trojan
-  password: 521314
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  udp: true
-- name: 巴西聖保羅丨yoyapai.com
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: https://chatgpt.com
-    headers:
-      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 9
   server: 5.255.102.165
   port: 443
@@ -807,19 +855,6 @@ proxies:
   auth: LzMWgm6LaNWCm11bFTbynDPq2TqQj03t
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 91.193.58.36
-  port: 443
-  type: trojan
-  password: 521314
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: Hkdcrtc-e.catcat321.com
   port: 20041
@@ -868,73 +903,76 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
-  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 30
-  - 美國丨yoyapai.com_17
   - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 8
+  - 美國丨yoyapai.com_17
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 美國節點
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 27
   - 美国丨yoyapai.com_2
   - 🇩🇪 德国 | DEU 18
   - 🇩🇪 德国 | DEU 30
-  - 🇩🇪 德国 | DEU 22
+  - 俄羅斯丨yoyapai.com
   - 🇬🇧 英国 | GBR 4
-  - 🇷🇺 俄罗斯 | RUS 4
   - 🇳🇱 荷兰 | NLD 8
+  - 🇬🇧 英国 | GBR 6
   - 🇩🇪 德国 | DEU 27
   - 🇩🇪 德国 | DEU 16
+  - 英國
   - 中國臺灣丨yoyapai.com
   - 🇩🇪 德国 | DEU 24
   - 🇷🇺 俄罗斯 | RUS 2
+  - 巴西聖保羅丨yoyapai.com
+  - 🇧🇿 BZ_155
   - 🇩🇪 德国 | DEU 28
-  - 🇰🇷 韩国 | KOR 3
+  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇦 乌克兰 | UKR
+  - 英國節點
   - 🇩🇪 德国 | DEU 23
   - 🇷🇺 俄罗斯 | RUS
   - 🇨🇦 加拿大 | CAN
-  - 🇧🇿 BZ_155
-  - 英國
   - 🇩🇪 德国 | DEU 19
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇵🇱 波兰 | POL
-  - 🇩🇪 德国 | DEU 6
-  - 英國節點
-  - 🇩🇪 德国 | DEU 8
+  - 台湾省台北市丨yoyapai.com
   - 🇩🇪 德国 | DEU 11
+  - 🇩🇪 德国 | DEU 8
+  - 🇵🇭 菲律宾 | PHL
   - 🇵🇱 波兰 | POL 2
   - 🇷🇺 俄罗斯 | RUS 5
+  - 🇹🇭 泰国 | THA 2
   - 荷蘭丨yoyapai.com
+  - 🇳🇱 荷兰 | NLD 3
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 6
   - 🇰🇷 韩国 | KOR
+  - 🇫🇷 法国 | FRA
+  - 🇬🇧 英国 | GBR 3
   - 🇮🇩 印尼 | IDN
   - 🇹🇭 泰国 | THA
   - 🇳🇱 荷兰 | NLD 12
+  - 🇩🇪 德国 | DEU
   - 🇲🇽 墨西哥 | MEX
-  - 🇳🇱 荷兰 | NLD 3
-  - 巴西聖保羅丨yoyapai.com
   - 🇳🇱 荷兰 | NLD 9
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 5
   - 🇩🇪 德国 | DEU 25
@@ -950,57 +988,56 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
-  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 30
-  - 美國丨yoyapai.com_17
+  - 🇺🇸 美国 | USA 26
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 30
-  - 美國丨yoyapai.com_17
   - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 8
+  - 美國丨yoyapai.com_17
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 美國節點
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 28
+  - 🇺🇸 美国 | USA 27
   - 美国丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP
-  - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 30
-  - 美國丨yoyapai.com_17
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
+  - 巴西聖保羅丨yoyapai.com
+  - 英國
+  - 美國節點
+  - 英國節點
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 6
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 10
+  - 🇬🇧 英国 | GBR 3
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 13
+  - 🇧🇿 BZ_155
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
