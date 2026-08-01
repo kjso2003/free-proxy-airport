@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-01T04:00:20.206023+00:00'
+generated-at: '2026-08-01T06:37:06.115461+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 3
   server: 162.159.36.117
@@ -39,19 +39,6 @@ proxies:
     path:
     - /
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 162.159.38.129
-  port: 443
-  type: vless
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt
-    headers:
-      Host: learn00.evany.de5.net
 - name: 🇸🇬 新加坡 | SGP 2
   server: sg.ethicsdinnerpave.online
   port: 443
@@ -68,19 +55,19 @@ proxies:
     host: sg.ethicsdinnerpave.online
     mode: auto
   udp: true
-- name: 美國丨yoyapai.com_13
+- name: 🇯🇵 日本 | JPN
+  server: 162.159.38.129
+  port: 443
   type: vless
-  server: 172.67.223.190
-  port: 2086
-  uuid: e6bad6ca-ab7c-4bdd-b07e-5c8ec407decd
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
   network: ws
-  tls: false
   ws-opts:
-    path: /eyJqdW5rIjoidGpkTkY2VHk0bE1pV3AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    path: /fdip=tw.william.us.ci!txt
     headers:
-      Host: cool-hill-7fe5.thenewata.workers.dev
-  skip-cert-verify: true
-  udp: true
+      Host: learn00.evany.de5.net
 - name: 🇺🇸 美国 | USA 11
   server: ad-020.cloud25075.info
   port: 8443
@@ -110,12 +97,6 @@ proxies:
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 98.81.132.97
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 美国 | USA 9
   server: 199.232.78.159
   port: 443
@@ -130,6 +111,12 @@ proxies:
     headers:
       Host: pan1.global.ssl.fastly.neT
   udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 98.81.132.97
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 8
   server: 78.159.240.215
   port: 8443
@@ -152,6 +139,19 @@ proxies:
   servername: most.lodkirmm.ru
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 美國丨yoyapai.com_13
+  type: vless
+  server: 172.67.223.190
+  port: 2086
+  uuid: e6bad6ca-ab7c-4bdd-b07e-5c8ec407decd
+  network: ws
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoidGpkTkY2VHk0bE1pV3AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    headers:
+      Host: cool-hill-7fe5.thenewata.workers.dev
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 169.40.42.15
@@ -203,29 +203,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 108.162.198.165
-  port: 8443
-  type: vless
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt
-    headers:
-      Host: learn00.evany.de5.net
-- name: 美國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: vpn-us-002.fastervpn.world
   port: 443
@@ -248,19 +225,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
+- name: 🇺🇸 美国 | USA 13
+  server: 108.162.198.165
+  port: 8443
   type: vless
-  server: 72.167.230.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
   network: ws
-  tls: false
   ws-opts:
-    path: /
+    path: /fdip=tw.william.us.ci!txt
     headers:
-      Host: vms.lifetime51.workers.dev
-  skip-cert-verify: true
-  udp: true
+      Host: learn00.evany.de5.net
 - name: 🇺🇸 美国 | USA 17
   server: dedus.skorostnet.space
   port: 443
@@ -290,6 +267,29 @@ proxies:
     path: /nova-geo-psiphon-de
     headers:
       Host: pinalo.zenvorix.ir
+  udp: true
+- name: 美國節點
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
+  type: vless
+  server: 72.167.230.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 104.21.77.92
@@ -329,19 +329,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇫🇷 法国 | FRA 6
-  server: 212.183.88.136
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
 - name: 🇩🇪 德国 | DEU 18
   server: 104.18.42.68
   port: 443
@@ -357,6 +344,19 @@ proxies:
     path: /nova-geo-psiphon-fi
     headers:
       Host: pinalo.zenvorix.ir
+  udp: true
+- name: 🇫🇷 法国 | FRA 6
+  server: 212.183.88.136
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
   udp: true
 - name: 🇹🇭 泰国 | THA 3
   server: dtac.exp.dog
@@ -413,19 +413,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 英國丨yoyapai.com_1
-  type: vless
-  server: 77.75.199.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 俄羅斯丨yoyapai.com
   type: vless
   server: 90.156.254.164
@@ -467,19 +454,6 @@ proxies:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: ne111.kubservice.icu
-  port: 443
-  type: vless
-  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: ne111.kubservice.icu
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 4
   server: code-sandbox.blog
   port: 443
@@ -491,6 +465,19 @@ proxies:
     public-key: 84d_aHtsBvclx_Y6FnTmhhTqsZyQdfCGWtmFvefTrUI
     short-id: ee57ea513371ce89
   servername: code-sandbox.blog
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 8
+  server: ne111.kubservice.icu
+  port: 443
+  type: vless
+  uuid: 1a0bd0ba-df37-4d86-84ee-5f6eb4210d07
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: ne111.kubservice.icu
   client-fingerprint: qq
   network: tcp
   udp: true
@@ -552,16 +539,6 @@ proxies:
     host: wx-deu-022.cdnphotos.org
     mode: auto
   udp: true
-- name: 英國
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: log-delivery.cloud
   port: 443
@@ -582,6 +559,19 @@ proxies:
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  udp: true
+- name: 英國丨yoyapai.com_1
+  type: vless
+  server: 77.75.199.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime59.workers.dev
   skip-cert-verify: true
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
@@ -643,29 +633,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 斯洛文尼亞丨yoyapai.com
-  type: vless
-  server: 92.53.189.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime19.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪 德国 | DEU 23
   server: 178.17.53.177
   port: 34151
@@ -678,19 +645,6 @@ proxies:
     short-id: 5e039404
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 歐盟丨yoyapai.com_2
-  type: vless
-  server: 45.85.118.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-  skip-cert-verify: true
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: wx-deu-037.cdnphotos.org
@@ -722,20 +676,18 @@ proxies:
     headers:
       Host: ad-013.orbitqgr7v.info
   udp: true
-- name: 巴西聖保羅丨yoyapai.com
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
+- name: 歐盟丨yoyapai.com_2
+  type: vless
+  server: 45.85.118.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
   ws-opts:
-    path: https://chatgpt.com
+    path: /
     headers:
-      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
+      Host: vms.lifetime55.workers.dev
+  skip-cert-verify: true
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: turok2.o4ka-internet.com
@@ -750,6 +702,29 @@ proxies:
   servername: turok2.o4ka-internet.com
   client-fingerprint: random
   network: tcp
+  udp: true
+- name: 斯洛文尼亞丨yoyapai.com
+  type: vless
+  server: 92.53.189.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime19.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 英國
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: 🇦🇹 奥地利 | AUT
   server: 45.131.215.61
@@ -777,22 +752,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇰 丹麦 | DNK
-  server: 104.21.40.208
-  port: 443
-  type: vless
-  uuid: 245bb424-b186-4738-8f42-bdbde719d4c9
-  tls: true
-  alpn:
-  - h2
-  servername: pinalo.zenvorix.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nova-geo-psiphon-dk
-    headers:
-      Host: pinalo.zenvorix.ir
-  udp: true
 - name: 🇩🇪 德国 | DEU 19
   server: 5.83.129.153
   port: 20088
@@ -819,6 +778,22 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: 🇩🇰 丹麦 | DNK
+  server: 104.21.40.208
+  port: 443
+  type: vless
+  uuid: 245bb424-b186-4738-8f42-bdbde719d4c9
+  tls: true
+  alpn:
+  - h2
+  servername: pinalo.zenvorix.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nova-geo-psiphon-dk
+    headers:
+      Host: pinalo.zenvorix.ir
+  udp: true
 - name: 🇩🇪 德国 | DEU 20
   server: fi02.auragg.org
   port: 26006
@@ -847,19 +822,6 @@ proxies:
   servername: de22.kubservice.icu
   client-fingerprint: qq
   network: tcp
-  udp: true
-- name: 歐盟丨yoyapai.com
-  type: vless
-  server: 45.80.110.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-  skip-cert-verify: true
   udp: true
 - name: 🇩🇪 德国 | DEU 17
   server: 212.237.217.130
@@ -926,6 +888,29 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 英國節點
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 歐盟丨yoyapai.com
+  type: vless
+  server: 45.80.110.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇭 瑞士 | CHE 2
   server: 109.163.239.60
   port: 443
@@ -946,14 +931,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-  udp: true
-- name: 台湾省台北市丨yoyapai.com
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  skip-cert-verify: true
   udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 212.237.217.37
@@ -985,6 +962,14 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 台湾省台北市丨yoyapai.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: ss.l90909l.vip
   port: 2096
@@ -999,22 +984,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: vless-grpc-reality
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 45.192.2.51
-  port: 443
-  type: vless
-  uuid: c9b764b5-49cf-4400-9540-f56f7c09a87a
-  tls: true
-  alpn:
-  - http/1.1
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
-    short-id: f34818a561dfd1fe
-  servername: yandex.net
-  client-fingerprint: qq
-  network: tcp
   udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: pl01.auragg.org
@@ -1032,6 +1001,22 @@ proxies:
     grpc-mode: gun
     grpc-service-name: auragrpc
   udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 45.192.2.51
+  port: 443
+  type: vless
+  uuid: c9b764b5-49cf-4400-9540-f56f7c09a87a
+  tls: true
+  alpn:
+  - http/1.1
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+    short-id: f34818a561dfd1fe
+  servername: yandex.net
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 212.237.217.130
   port: 16923
@@ -1047,19 +1032,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: neurex
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: jumao91.shop
-  port: 2096
-  type: trojan
-  password: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  sni: jumao91.shop
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxyip=45.207.156.255
-    headers:
-      Host: jumao91.shop
   udp: true
 - name: 🇹🇭 泰国 | THA 2
   server: www.true.th
@@ -1114,6 +1086,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  type: trojan
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 | FRA 4
   server: 45.192.2.51
   port: 443
@@ -1128,13 +1107,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  type: trojan
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 | KOR
   server: vpn-kr-003.fastervpn.world
   port: 443
@@ -1172,6 +1144,19 @@ proxies:
   servername: yandex.net
   client-fingerprint: qq
   network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: jumao91.shop
+  port: 2096
+  type: trojan
+  password: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  sni: jumao91.shop
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /proxyip=45.207.156.255
+    headers:
+      Host: jumao91.shop
   udp: true
 - name: 🇪🇸 西班牙 | ESP 2
   server: is.tunnelpoint.space
@@ -1215,26 +1200,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 8
-  server: 13.62.231.217
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪 爱尔兰 | IRL 3
-  server: 5.254.121.227
-  port: 443
-  type: vless
-  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: df5f7ec1de636bbb
-  servername: cdn6-72.yahoo.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 172.64.146.59
   port: 443
@@ -1251,6 +1216,41 @@ proxies:
     headers:
       Host: pinalo.zenvorix.ir
   udp: true
+- name: 🇮🇪 爱尔兰 | IRL 3
+  server: 5.254.121.227
+  port: 443
+  type: vless
+  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: df5f7ec1de636bbb
+  servername: cdn6-72.yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 巴西聖保羅丨yoyapai.com
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 8
+  server: 13.62.231.217
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇬🇧 英国 | GBR 3
   server: wopa8.api3-max.ru
   port: 443
@@ -1275,14 +1275,6 @@ proxies:
   sni: de.catxstar.com
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: 194.242.129.183
-  port: 2550
-  type: vless
-  uuid: d8b42cd5-a149-4356-9e61-000000000000
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: 91.124.209.138
   port: 8880
@@ -1294,6 +1286,14 @@ proxies:
     path: /
     headers:
       Host: cdn-cloudflare91.korvexe.ir
+- name: 🇬🇧 英国 | GBR 5
+  server: 194.242.129.183
+  port: 2550
+  type: vless
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇭🇺 匈牙利 | HUN
   server: hu001.kubservice.icu
   port: 443
@@ -1358,104 +1358,104 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
-  - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 2
-  - 美國丨yoyapai.com_13
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 11
   - 美國丨yoyapai.com_17
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 美國丨yoyapai.com_13
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 13
-  - 美國節點
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
-  - 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
+  - 美國節點
+  - 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
-  - 🇫🇷 法国 | FRA 6
   - 🇩🇪 德国 | DEU 18
+  - 🇫🇷 法国 | FRA 6
   - 🇹🇭 泰国 | THA 3
   - 🇳🇱 荷兰 | NLD 7
   - 🇫🇷 法国 | FRA 5
   - 🇫🇷 法国 | FRA 7
-  - 英國丨yoyapai.com_1
   - 俄羅斯丨yoyapai.com
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 22
-  - 🇳🇱 荷兰 | NLD 8
   - 🇷🇺 俄罗斯 | RUS 4
+  - 🇳🇱 荷兰 | NLD 8
   - 🇬🇧 英国 | GBR 6
   - 🇨🇾 塞浦路斯 | CYP
   - 🇸🇪 瑞典 | SWE 7
   - 🇩🇪 德国 | DEU 16
-  - 英國
   - 🇮🇹 意大利 | ITA 2
   - 中國臺灣丨yoyapai.com
+  - 英國丨yoyapai.com_1
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 4
   - 🇬🇷 希腊 | GRC
   - 🇷🇺 俄罗斯 | RUS 3
-  - 英國節點
-  - 斯洛文尼亞丨yoyapai.com
   - 🇩🇪 德国 | DEU 23
-  - 歐盟丨yoyapai.com_2
   - 🇷🇺 俄罗斯 | RUS
   - 🇨🇦 加拿大 | CAN
-  - 巴西聖保羅丨yoyapai.com
+  - 歐盟丨yoyapai.com_2
   - 🇹🇷 土耳其 | TUR
+  - 斯洛文尼亞丨yoyapai.com
+  - 英國
   - 🇦🇹 奥地利 | AUT
   - 🇨🇭 瑞士 | CHE 3
-  - 🇩🇰 丹麦 | DNK
   - 🇩🇪 德国 | DEU 19
   - 🇩🇪 德国 | DEU 5
+  - 🇩🇰 丹麦 | DNK
   - 🇩🇪 德国 | DEU 20
   - 🇩🇪 德国 | DEU 15
-  - 歐盟丨yoyapai.com
   - 🇩🇪 德国 | DEU 17
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇮🇪 爱尔兰 | IRL
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
+  - 英國節點
+  - 歐盟丨yoyapai.com
   - 🇨🇭 瑞士 | CHE 2
   - 🇸🇪 瑞典 | SWE 5
-  - 台湾省台北市丨yoyapai.com
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
+  - 台湾省台北市丨yoyapai.com
   - 🇨🇭 瑞士 | CHE
-  - 🇫🇷 法国 | FRA 3
   - 🇵🇱 波兰 | POL 2
+  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 13
-  - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA 2
   - 🇩🇪 德国 | DEU 14
   - 荷蘭丨yoyapai.com
   - 🇸🇪 瑞典 | SWE
-  - 🇫🇷 法国 | FRA 4
   - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA 4
   - 🇰🇷 韩国 | KOR
   - 🇵🇱 波兰 | POL 4
   - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD 2
   - 🇪🇸 西班牙 | ESP 2
   - 🇩🇪 德国 | DEU
   - 🇫🇷 法国 | FRA 2
-  - 🇸🇪 瑞典 | SWE 8
-  - 🇮🇪 爱尔兰 | IRL 3
   - 🇳🇱 荷兰 | NLD 3
+  - 🇮🇪 爱尔兰 | IRL 3
+  - 巴西聖保羅丨yoyapai.com
+  - 🇸🇪 瑞典 | SWE 8
   - 🇬🇧 英国 | GBR 3
   - 🇹🇷 土耳其 | TUR 4
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 5
   - 🇩🇪 德国 | DEU 12
+  - 🇬🇧 英国 | GBR 5
   - 🇭🇺 匈牙利 | HUN
   - 🇮🇹 意大利 | ITA 3
   - 🇪🇸 西班牙 | ESP
@@ -1467,9 +1467,9 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
-  - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 2
-  - 美國丨yoyapai.com_13
+  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -1481,24 +1481,24 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 美國丨yoyapai.com_13
   - 🇺🇸 美国 | USA 11
   - 美國丨yoyapai.com_17
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 美國丨yoyapai.com_13
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 13
-  - 美國節點
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
-  - 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
+  - 美國節點
+  - 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
@@ -1507,26 +1507,26 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 巴西聖保羅丨yoyapai.com
-  - 美國丨yoyapai.com_13
-  - 美國節點
-  - 英國
-  - 英國節點
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 13
-  - 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
-  - 🇳🇱 荷兰 | NLD 2
-  - 英國丨yoyapai.com_1
-  - 斯洛文尼亞丨yoyapai.com
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
-  - 歐盟丨yoyapai.com_2
-  - 歐盟丨yoyapai.com
+  - 🇺🇸 美国 | USA 11
+  - 美國丨yoyapai.com_17
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
+  - 美國丨yoyapai.com_13
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 15
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
