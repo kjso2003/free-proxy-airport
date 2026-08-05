@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-05T22:10:53.349066+00:00'
+generated-at: '2026-08-05T23:29:30.804048+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 4
   server: oplosgru-c.catcat321.com
@@ -58,27 +58,12 @@ proxies:
   auth: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
   sni: sg1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: www.shopify.com
-  port: 443
-  type: vless
-  uuid: a4f61bab-947b-4451-b289-2e09962b9c9e
-  tls: true
-  servername: hht.hhlldjc.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hht.hhlldjc.kdns.fr
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: sg3.xiaoliyu.cyou
-  port: 4466
-  type: hysteria2
-  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  auth: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  sni: sg3.xiaoliyu.cyou
+- name: 🇯🇵 日本 | JPN 4
+  server: hkdcrtc-e.catcat321.com
+  port: 20129
+  type: trojan
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN
   server: 45.88.43.116
@@ -87,14 +72,6 @@ proxies:
   password: 6c077487-06af-4fb1-9e46-d485d98f0a31
   auth: 6c077487-06af-4fb1-9e46-d485d98f0a31
   sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: xjp2.mangshe.xyz
-  port: 2060
-  type: hysteria2
-  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
-  auth: 9d3356a0-c07e-43cc-b30e-450bd50521b8
-  sni: xjp2.mangshe.xyz
   skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 11
   server: 162.159.44.7
@@ -180,19 +157,6 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
-- name: 🇺🇸 美國丨yoyapai.com
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 21
   server: 198.41.208.112
   port: 443
@@ -207,27 +171,6 @@ proxies:
     headers:
       Host: support.zoom.us.yxls.eu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 179.255.148.66
-  port: 47588
-  type: vless
-  uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
-  tls: true
-  reality-opts:
-    public-key: ViI3P61PX_g1Qw5isp6C1ZaGqKQO471V9cCEJwHFpE4
-    short-id: 8b2730e4eb1313
-  servername: yellowpages.amazon.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 33
-  server: los.chihirokk.online
-  port: 11949
-  type: trojan
-  password: 0c946396-6336-40c3-a161-fcb6bec776ce
-  sni: los.chihirokk.online
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 31
   server: 104.26.2.173
   port: 443
@@ -240,6 +183,21 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
+  udp: true
+- name: 🇺🇸 美国 | USA 33
+  server: los.chihirokk.online
+  port: 11949
+  type: trojan
+  password: 0c946396-6336-40c3-a161-fcb6bec776ce
+  sni: los.chihirokk.online
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 3.85.61.177
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇺🇸 美国 | USA 25
   server: www.wto.org
@@ -277,13 +235,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 3.85.61.177
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.16.106.217
@@ -346,6 +297,18 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 172.64.53.194
   port: 2087
@@ -375,6 +338,15 @@ proxies:
     headers:
       Host: support.zoom.us.yxls.eu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: starlink-ft.251313.xyz
+  port: 443
+  type: hysteria2
+  password: https://xship.best
+  auth: https://xship.best
+  sni: xship.top
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: 88.218.44.4
   port: 993
@@ -387,15 +359,6 @@ proxies:
   servername: dl.google.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.best
-  auth: https://xship.best
-  sni: xship.top
-  skip-cert-verify: true
   udp: true
 - name: 免費節點丨yoyapai.com_18
   type: vless
@@ -424,21 +387,6 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 185.206.170.69
-  port: 5151
-  type: vless
-  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: T3vWH0zPUrOsgdK7cvEEnMbS3LIJDxQ17_L_GhmZJ0E
-    short-id: 69b851
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇮🇳 印度 | IND
   server: ln4.xiaoliyu.cyou
   port: 4433
@@ -447,6 +395,20 @@ proxies:
   auth: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
   sni: ln4.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 51.250.47.71
+  port: 443
+  type: vless
+  uuid: 9b4c96f9-60e8-4694-b069-c46992390555
+  tls: true
+  servername: cloudflare.vhub.pro
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: cloudflare.vhub.pro
+  udp: true
 - name: 中國臺灣丨yoyapai.com
   type: hysteria2
   server: vpn-tw-002.fastervpn.world
@@ -564,6 +526,21 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
+- name: 巴西聖保羅丨yoyapai.com
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
+  udp: true
 - name: 英國節點
   type: vmess
   server: 82.198.246.250
@@ -595,21 +572,6 @@ proxies:
     public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
   skip-cert-verify: true
   udp: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: sosk.sorix-home.ir
-  port: 60231
-  type: vless
-  uuid: 4d7d1add-0a51-4887-b10a-07c68df24f7e
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - sosk.sorix-home.ir
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 13
   server: 88.218.44.4
   port: 8443
@@ -625,19 +587,27 @@ proxies:
     grpc-mode: gun
     grpc-service-name: TunService
   udp: true
-- name: 免費節點丨yoyapai.com_39
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: sosk.sorix-home.ir
+  port: 60231
   type: vless
-  server: ad-018.cloud25075.info
-  port: 8443
-  uuid: 5d3abfa9-bdf5-4334-8383-dcf92df802a5
-  network: ws
-  servername: ad-018.cloud25075.info
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
+  uuid: 4d7d1add-0a51-4887-b10a-07c68df24f7e
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
     headers:
-      Host: ad-018.cloud25075.info
+      Host:
+      - sosk.sorix-home.ir
+  udp: true
+- name: 台湾省台北市丨yoyapai.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   skip-cert-verify: true
   udp: true
 - name: 🇳🇱 荷兰 | NLD 11
@@ -656,6 +626,21 @@ proxies:
     path: /
     host: download.nvidia.com
     mode: auto
+  udp: true
+- name: 免費節點丨yoyapai.com_39
+  type: vless
+  server: ad-018.cloud25075.info
+  port: 8443
+  uuid: 5d3abfa9-bdf5-4334-8383-dcf92df802a5
+  network: ws
+  servername: ad-018.cloud25075.info
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-018.cloud25075.info
+  skip-cert-verify: true
   udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 144.22.183.254
@@ -679,21 +664,6 @@ proxies:
   auth: 71cada65-d23e-418c-88e4-a06188d14689
   sni: swe-one.quiet-rogue.site
   skip-cert-verify: true
-- name: 巴西聖保羅丨yoyapai.com
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: https://chatgpt.com
-    headers:
-      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
-  udp: true
 - name: 🇨🇴 哥伦比亚 | COL
   server: 149.130.164.131
   port: 62145
@@ -710,20 +680,6 @@ proxies:
   auth: gf1:gfhysteria2024
   sni: www.linux.com
   skip-cert-verify: true
-- name: 🇹🇭 泰国 | THA
-  server: www.true.th
-  port: 443
-  type: vless
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  tls: true
-  servername: d1yxsk0zprgivr.cloudfront.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 12
   server: 88.218.44.4
   port: 8443
@@ -739,6 +695,20 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: TunService
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 443
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
   udp: true
 - name: 🇳🇱 荷兰 | NLD 18
   server: 45.130.125.126
@@ -798,38 +768,35 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 7
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 US美國
   - 🇺🇸 US美國_1
   - 美國丨yoyapai.com_17
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美國丨yoyapai.com
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 10
   - 美國節點
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 22
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 22
   - 免費節點丨yoyapai.com_18
   - 🇫🇷 法国 | FRA 5
-  - 🇨🇦 加拿大 | CAN 2
   - 🇮🇳 印度 | IND
+  - 🇷🇺 俄罗斯 | RUS 4
   - 中國臺灣丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
@@ -841,21 +808,22 @@ proxy-groups:
   - 免費節點丨yoyapai.com_40
   - 🇸🇪 瑞典 | SWE 4
   - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 巴西聖保羅丨yoyapai.com
   - 英國節點
   - 🇨🇴 哥伦比亚 | COL 5
   - 免費節點丨yoyapai.com_25
-  - 🇷🇴 罗马尼亚 | ROU
   - 🇳🇱 荷兰 | NLD 13
-  - 免費節點丨yoyapai.com_39
+  - 🇷🇴 罗马尼亚 | ROU
+  - 台湾省台北市丨yoyapai.com
   - 🇳🇱 荷兰 | NLD 11
+  - 免費節點丨yoyapai.com_39
   - 🇧🇷 巴西 | BRA
   - 免費節點丨yoyapai.com_42
   - 🇸🇪 瑞典 | SWE
-  - 巴西聖保羅丨yoyapai.com
   - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD 2
-  - 🇹🇭 泰国 | THA
   - 🇳🇱 荷兰 | NLD 12
+  - 🇹🇭 泰国 | THA
   - 🇳🇱 荷兰 | NLD 18
   - 🇩🇪 德国 | DEU
   - 🇹🇷 土耳其 | TUR 2
@@ -871,6 +839,7 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -883,42 +852,41 @@ proxy-groups:
   - 美國丨yoyapai.com_17
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美國丨yoyapai.com
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 10
   - 美國節點
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 22
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 巴西聖保羅丨yoyapai.com
-  - 美國節點
-  - 英國節點
-  - 英國
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 33
+  - 免費節點丨yoyapai.com_18
+  - 🇺🇸 美国 | USA 13
+  - 美國節點
+  - 英國
+  - 英國節點
+  - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
