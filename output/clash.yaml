@@ -7,8 +7,16 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-08T21:35:39.367927+00:00'
+generated-at: '2026-08-08T22:25:28.572961+00:00'
 proxies:
+- name: 🇯🇵 日本 | JPN 5
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  type: trojan
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇭🇰 香港 | HKG 4
   server: v9.hdacd.com
   port: 30809
@@ -63,25 +71,24 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.44.195
+  port: 443
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=random
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
 - name: 🇺🇸 US美國
   type: vmess
   server: cindy52.ceoiii.com
   port: 36803
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-  udp: true
-- name: 🇺🇸 US美國_1
-  type: vmess
-  server: cindy50.ceoiii.com
-  port: 36801
   uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
   alterId: 0
   cipher: auto
@@ -108,6 +115,33 @@ proxies:
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
   udp: true
+- name: 🇺🇸 US美國_1
+  type: vmess
+  server: cindy50.ceoiii.com
+  port: 36801
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+  udp: true
+- name: 🇺🇸 美国 | USA 25
+  server: 104.25.242.132
+  port: 443
+  type: trojan
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  sni: yks-dd9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: yks-dd9.pages.dev
 - name: 🇺🇸 美國丨yoyapai.com
   type: vless
   server: 45.155.52.231
@@ -135,20 +169,6 @@ proxies:
     headers:
       Host: us-akile.nanniang.top
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.44.195
-  port: 443
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=random
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
 - name: 🇺🇸 美国 | USA 33
   server: us.klxiaogou.com
   port: 41963
@@ -163,18 +183,6 @@ proxies:
     path: /124
     headers:
       Host: us.klxiaogou.com
-- name: 🇺🇸 美国 | USA 25
-  server: 104.25.242.132
-  port: 443
-  type: trojan
-  password: 87961f9d-bee1-4377-826b-e169e7891c4f
-  sni: yks-dd9.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: yks-dd9.pages.dev
 - name: 🇺🇸 美国 | USA 16
   server: 70.39.197.9
   port: 59216
@@ -290,6 +298,14 @@ proxies:
   sni: de-two.quiet-rogue.site
   skip-cert-verify: true
   udp: true
+- name: 🇮🇳 印度 | IND
+  server: ln4.xiaoliyu.cyou
+  port: 4433
+  type: hysteria2
+  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
+  auth: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
+  sni: ln4.xiaoliyu.cyou
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 | RUS 4
   server: 201.24.118.145
   port: 4100
@@ -365,14 +381,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 158.178.154.97
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: hl1.mangshe.xyz
   port: 2056
@@ -405,6 +413,21 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
+  udp: true
+- name: 巴西聖保羅丨yoyapai.com
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 78.159.240.69
@@ -470,16 +493,6 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: 149.118.66.201
   port: 20000
@@ -500,12 +513,14 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 台湾省台北市丨yoyapai.com
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 英國節點
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
@@ -587,21 +602,6 @@ proxies:
   servername: getsavesafe.net
   client-fingerprint: qq
   network: tcp
-  udp: true
-- name: 巴西聖保羅丨yoyapai.com
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: https://chatgpt.com
-    headers:
-      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 158.101.199.246
@@ -717,19 +717,20 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 4
   - 🇯🇵 日本 | JPN 6
   - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 US美國
-  - 🇺🇸 US美國_1
   - 美國丨yoyapai.com_17
+  - 🇺🇸 US美國_1
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美國丨yoyapai.com
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
@@ -740,26 +741,26 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 7
   - 🇷🇺 俄罗斯 | RUS 6
   - 🇩🇪 德国 | DEU 2
+  - 🇮🇳 印度 | IND
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇳🇱 荷兰 | NLD 8
   - 中國臺灣丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇷🇺 俄罗斯 | RUS 7
+  - 巴西聖保羅丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
   - 英國
   - 🇷🇺 俄罗斯 | RUS 8
   - 免費節點丨yoyapai.com_3
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 英國節點
   - 🇦🇺 澳大利亚 | AUS
   - 🇮🇪 爱尔兰 | IRL
-  - 台湾省台北市丨yoyapai.com
+  - 英國節點
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇷🇺 俄罗斯 | RUS 5
   - 🇸🇪 瑞典 | SWE
@@ -767,7 +768,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA 4
   - 🇳🇱 荷兰 | NLD 6
-  - 巴西聖保羅丨yoyapai.com
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU 9
   - 🇨🇴 哥伦比亚 | COL 2
@@ -789,6 +789,7 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
@@ -797,14 +798,14 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 US美國
-  - 🇺🇸 US美國_1
   - 美國丨yoyapai.com_17
+  - 🇺🇸 US美國_1
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美國丨yoyapai.com
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
@@ -818,17 +819,17 @@ proxy-groups:
   type: url-test
   proxies:
   - 巴西聖保羅丨yoyapai.com
-  - 英國節點
-  - 美國節點
-  - 英國
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 11
+  - 英國
+  - 英國節點
+  - 美國節點
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 9
+  - 免費節點丨yoyapai.com_3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
