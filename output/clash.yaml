@@ -7,25 +7,35 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-09T13:47:19.469516+00:00'
+generated-at: '2026-08-09T14:31:22.869983+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
-  server: JP032009.ssgreen.org
+  server: 64.176.44.23
   port: 443
-  type: vmess
-  uuid: 0976d0fd-e6c1-4adc-a2be-86a11c87bc8b
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: JP032009.ssgreen.org
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /wes
+    path: /
     headers:
-      Host: JP032009.ssgreen.org
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 8.219.155.125
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 16.176.42.97
@@ -41,93 +51,147 @@ proxies:
     headers:
       Host: zero.csmaster.ggff.net
 - name: 🇸🇬 新加坡 | SGP 2
-  server: 172.64.146.211
-  port: 2087
+  server: cccct.284.pics
+  port: 65022
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: YmQ5Y2E3MGRlNmU1NDVkZTNhZGIyMmIyZDJjZjM3NGI=:MWU1N2Y0Y2UtNWYwOC00N2NhLWFiNjktMTE3MTBhYTg=
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: cmcc.cloudflare.seeck.cn
+  port: 443
   type: vless
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 26
-  server: 104.16.150.130
-  port: 2087
+- name: 🇺🇸 美国 | USA 11
+  server: 82.40.23.174
+  port: 443
   type: vless
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
   tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: 188.114.96.3
-  port: 443
-  type: trojan
-  password: MiTiVPN
-  sni: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: US032017.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 7132fc21-21b1-46e1-aa59-6ce61e96d0fe
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032017.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032017.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: cfip.1323123.xyz
-  port: 443
-  type: trojan
-  password: 87961f9d-bee1-4377-826b-e169e7891c4f
-  sni: yks-dd9.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: yks-dd9.pages.dev
-- name: 🇺🇸 美国 | USA
-  server: 162.35.231.6
+- name: 🇺🇸 美国 | USA 9
+  server: 193.233.205.117
   port: 443
   type: vless
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
   tls: true
   packet-encoding: xudp
   reality-opts:
-    public-key: O4of5fbG7Ns3fBdBF0bDU8Fa8q-mdk7YLgOgvAWPeF8
-    short-id: f85aebea
-  servername: media2.tcpdoor.net
+    public-key: iUc9JqWjFemnQo8R5fgiwssCjEdWmixB4X-mRJkx2VE
+    short-id: 3182f9ae
+  servername: media3.abvphelp.cc
   client-fingerprint: firefox
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
   udp: true
-- name: 🇺🇸 美国 | USA 10
+- name: 🇺🇸 美国 | USA 8
+  server: 192.243.113.108
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 | USA 20
+  server: lt.badns.help
+  port: 51360
+  type: vmess
+  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: ct.877774.xyz
+  port: 443
+  type: vless
+  uuid: a367c9d0-cfac-4547-b367-645f3774df6a
+  tls: true
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement
+    headers:
+      Host: us-lax.862400.xyz
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.53.215
+  port: 2087
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 104.17.22.240
+  port: 443
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 104.18.151.172
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 | USA 7
+  server: 185.23.35.175
+  port: 8450
+  type: vless
+  uuid: 48817310-fd5c-4877-b2ac-70fee6db6acc
+  tls: false
+  packet-encoding: xudp
+  network: ws
+  ws-opts:
+    path: /lk/profile
+    headers:
+      Host: x5club.ru
+  udp: true
+- name: 🇺🇸 美国 | USA 5
   server: 159.195.14.140
   port: 443
   type: vless
@@ -140,7 +204,60 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 19
+- name: 🇺🇸 美国 | USA
+  server: 3x.aweijll.cf
+  port: 40001
+  type: hysteria2
+  password: 7wzl2lj2fy956inb
+  auth: 7wzl2lj2fy956inb
+  sni: 3x.aweijll.cf
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 10
+  server: 199.193.125.72
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 | USA 13
+  server: 89.208.251.72
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: api.connectix.uk
+  port: 443
+  type: vless
+  uuid: f3a436a8-45c3-4c5d-bf97-b1ff6e9ced38
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  servername: unitedstates.havray2025.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: unitedstates.havray2025.ir
+  udp: true
+- name: 🇺🇸 美国 | USA 2
   server: 104.16.65.1
   port: 443
   type: vless
@@ -153,66 +270,52 @@ proxies:
     path: /
     headers:
       Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 | USA 14
-  server: 172.64.145.158
-  port: 8443
+- name: 🇫🇷 法国 | FRA 6
+  server: 35.181.171.182
+  port: 40133
   type: vless
-  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
-  tls: true
-  servername: us-akile.nanniang.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us-akile.nanniang.top
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 88.218.44.4
-  port: 993
-  type: vless
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  uuid: 1e3c6e25-0c65-4927-91cb-79982fd6dafc
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
-  servername: swcdn.apple.com
-  client-fingerprint: chrome
+    public-key: FDnQBm11AA6TUNmcyQAo0wJnl2mt1oozbOG-FSVi6DU
+    short-id: 87806cfd2dcfcd
+  servername: yahoo.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 82.117.87.119
+- name: 🇫🇷 法国 | FRA 5
+  server: 193.233.255.24
   port: 443
   type: vless
-  uuid: 0f2dc4af-951f-4690-922e-07c6e8bab26a
+  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: UvJqmTGvadeK94_38ncycxTRqU4lmsjhDjJBuL0CQSA
-    short-id: c71af684feb2fef4
-  servername: nl-one.quiet-rogue.site
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 45.155.52.231
-  port: 443
-  type: vless
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  tls: true
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  servername: ru2.skydrgn-online.online
-  client-fingerprint: chrome
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fr.sellflow.org
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 141.227.170.192
-  port: 8443
+- name: 🇫🇷 法国 | FRA 7
+  server: 45.131.212.28
+  port: 443
   type: vless
   uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
   tls: true
-  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fr.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 147.45.47.38
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
   flow: xtls-rprx-vision
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
@@ -220,11 +323,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 78.159.240.69
+  port: 8443
+  type: hysteria2
+  password: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  auth: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 | RUS 11
-  server: 147.45.47.46
+  server: 147.45.47.48
   port: 443
   type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
@@ -234,61 +345,50 @@ proxies:
   network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 4
-  server: 176.109.85.140
-  port: 9441
-  type: vless
-  uuid: b251ec8f-47ec-4ab4-8bd2-13ac333a4100
-  tls: true
-  reality-opts:
-    public-key: xTk5dX6E0DGuQj19bWDMafx13XoUK8euqlmtwJIg8wY
-    short-id: 8a7137d4e9c49b9c
-  servername: max.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tuning-stream
-  udp: true
-- name: 🇩🇪 德国 | DEU 16
-  server: 135.125.184.182
-  port: 50559
-  type: vless
-  uuid: 3fd3909b-238f-42c4-9170-38d10014b1d8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Play.googel.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 176.109.85.84
-  port: 7443
-  type: vless
-  uuid: b49d92be-0764-4d96-80e0-101ad154895c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2g6aoah8fX9KVIXWJy42cVdMxIz2RLsMyI0UlRLgFBs
-  servername: api-maps.yandex.ru
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 13
-  server: 147.45.47.48
+  server: 147.45.47.37
   port: 443
   type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 188.114.99.89
+  port: 8443
+  type: vless
+  uuid: '@V2XNET'
+  tls: true
+  packet-encoding: xudp
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  servername: argentinavsspain.dpdns.org
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: argentinavsspain.dpdns.org
+    mode: auto
+    x-padding-bytes: 100-1000
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 13
+  server: 147.45.47.49
+  port: 443
+  type: vless
+  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fr.sellflow.org
   client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
-  server: 147.45.47.46
+  server: 147.45.47.35
   port: 443
   type: vless
   uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
@@ -296,123 +396,60 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
+  servername: fr.sellflow.org
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 147.45.47.45
+- name: 🇸🇪 瑞典 | SWE 3
+  server: sw1-chr.astralweb.tech
   port: 443
   type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
+  servername: sw1-chr.astralweb.tech
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: 89.144.35.232
+  port: 17306
+  type: tuic
+  password: 3ebac90b-6977-47c0-bef5-b2e37554432c
+  uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  disable-sni: false
+  reduce-rtt: false
+  request-timeout: 0
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 84.32.101.222
+  port: 443
+  type: vless
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  tls: true
+  servername: ddc-chr.astralweb.tech
   client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
-  server: 141.227.160.138
-  port: 8443
+  server: 150.241.72.5
+  port: 443
   type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  uuid: fc1b3bda-b226-452a-8c5c-b0e36a1f8f88
   tls: true
-  packet-encoding: xudp
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 7
-  server: 147.45.47.51
-  port: 443
-  type: vless
-  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 144.31.166.91
-  port: 443
-  type: hysteria2
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  auth: 71cada65-d23e-418c-88e4-a06188d14689
-  sni: de-two.quiet-rogue.site
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 16
-  server: wqeds.denverpresents.top
-  port: 443
-  type: vless
-  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: wqeds.denverpresents.top
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /assets/build/_app/immutable/chunks/stream-one/
-    host: wqeds.denverpresents.top
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 20
-  server: 78.159.245.249
-  port: 1111
-  type: vless
-  uuid: e04a778c-4c83-4fe0-9f52-e6b7bcb59c7c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YuhNgtj_Tf8WNLiSB2bNJKPvfwmqa6PNRpbP8TvNkzA
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 8
-  server: 147.45.47.52
-  port: 443
-  type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 92.42.96.240
-  port: 443
-  type: vless
-  uuid: 4038f946-bd95-5505-a111-196c05d6d92f
-  tls: true
-  servername: mAhaNrEaliteAm.MaHkHan.iR
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mAhaNrEaliteAm.MaHkHan.iR
-  udp: true
-- name: 🇩🇪 德国 | DEU 15
-  server: 78.159.240.69
-  port: 8443
-  type: hysteria2
-  password: 7836b28e-8451-4596-ad3e-e3601b2335ba
-  auth: 7836b28e-8451-4596-ad3e-e3601b2335ba
-  sni: quic.tyr-agentstvo.tech
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 17
   server: 147.45.47.38
   port: 443
   type: vless
@@ -425,33 +462,186 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 5.83.129.153
-  port: 20088
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 135.106.140.23
+  port: 443
+  type: vless
+  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: qwesd.rutendingaltos.top
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /assets/build/_app/immutable/chunks/stream-one/
+    host: qwesd.rutendingaltos.top
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 5.83.129.143
+  port: 26691
   type: hysteria
   auth_str: dongtaiwang.com
   auth-str: dongtaiwang.com
-  up: 500
-  down: 1000
+  up: 11 Mbps
+  down: 55 Mbps
   protocol: udp
   sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 104.17.148.22
+- name: 🇩🇪 德国 | DEU 5
+  server: 162.159.137.204
   port: 443
   type: vless
-  uuid: mahanvpn-mahanvpn
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: true
-  servername: mAhaNrEaliteAm.MaHkHan.iR
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: mAhaNrEaliteAm.MaHkHan.iR
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 16
+  server: 45.155.52.231
+  port: 443
+  type: vless
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  tls: true
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  servername: ru2.skydrgn-online.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: 91.235.234.186
+  port: 443
+  type: vless
+  uuid: 4593aa27-a2a1-412f-935f-3829495c0970
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: g-WqfHKjac71MMtkmq5bIvTFavzXTCAnEI_17KoTNSQ
+  servername: us7fs3.proxen.pdevinfra.com
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: 170.168.97.5
+  port: 8443
+  type: vless
+  uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
+  tls: true
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: TunService
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 8
+  server: 147.45.47.38
+  port: 443
+  type: vless
+  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 4
+  server: cdn3.portalcode.ir
+  port: 2082
+  type: vless
+  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: swed.milkabebar.ir
+    v2ray-http-upgrade: true
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 17
+  server: 5.129.241.247
+  port: 4100
+  type: vless
+  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 137.23.22.155
+  port: 20000
+  type: hysteria2
+  password: b42d90fa667942aebc734d60
+  auth: b42d90fa667942aebc734d60
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  ports: 20000-30000
+- name: 🇩🇪 德国 | DEU 6
+  server: 178.83.46.30
+  port: 5794
+  type: vless
+  uuid: ddd72e51-9224-43a2-b3a0-9c4170f78ed1
+  tls: false
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 9
+  server: cdn1.portalcode.ir
+  port: 2082
+  type: vless
+  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: frs.milkabebar.ir
+    v2ray-http-upgrade: true
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 199.232.78.159
+  port: 443
+  type: vless
+  uuid: e1a5c7fd-d1c7-49a3-b772-9e2935d420db
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: SvnTeamChannel.global.ssl.fastly.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 45.65.112.228
+  port: 20513
+  type: vless
+  uuid: 888193f6-6818-42f4-b223-64c9fd323b76
+  tls: true
+  reality-opts:
+    public-key: CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k
+    short-id: 285db1978fd0d8c1
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+  network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 178.253.55.89
@@ -468,21 +658,8 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 15
-  server: 147.45.47.45
-  port: 443
-  type: vless
-  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 147.45.47.38
+- name: 🇨🇭 瑞士 | CHE
+  server: 193.233.255.6
   port: 443
   type: vless
   uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
@@ -490,89 +667,11 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
+  servername: abuse.sellflow.org
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇹🇭 泰国 | THA 2
-  server: www.true.th
-  port: 80
-  type: vless
-  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /than
-    headers:
-      Host: d16l6nb4do0zu4.cloudfront.net
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 141.227.170.14
-  port: 8443
-  type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- type: trojan
-  name: 未知TROJAN-230|free-nodes
-  server: 104.19.64.105
-  port: 443
-  password: humanity
-  udp: true
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      host: www.calmlunch.com
-- name: 🇸🇪 瑞典 | SWE
-  server: 141.227.160.236
-  port: 8443
-  type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 193.233.255.25
-  port: 443
-  type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: de.sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 10
-  server: 5.129.241.247
-  port: 4100
-  type: vless
-  uuid: 5d0fbb28-3be3-4044-bc5b-e4b7ca1916c7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
-- name: 🇫🇷 法国 | FRA 4
+- name: 🇫🇷 法国 | FRA 3
   server: 152.228.215.219
   port: 8443
   type: vless
@@ -586,8 +685,88 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 21
+- name: 🇷🇺 俄罗斯 | RUS 15
+  server: 193.233.255.21
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
   server: 147.45.47.37
+  port: 443
+  type: vless
+  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 13
+  server: 141.227.170.192
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fi.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 141.227.160.138
+  port: 8443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 14
+  server: 141.227.170.192
+  port: 8443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 152.53.173.94
+  port: 443
+  type: vless
+  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AmsLUlWO0VMr7DWGL4k3dhEXS_eR2898D6ltMp1XMF4
+  servername: crisp-helix.cdn.cachefleet.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 10
+  server: 147.45.47.45
   port: 443
   type: vless
   uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
@@ -599,22 +778,138 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 89.144.35.232
-  port: 17306
-  type: tuic
-  password: 3ebac90b-6977-47c0-bef5-b2e37554432c
-  uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c
-  sni: www.microsoft.com
-  skip-cert-verify: true
+- name: 🇫🇷 法国 | FRA 4
+  server: 193.233.255.11
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fr.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 140.248.186.45
+  port: 443
+  type: vless
+  uuid: XpnTeam-21
+  tls: true
   alpn:
-  - h3
-  disable-sni: false
-  reduce-rtt: false
-  request-timeout: 0
-  udp-relay-mode: native
-  congestion-controller: bbr
+  - http/1.1
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
+- name: 🇦🇪 阿联酋 | ARE
+  server: hk.s3-cloud.org
+  port: 443
+  type: vless
+  uuid: f9959a44-4836-4d29-8029-c539a26e77c5
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: hk.s3-cloud.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA
+  server: 147.45.47.26
+  port: 443
+  type: vless
+  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fr.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.224.100
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
+  server: 158.180.14.198
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇷🇺 俄罗斯 | RUS 12
+  server: 147.45.47.48
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 18
+  server: mws-fc-1.ghost-lan.com
+  port: 9441
+  type: vless
+  uuid: b251ec8f-47ec-4ab4-8bd2-13ac333a4100
+  tls: true
+  packet-encoding: xudp
+  reality-opts:
+    public-key: xTk5dX6E0DGuQj19bWDMafx13XoUK8euqlmtwJIg8wY
+    short-id: 8a7137d4e9c49b9c
+  servername: max.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tuning-stream
+  udp: true
+- type: trojan
+  name: 🇩🇪DE-2009
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  udp: true
+  skip-cert-verify: true
+  sni: de.catxstar.com
+  network: tcp
+- name: 🇩🇪 德国 | DEU
+  server: 93.114.194.122
+  port: 8443
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: grape-zet-ro-turbo.bumbleshrimp.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 | FRA 2
+  server: 147.45.47.49
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: fr.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
   server: 82.115.6.93
   port: 443
   type: vless
@@ -631,83 +926,8 @@ proxies:
     headers:
       Host: kuraakavaa-5l7.pages.dev
   udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
-  port: 80
-  type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 92.42.96.240
-  port: 443
-  type: vless
-  uuid: mahanvpn-mahanvpn
-  tls: true
-  servername: mAhaNrEaliteAm.MaHkHan.iR
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mAhaNrEaliteAm.MaHkHan.iR
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 12
-  server: 147.45.47.52
-  port: 443
-  type: vless
-  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 18
-  server: 147.45.47.48
-  port: 443
-  type: vless
-  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- type: trojan
-  name: 🇩🇪DE-2009
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  udp: true
-  skip-cert-verify: true
-  sni: de.catxstar.com
-  network: tcp
-- name: 🇩🇪 德国 | DEU
-  server: 161.104.32.106
-  port: 7443
-  type: vless
-  uuid: 501b6afa-f955-473f-8440-1010110a1548
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mBaiGOrxW7NFGpW7aZLztWiME6vulM0Nk1Uh0SxX4zc
-    short-id: fa1a12cf
-  servername: eh.vk.com
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 14
-  server: 147.45.47.47
+  server: 193.233.255.17
   port: 443
   type: vless
   uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
@@ -719,23 +939,7 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 9
-  server: 135.106.140.23
-  port: 443
-  type: vless
-  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: qwesd.rutendingaltos.top
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /assets/build/_app/immutable/chunks/stream-one/
-    host: qwesd.rutendingaltos.top
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 9
+- name: 🇳🇱 荷兰 | NLD 5
   server: 104.21.5.155
   port: 443
   type: trojan
@@ -748,11 +952,28 @@ proxies:
     headers:
       Host: de1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
 - name: 🇷🇺 俄罗斯 | RUS 19
-  server: 147.45.47.47
+  server: qwesd.rutendingaltos.top
   port: 443
   type: vless
-  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
+  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
   tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: qwesd.rutendingaltos.top
+  client-fingerprint: edge
+  network: xhttp
+  xhttp-opts:
+    path: /assets/build/_app/immutable/chunks/stream-one/
+    host: qwesd.rutendingaltos.top
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 141.227.174.108
+  port: 8443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  packet-encoding: xudp
   flow: xtls-rprx-vision
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
@@ -760,99 +981,154 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: gr054.bamajobin.ir
-  port: 2053
-  type: vless
-  uuid: d9aa9ea3-9388-483f-a58d-a754f33ec505
-  tls: true
-  reality-opts:
-    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
-    short-id: 524efc1f88592266
-  servername: play.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.data
-  udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 185.136.12.190
+- name: 🇬🇧 英国 | GBR
+  server: 104.16.75.207
   port: 443
   type: vless
-  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
+  uuid: 04d630b3-4b8d-422d-b53c-99addcb13191
   tls: true
   alpn:
+  - h3
   - h2
-  servername: deu683.lackerdeu.org
+  - http/1.1
+  servername: v3.sub1vpn.dpdns.org
   client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
-    path: /api/v1/
-    host: deu683.lackerdeu.org
+    path: /api
+    host: v3.sub1vpn.dpdns.org
     mode: auto
+    x-padding-bytes: 100-1000
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: 91.193.58.201
+  port: 2087
+  type: vless
+  uuid: e1a5c7fd-d1c7-49a3-b772-9e2935d420db
+  tls: true
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  servername: text.xn--fjqyexxidv2znoe9rk1n8ada0532g6usa.com
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: max.xn--fjqyexxidv2znoe9rk1n8ada0532g6usa.com
+    mode: auto
+  udp: true
+- name: 🇫🇷 法国 | FRA 8
+  server: cdn.devmixa.ir
+  port: 443
+  type: vless
+  uuid: f3a436a8-45c3-4c5d-bf97-b1ff6e9ced38
+  tls: true
+  alpn:
+  - http/1.1
+  servername: france2025.havray2025.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: france2025.havray2025.ir
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: 45.131.212.26
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: de.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 25
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 23
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 2
+  - 🇫🇷 法国 | FRA 6
+  - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 7
   - 🇷🇺 俄罗斯 | RUS 6
   - 🇩🇪 德国 | DEU 2
   - 🇷🇺 俄罗斯 | RUS 11
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇩🇪 德国 | DEU 16
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 13
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇸🇪 瑞典 | SWE 3
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
   - 🇸🇪 瑞典 | SWE 2
   - 🇷🇺 俄罗斯 | RUS 7
+  - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
-  - 🇷🇺 俄罗斯 | RUS 16
-  - 🇷🇺 俄罗斯 | RUS 20
-  - 🇷🇺 俄罗斯 | RUS 8
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 15
+  - 🇷🇺 俄罗斯 | RUS 16
+  - 🇪🇪 爱沙尼亚 | EST
+  - 🇹🇷 土耳其 | TUR
+  - 🇷🇺 俄罗斯 | RUS 8
+  - 🇸🇪 瑞典 | SWE 4
   - 🇷🇺 俄罗斯 | RUS 17
+  - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
+  - 🇫🇷 法国 | FRA 9
+  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
   - 🇮🇹 意大利 | ITA
+  - 🇨🇭 瑞士 | CHE
+  - 🇫🇷 法国 | FRA 3
   - 🇷🇺 俄罗斯 | RUS 15
   - 🇷🇺 俄罗斯 | RUS 5
-  - 🇹🇭 泰国 | THA 2
-  - 🇩🇪 德国 | DEU 14
-  - 未知TROJAN-230|free-nodes
+  - 🇩🇪 德国 | DEU 13
   - 🇸🇪 瑞典 | SWE
+  - 🇩🇪 德国 | DEU 14
   - 🇩🇪 德国 | DEU 4
   - 🇷🇺 俄罗斯 | RUS 10
   - 🇫🇷 法国 | FRA 4
-  - 🇷🇺 俄罗斯 | RUS 21
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇬🇧 英国 | GBR 2
+  - 🇦🇪 阿联酋 | ARE
+  - 🇫🇷 法国 | FRA
+  - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD 2
-  - 🇹🇭 泰国 | THA
-  - 🇩🇪 德国 | DEU 9
   - 🇷🇺 俄罗斯 | RUS 12
   - 🇷🇺 俄罗斯 | RUS 18
   - 🇩🇪DE-2009
   - 🇩🇪 德国 | DEU
+  - 🇫🇷 法国 | FRA 2
+  - 🇳🇱 荷兰 | NLD 3
   - 🇷🇺 俄罗斯 | RUS 14
-  - 🇷🇺 俄罗斯 | RUS 9
-  - 🇳🇱 荷兰 | NLD 9
+  - 🇳🇱 荷兰 | NLD 5
   - 🇷🇺 俄罗斯 | RUS 19
   - 🇬🇧 英国 | GBR 3
+  - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 12
+  - 🇫🇷 法国 | FRA 8
   - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -860,46 +1136,57 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 21
+  - 🇸🇬 新加坡 | SGP 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 19
-  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 13
+  - 🇩🇪 德国 | DEU 5
   - 🇺🇸 美国 | USA 10
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇺🇸 美国 | USA 21
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 14
-  - 🇸🇪 瑞典 | SWE
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇺🇸 美国 | USA 9
+  - 🇩🇪 德国 | DEU 12
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 16
+  - 🇩🇪 德国 | DEU 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
