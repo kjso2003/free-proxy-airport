@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-09T08:38:12.866592+00:00'
+generated-at: '2026-08-09T09:36:14.696478+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: v6.hdacd.com
@@ -43,26 +43,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: sg3.xiaoliyu.cyou
-  port: 4466
-  type: hysteria2
-  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  auth: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  sni: sg3.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 30
-  server: 172.66.214.247
-  port: 8880
-  type: vless
-  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: summer-snow-c151.320-3ef.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 20
   server: 104.16.252.34
   port: 443
@@ -88,18 +68,18 @@ proxies:
     headers:
       Host: us-ga-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
   udp: true
-- name: 🇺🇸 美国 | USA 38
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  tls: false
+- name: 🇺🇸 美国 | USA 17
+  server: cf.877771.xyz
+  port: 443
+  type: trojan
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  sni: yks-dd9.pages.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /
     headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-  udp: true
+      Host: yks-dd9.pages.dev
 - name: 🇺🇸 美国 | USA 35
   server: 172.64.147.104
   port: 2087
@@ -127,18 +107,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: cf.877771.xyz
-  port: 443
-  type: trojan
-  password: 87961f9d-bee1-4377-826b-e169e7891c4f
-  sni: yks-dd9.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: yks-dd9.pages.dev
 - name: 🇺🇸 美国 | USA 23
   server: 172.66.214.247
   port: 8880
@@ -176,18 +144,6 @@ proxies:
   servername: ai.sellflow.org
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 5.129.252.140
-  port: 4100
-  type: vless
-  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 144.31.166.91
@@ -231,6 +187,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 16
+  server: 161.104.32.106
+  port: 7443
+  type: vless
+  uuid: 501b6afa-f955-473f-8440-1010110a1548
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mBaiGOrxW7NFGpW7aZLztWiME6vulM0Nk1Uh0SxX4zc
+    short-id: fa1a12cf
+  servername: eh.vk.com
+  client-fingerprint: edge
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: qwesd.rutendingaltos.top
   port: 443
@@ -263,22 +233,6 @@ proxies:
     path: /assets/build/_app/immutable/chunks/stream-one/
     host: ru6.ethicsdinnerpave.online
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
-  server: wqeds.denverpresents.top
-  port: 443
-  type: vless
-  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: wqeds.denverpresents.top
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /assets/build/_app/immutable/chunks/stream-one/
-    host: wqeds.denverpresents.top
-  udp: true
 - name: 🇩🇪 德国 | DEU 23
   server: cdn-ru.sxvpn.pro
   port: 443
@@ -294,6 +248,22 @@ proxies:
     path: /sx-cdn-ws
     headers:
       Host: cdn-ru.sxvpn.pro
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 7
+  server: wqeds.denverpresents.top
+  port: 443
+  type: vless
+  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: wqeds.denverpresents.top
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /assets/build/_app/immutable/chunks/stream-one/
+    host: wqeds.denverpresents.top
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 147.45.47.45
@@ -370,6 +340,15 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: v4.hdacd.com
+  port: 30804
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 | POL
   server: 188.119.123.112
   port: 49001
@@ -430,6 +409,20 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇩🇪 德国 | DEU 14
+  server: 161.104.32.106
+  port: 8443
+  type: vless
+  uuid: 501b6afa-f955-473f-8440-1010110a1548
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mBaiGOrxW7NFGpW7aZLztWiME6vulM0Nk1Uh0SxX4zc
+    short-id: fa1a12cf
+  servername: api-maps.yandex.ru
+  client-fingerprint: edge
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: ddc-akn.astralweb.tech
   port: 443
@@ -532,13 +525,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 144.21.34.192
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇬🇧 英国 | GBR 5
   server: Hkdcrtc-e.catcat321.com
   port: 20041
@@ -547,6 +533,13 @@ proxies:
   sni: de.catxstar.com
   skip-cert-verify: true
   udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 144.21.34.192
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇪🇸 西班牙 | ESP
   server: 185.18.250.252
   port: 443
@@ -567,37 +560,36 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 2
   - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 38
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 35
   - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 2
-  - 🇷🇺 俄罗斯 | RUS 6
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 22
   - 🇮🇳 印度 | IND
   - 🇷🇺 俄罗斯 | RUS 4
+  - 🇩🇪 德国 | DEU 16
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇷🇺 俄罗斯 | RUS 7
   - 🇩🇪 德国 | DEU 23
+  - 🇷🇺 俄罗斯 | RUS 7
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇷🇺 俄罗斯 | RUS 8
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 17
+  - 🇮🇪 爱尔兰 | IRL
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 11
   - 🇷🇺 俄罗斯 | RUS 5
   - 未知TROJAN-230|free-nodes
   - 🇧🇷 巴西 | BRA
+  - 🇩🇪 德国 | DEU 14
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇨🇴 哥伦比亚 | COL
@@ -608,8 +600,8 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 5
   - 🇬🇧 英国 | GBR 5
+  - 🇳🇱 荷兰 | NLD 5
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -628,13 +620,11 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 38
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 35
   - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 2
@@ -643,15 +633,15 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 30
-  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 23
+  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 38
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 2
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
