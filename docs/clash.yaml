@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-09T21:28:35.918286+00:00'
+generated-at: '2026-08-09T21:59:34.309233+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: v9.hdacd.com
@@ -102,43 +102,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: lt.badns.help
-  port: 51360
-  type: vmess
-  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 192.243.113.108
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.53.215
-  port: 2087
-  type: vless
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 104.17.22.240
   port: 443
@@ -153,6 +116,43 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: lt.badns.help
+  port: 51360
+  type: vmess
+  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.53.215
+  port: 2087
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 192.243.113.108
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 | USA 4
   server: 104.18.151.172
   port: 443
@@ -388,16 +388,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: sw1-chr.astralweb.tech
-  port: 443
-  type: vless
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  tls: true
-  servername: sw1-chr.astralweb.tech
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 84.32.101.222
   port: 443
@@ -423,18 +413,19 @@ proxies:
   request-timeout: 0
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 147.45.47.36
+- name: 🇩🇪 德国 | DEU 5
+  server: 162.159.137.204
   port: 443
   type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: gb.sellflow.org
-  client-fingerprint: firefox
-  network: tcp
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: 150.241.72.5
@@ -478,20 +469,6 @@ proxies:
   xhttp-opts:
     path: /assets/build/_app/immutable/chunks/stream-one/
     host: qwesd.rutendingaltos.top
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 162.159.137.204
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 5.83.129.143
@@ -560,19 +537,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: TunService
   udp: true
-- name: 🇸🇪 瑞典 | SWE 4
-  server: cdn3.portalcode.ir
-  port: 2082
-  type: vless
-  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: swed.milkabebar.ir
-    v2ray-http-upgrade: true
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 17
   server: 5.129.241.247
   port: 4100
@@ -596,19 +560,6 @@ proxies:
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000
-- name: 🇫🇷 法国 | FRA 9
-  server: cdn1.portalcode.ir
-  port: 2082
-  type: vless
-  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: frs.milkabebar.ir
-    v2ray-http-upgrade: true
-  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: 45.65.112.228
   port: 20513
@@ -620,19 +571,6 @@ proxies:
     short-id: 285db1978fd0d8c1
   servername: updates.cdn-apple.com
   client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: 193.233.255.6
-  port: 443
-  type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: abuse.sellflow.org
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA
@@ -650,6 +588,33 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇨🇭 瑞士 | CHE
+  server: 193.233.255.6
+  port: 443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: abuse.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 152.228.215.219
+  port: 8443
+  type: vless
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 15
   server: 193.233.255.21
   port: 443
@@ -663,19 +628,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: 147.45.47.37
-  port: 443
-  type: vless
-  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 141.227.170.192
   port: 443
@@ -686,6 +638,19 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: fi.sellflow.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 147.45.47.37
+  port: 443
+  type: vless
+  uuid: 1995a4e0-fd85-4de2-94f1-f86829e44308
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -769,6 +734,30 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 140.248.186.45
+  port: 443
+  type: vless
+  uuid: XpnTeam-21
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.224.100
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 147.45.47.26
   port: 443
@@ -780,14 +769,6 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: fr.sellflow.org
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.224.100
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
   network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 12
@@ -882,19 +863,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 9
-  server: 147.45.47.42
-  port: 443
-  type: vless
-  uuid: 50e636af-b554-4526-94ad-d0f4b34adecc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: fi.sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 19
   server: qwesd.rutendingaltos.top
   port: 443
@@ -958,19 +926,6 @@ proxies:
     headers:
       Host: france2025.havray2025.ir
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 45.131.212.26
-  port: 443
-  type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: de.sellflow.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -983,10 +938,10 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
@@ -1005,37 +960,35 @@ proxy-groups:
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 13
-  - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇩🇪 德国 | DEU 5
   - 🇸🇪 瑞典 | SWE 2
   - 🇷🇺 俄罗斯 | RUS 7
   - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 3
   - 🇷🇺 俄罗斯 | RUS 16
   - 🇪🇪 爱沙尼亚 | EST
   - 🇷🇺 俄罗斯 | RUS 8
   - 🇹🇷 土耳其 | TUR
-  - 🇸🇪 瑞典 | SWE 4
   - 🇷🇺 俄罗斯 | RUS 17
   - 🇦🇺 澳大利亚 | AUS
-  - 🇫🇷 法国 | FRA 9
   - 🇩🇪 德国 | DEU 11
-  - 🇨🇭 瑞士 | CHE
   - 🇮🇹 意大利 | ITA
+  - 🇨🇭 瑞士 | CHE
+  - 🇫🇷 法国 | FRA 3
   - 🇷🇺 俄罗斯 | RUS 15
-  - 🇷🇺 俄罗斯 | RUS 5
   - 🇩🇪 德国 | DEU 13
+  - 🇷🇺 俄罗斯 | RUS 5
   - 未知TROJAN-230|free-nodes
   - 🇩🇪 德国 | DEU 14
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇷🇺 俄罗斯 | RUS 10
   - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA
+  - 🇬🇧 英国 | GBR 2
   - 🇨🇴 哥伦比亚 | COL
+  - 🇫🇷 法国 | FRA
   - 🇷🇺 俄罗斯 | RUS 12
   - 🇷🇺 俄罗斯 | RUS 18
   - 🇩🇪 德国 | DEU
@@ -1043,12 +996,10 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 2
   - 🇷🇺 俄罗斯 | RUS 14
   - 🇬🇧 英国 | GBR 3
-  - 🇷🇺 俄罗斯 | RUS 9
   - 🇷🇺 俄罗斯 | RUS 19
   - 🇳🇱 荷兰 | NLD 5
   - 🇬🇧 英国 | GBR
   - 🇫🇷 法国 | FRA 8
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -1068,10 +1019,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
@@ -1086,19 +1037,19 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇺🇸 美国 | USA 4
   - 🇳🇱 荷兰 | NLD 5
   - 🇨🇴 哥伦比亚 | COL
-  - 🇺🇸 美国 | USA 8
   - 🇬🇧 英国 | GBR 3
-  - 🇺🇸 美国 | USA 13
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 10
   - 未知TROJAN-230|free-nodes
-  - 🇩🇪 德国 | DEU 11
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 13
+  - 🇫🇷 法国 | FRA 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
