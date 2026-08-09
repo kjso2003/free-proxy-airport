@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-09T05:44:29.663966+00:00'
+generated-at: '2026-08-09T06:51:44.496814+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: v6.hdacd.com
@@ -63,13 +63,6 @@ proxies:
   auth: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
   sni: sg3.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG
-  server: 18.167.76.203
-  port: 35151
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 30
   server: 172.66.214.247
   port: 8880
@@ -94,18 +87,6 @@ proxies:
     path: /
     headers:
       Host: yks-dd9.pages.dev
-- name: 🇺🇸 美国 | USA 34
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dawn-waterfall-6052.360-001.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 104.16.1.2
   port: 443
@@ -131,13 +112,19 @@ proxies:
     headers:
       Host: soft-scene-d370.55-7ff.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 18.167.76.203
-  port: 10418
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 36
+  server: 70.39.178.250
+  port: 443
+  type: vless
+  uuid: 02f74ad5-487e-4809-a5b9-d4a05e9a7e57
+  tls: true
+  reality-opts:
+    public-key: fZ_KWK62j51ZCqS5P6QdPdeLoO2cLkQUI_YrExbK6AQ
+    short-id: 417739fc12
+  servername: berkararotel.com.tm
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 35
   server: 172.64.147.104
   port: 2087
@@ -152,6 +139,18 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: cf.877771.xyz
+  port: 443
+  type: trojan
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  sni: yks-dd9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: yks-dd9.pages.dev
 - name: 🇺🇸 美国 | USA 27
   server: 88.218.44.4
   port: 993
@@ -165,18 +164,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: cf.877771.xyz
-  port: 443
-  type: trojan
-  password: 87961f9d-bee1-4377-826b-e169e7891c4f
-  sni: yks-dd9.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: yks-dd9.pages.dev
 - name: 🇺🇸 美国 | USA 23
   server: 172.66.214.247
   port: 8880
@@ -215,19 +202,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 188.114.97.3
-  port: 2083
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 5.129.252.140
+  port: 4100
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  client-fingerprint: chrome
+  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
+  tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /v1
     headers:
-      Host: newwk1.f1w.de5.net
+      Host: live.ok.ru
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 144.31.166.91
@@ -245,6 +230,33 @@ proxies:
   auth: 7836b28e-8451-4596-ad3e-e3601b2335ba
   sni: quic.tyr-agentstvo.tech
   skip-cert-verify: true
+- name: 🇮🇳 印度 | IND
+  server: IN.Sav-savteAm.iR
+  port: 2017
+  type: vless
+  uuid: 17a7a06a-4237-4510-acc2-ac0fd0d27852
+  tls: true
+  reality-opts:
+    public-key: He7xpVqmrgr_Dg-Mks45tZS_ZR5eky4zpsgd-wREBDg
+    short-id: b11fa99e5c567d7b
+  servername: yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 188.114.97.3
+  port: 2083
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 4
   server: 147.45.47.52
   port: 443
@@ -272,20 +284,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: ld.242311.xyz
-  port: 443
-  type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ld.242311.xyz
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: qwesd.rutendingaltos.top
   port: 443
@@ -301,6 +299,20 @@ proxies:
   xhttp-opts:
     path: /assets/build/_app/immutable/chunks/stream-one/
     host: qwesd.rutendingaltos.top
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: ld.242311.xyz
+  port: 443
+  type: vless
+  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
+  tls: true
+  servername: ld.242311.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ld.242311.xyz
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: ru6.ethicsdinnerpave.online
@@ -391,19 +403,6 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇦🇹 奥地利 | AUT
-  server: 212.183.88.136
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: de-two.quiet-rogue.site
   port: 443
@@ -434,20 +433,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 波兰 | POL
-  server: 188.119.123.112
-  port: 49001
-  type: vless
-  uuid: 41784775-8846-4579-9d9d-9ad6ea802e2e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: _LbLyj6OynSREglFpkhdrxVmh_bf9p60uTEWfQbtUWo
-    short-id: 1a6b1f9d0e
-  servername: de-7.techprovide.icu
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: 85.234.100.49
   port: 8443
@@ -481,19 +466,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- type: trojan
-  name: 未知TROJAN-230|free-nodes
-  server: 104.19.64.105
-  port: 443
-  password: humanity
-  udp: true
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      host: www.calmlunch.com
 - name: 🇩🇪 德国 | DEU 14
   server: 161.104.32.106
   port: 8443
@@ -508,13 +480,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 26
-  server: e2.cover20.ir
-  port: 30874
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4YQDtYQlErEbYy+6INH+dcNOExc6sbl2lEiA/15zhfI=
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: ddc-akn.astralweb.tech
   port: 443
@@ -525,12 +490,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 134.98.145.246
-  port: 45819
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
 - name: 🇬🇧 英国 | GBR 2
   server: hkdcrtc-e.catcat321.com
   port: 20041
@@ -539,6 +498,12 @@ proxies:
   sni: de.catxstar.com
   skip-cert-verify: true
   udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 134.98.145.246
+  port: 45819
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
 - name: 🇨🇴 哥伦比亚 | COL
   server: 157.137.215.84
   port: 62145
@@ -572,15 +537,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- type: trojan
-  name: 🇩🇪DE-2009
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  udp: true
-  skip-cert-verify: true
-  sni: de.catxstar.com
-  network: tcp
 - type: vless
   name: 未知VLESS-641|free-nodes
   server: www.true.th
@@ -637,13 +593,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 144.21.34.192
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇬🇧 英国 | GBR 5
   server: Hkdcrtc-e.catcat321.com
   port: 20041
@@ -652,19 +601,13 @@ proxies:
   sni: de.catxstar.com
   skip-cert-verify: true
   udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: 185.18.250.252
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 144.21.34.192
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -674,65 +617,58 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 6
   - 🇸🇬 新加坡 | SGP 8
-  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 38
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 36
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇷🇺 俄罗斯 | RUS 6
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 22
+  - 🇮🇳 印度 | IND
+  - 🇳🇱 荷兰 | NLD 4
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇩🇪 德国 | DEU 16
-  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇷🇺 俄罗斯 | RUS 7
   - 🇩🇪 德国 | DEU 23
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇷🇺 俄罗斯 | RUS 8
-  - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 17
   - 🇮🇪 爱尔兰 | IRL
-  - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 11
   - 🇷🇺 俄罗斯 | RUS 5
   - 🇧🇷 巴西 | BRA
-  - 未知TROJAN-230|free-nodes
   - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 26
   - 🇩🇪 德国 | DEU 4
-  - 🇳🇱 荷兰 | NLD 6
   - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 6
   - 🇨🇴 哥伦比亚 | COL
   - 🇹🇭 泰国 | THA
   - 🇳🇱 荷兰 | NLD 2
-  - 🇩🇪DE-2009
   - 未知VLESS-641|free-nodes
   - 🇳🇱 荷兰 | NLD 3
   - 🇳🇴 挪威 | NOR
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 5
   - 🇬🇧 英国 | GBR 5
-  - 🇪🇸 西班牙 | ESP
+  - 🇳🇱 荷兰 | NLD 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -746,13 +682,12 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 38
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 36
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 2
@@ -761,17 +696,16 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 38
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 38
+  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 35
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 34
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 27
-  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 23
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 8
+  - 🇳🇱 荷兰 | NLD
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
