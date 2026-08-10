@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-10T19:53:50.148585+00:00'
+generated-at: '2026-08-10T20:39:03.241579+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 5
   server: 52.77.22.203
@@ -126,13 +126,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 104.16.150.130
   port: 2087
@@ -181,29 +174,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇧🇪 比利时 | BEL
-  server: 109.69.218.207
-  port: 443
-  type: vless
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU
-  servername: crisp-titan.cdn.cachefleet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 366-1095.rabbitpro-in-3.com
-  port: 29081
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇪 瑞典 | SWE 7
   server: sw.rexten.cc
   port: 443
@@ -229,19 +199,6 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇧🇪 比利时 | BEL 2
-  server: 109.69.218.217
-  port: 443
-  type: vless
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU
-  servername: kind-wolf.cdn.cachefleet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 144.31.13.141
   port: 10443
@@ -257,14 +214,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: GunService
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 205.237.109.219
-  port: 8443
-  type: hysteria2
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-turbo-fr.roxa.org
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 45.155.52.231
   port: 443
@@ -292,18 +241,18 @@ proxies:
   xhttp-opts:
     path: /
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 3
-  server: lv.rexten.cc
-  port: 443
+- name: 🇵🇱 波兰 | POL
+  server: 188.119.123.112
+  port: 49001
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  uuid: 41784775-8846-4579-9d9d-9ad6ea802e2e
   tls: true
-  packet-encoding: xudp
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: firefox
+    public-key: _LbLyj6OynSREglFpkhdrxVmh_bf9p60uTEWfQbtUWo
+    short-id: 1a6b1f9d0e
+  servername: de-7.techprovide.icu
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
@@ -314,19 +263,6 @@ proxies:
   auth: uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r
   sni: ro.h2corp.org
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 | SWE 5
-  server: 143.246.197.86
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: sw.rexten.cc
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: 46.62.240.122
   port: 40443
@@ -355,34 +291,6 @@ proxies:
     headers:
       Host: 150.241.101.218.fwqfw783rg2dad.website
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 4
-  server: lv.rexten.cc
-  port: 10443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GunService
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 164.37.105.37
-  port: 443
-  type: vless
-  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sBSNX3DhJSWOkqTmRHisayVLisCBQLb4JcpKzwCrvC0
-  servername: sl.cdn.cachefleet.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 154.84.164.10
   port: 443
@@ -405,18 +313,17 @@ proxies:
   auth: gf1:gfhysteria2024
   sni: www.docker.com
   skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: 72.56.53.66
-  port: 443
+- name: 🇹🇭 泰国 | THA
+  server: 18.239.134.69
+  port: 80
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: chrome
-  network: tcp
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 5.83.129.143
@@ -431,19 +338,20 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 193.124.254.60
+- type: vless
+  name: 未知VLESS-641|free-nodes
+  server: www.true.th
   port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: chrome
-  network: tcp
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  skip-cert-verify: true
   udp: true
+  tls: true
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  ws-opts:
+    path: /
+    headers:
+      host: d1yxsk0zprgivr.cloudfront.net
 - name: 🇳🇱 荷兰 | NLD 3
   server: 144.31.13.141
   port: 443
@@ -455,6 +363,20 @@ proxies:
     public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
   servername: ne4.rexten.cc
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 85.155.226.134
+  port: 443
+  type: vless
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  servername: getsavesafe.net
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR 3
@@ -470,20 +392,6 @@ proxies:
   servername: eng.xanka.best
   client-fingerprint: firefox
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 85.155.226.134
-  port: 443
-  type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 139.59.191.88
   port: 443
@@ -496,6 +404,20 @@ proxies:
     short-id: 2da3ecc3ad9a323b
   servername: www.stanford.edu
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: 154.83.246.225
+  port: 443
+  type: vless
+  uuid: d2042070-c247-4226-a3ac-15337923e00d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
+    short-id: 500aec9e9e5e2212
+  servername: storage.yandex.net
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇪🇸 西班牙 | ESP
@@ -525,36 +447,29 @@ proxy-groups:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇳🇱 荷兰 | NLD 8
-  - 🇧🇪 比利时 | BEL
-  - 🇰🇷 韩国 | KOR 2
   - 🇸🇪 瑞典 | SWE 7
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇧🇪 比利时 | BEL 2
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇷🇺 俄罗斯 | RUS
-  - 🇱🇻 拉脱维亚 | LVA 3
+  - 🇵🇱 波兰 | POL
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇸🇪 瑞典 | SWE 5
   - 🇩🇪 德国 | DEU 11
   - 🇪🇪 爱沙尼亚 | EST 4
-  - 🇱🇻 拉脱维亚 | LVA 4
-  - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
-  - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU
-  - 🇱🇻 拉脱维亚 | LVA
+  - 未知VLESS-641|free-nodes
   - 🇳🇱 荷兰 | NLD 3
-  - 🇬🇧 英国 | GBR 3
   - 🇳🇱 荷兰 | NLD 9
+  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 5
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -581,7 +496,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -590,12 +504,10 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇬🇧 英国 | GBR 3
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 4
+  - 🇬🇧 英国 | GBR 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
