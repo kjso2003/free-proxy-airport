@@ -7,23 +7,135 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-10T23:32:08.472880+00:00'
+generated-at: '2026-08-11T01:23:55.490368+00:00'
 proxies:
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 52.77.22.203
-  port: 443
+- name: 🇭🇰 香港 | HKG 7
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16622
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 6
+  server: 188.253.123.164
+  port: 29715
   type: vless
-  uuid: 769d922d-9ca6-4ba9-81f2-a6df0a0c4531
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: SChM_MUYbRz8lzGu19qFDpFaBxok7CTorYM04zxgL1o
-    short-id: fd733ad36894c4a3
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  servername: cdnjs.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: m.cnmjin.net.xiaoyan.io
+  port: 16622
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 4
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇭🇰 香港 | HKG 3
+  server: 155.117.199.12
+  port: 9713
+  type: vless
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  servername: cdnjs.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 6
+  server: 88.216.188.11
+  port: 40443
+  type: vless
+  uuid: 641baa2f-6f74-4ecf-b948-032d19ba0142
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I
+    short-id: 09f696119a54ea3c
+  servername: deepl.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: 20.89.106.34
+  port: 443
+  type: vless
+  uuid: 7781929f-165f-4a94-b07b-689edf7913e2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mFfDWNmPFHIN3ojAw2GENgpklJUCOvfj1i_zix8Pnkc
+    short-id: 73122674fa25a3ab
+  servername: www.stanford.edu
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇭🇰 香港 | HKG 5
+  server: m.cnmjin.net.xiaoyan.io
+  port: 16632
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇸🇬 新加坡 | SGP
+  server: 178.128.127.117
+  port: 443
+  type: vless
+  uuid: 3534d1f5-cf1d-490c-adbe-7365f2ff0151
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: s0DJvbVUHHr1HP8XvPru3FK6gH4QWJ84JWERkzLKJWA
+    short-id: 13e240c22713c7a6
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 5
+- name: 🇭🇰 香港 | HKG
   server: v9.hdacd.com
   port: 30809
   type: vmess
@@ -33,77 +145,111 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 149.118.62.150
-  port: 443
+- name: 🇯🇵 日本 | JPN
+  server: rm-jp-01.409648.xyz
+  port: 20725
   type: vless
-  uuid: f12bbae7-fd8e-4430-8420-fcbd61e73cd7
+  uuid: 6dcb725e-947e-4bbe-bb35-903374d57179
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: Q-KGWRW9iVz7ZuDV1e25zguf2XxbFXiGlOJjwWJ0diA
-    short-id: cb9bc58a5976598a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: hceZHd9X9FSbWGXGgm3OWN-4Au26rrsriTcyHw5M3VU
+    short-id: 0102ac4e
+  servername: buylite.tv.apple.com
+  client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 140.245.42.185
-  port: 443
+- name: 🇺🇸 美国 | USA 11
+  server: market.cvedcdigital.vip
+  port: 8113
   type: vless
-  uuid: 55f6633c-51d4-46d0-ad36-532a42fcdcb6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EiIdnnsMW7waNJlc0R6BLwMArlo5yfuy_MJmyYDHT2M
-    short-id: 3147cef25996255f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 172.67.69.106
-  port: 443
-  type: vless
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
+  uuid: f5e5da05-ef1d-4a19-b75d-aaf30c93bb1a
   tls: true
   packet-encoding: xudp
-  servername: zero.csmaster.ggff.net
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1XNcujMbWdVkVnPV4JvvIllMFdRXToudea_mqzXcMWg
+    short-id: a4f8c92d
+  servername: westondigita.cloud
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 104.16.248.48
+  port: 443
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: random
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: zero.csmaster.ggff.net
+      Host: hhlfy.twiladaphne.ndjp.net
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 143.110.147.74
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: autodiscover.fuzzyaytor.cyou
+  port: 42982
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 132.145.200.43
+  port: 2054
+  type: vmess
+  uuid: ceeaee0b-89af-40b1-aa14-577cbde03a89
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /p
+  udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: m.cnmjin.net.xiaoyan.io
+  port: 16648
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇺🇸 美国 | USA 19
+  server: 88.216.130.130
+  port: 40443
   type: vless
-  uuid: bf4ca505-0f7c-43b8-9db8-bc089869fb50
+  uuid: 641baa2f-6f74-4ecf-b948-032d19ba0142
   tls: true
+  packet-encoding: xudp
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 39GcXjbgfhKp4VDs4E2TC_Qxrv3OYoCdeCTelg7YVn4
-    short-id: 1c9e6c4e0b29d309
-  servername: www.stanford.edu
-  client-fingerprint: chrome
+    public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I
+    short-id: 2d127d11297df7de
+  servername: deepl.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.16.65.1
+- name: 🇺🇸 美国 | USA 10
+  server: starlink-ft.251313.xyz
   port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 | USA 7
+  type: hysteria2
+  password: https://xship.2fa.cat
+  auth: https://xship.2fa.cat
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 14
   server: 180.178.60.253
   port: 10000
   type: vless
@@ -111,15 +257,8 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  udp: true
 - name: 🇺🇸 美国 | USA 2
-  server: 104.16.150.130
+  server: 104.19.214.97
   port: 2087
   type: vless
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -132,38 +271,73 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 158.101.201.108
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 45.9.14.31
+- name: 🇺🇸 美国 | USA 23
+  server: 3x.aweijll.cf
+  port: 40001
+  type: hysteria2
+  password: 7wzl2lj2fy956inb
+  auth: 7wzl2lj2fy956inb
+  sni: 3x.aweijll.cf
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 12
+  server: 188.114.96.3
   port: 443
-  type: vless
-  uuid: 533098d5-957a-4914-addd-528eea5f2b99
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dqNf0WzsieOO2lPrm_clopblTaFeX9xHNwWsaUY9CC0
-    short-id: ec35d84c1661b372
-  servername: bestrecipes-online.site
-  client-fingerprint: firefox
-  network: tcp
+  type: trojan
+  password: MiTiVPN
+  sni: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
   udp: true
-- name: 🇸🇪 瑞典 | SWE 7
-  server: sw.rexten.cc
+- name: 🇩🇪 德国 | DEU 2
+  server: 78.159.240.69
+  port: 8443
+  type: hysteria2
+  password: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  auth: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+- name: 🇮🇳 印度 | IND
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16626
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 201.51.2.6
+  port: 2200
+  type: vless
+  uuid: eb135f2b-4b9e-4abb-9a89-78242613da61
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: arclo.ciphero.xyz
   port: 443
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  uuid: 1bced29a-3051-42b8-b393-005135b97616
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: sw.rexten.cc
-  client-fingerprint: chrome
+    public-key: 8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4
+    short-id: 33b5887524592cad
+  servername: arclo.ciphero.xyz
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
@@ -178,43 +352,44 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 144.31.13.141
-  port: 10443
+- name: 🇹🇷 土耳其 | TUR 5
+  server: sub.almavpn.shop
+  port: 8080
+  type: vless
+  uuid: f4f8a452-2f18-492a-8cb6-4c4b3d476277
+  tls: false
+  encryption: mlkem768x25519plus.native.0rtt.1obY9jIyIRVMmizOYjRRst09CRuPhhwIyRr6F936PAQ
+  network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 143.246.194.26
+  port: 443
   type: vless
   uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
   tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: ne4.rexten.cc
+  servername: sw.rexten.cc
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GunService
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 205.237.109.219
-  port: 8443
-  type: hysteria2
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-turbo-fr.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 45.155.52.231
-  port: 443
-  type: vless
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  tls: true
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  servername: ru2.skydrgn-online.online
-  client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 45.84.222.181
+  port: 2053
+  type: vless
+  uuid: e5dfd386-9de6-4b2c-a652-e31f4084d787
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: klqenfvPoePfiVDDeWb7GwcIB25cWF1bjuNVjVDc8BA
+    short-id: a1b2c3d4
+  servername: www.gitlab.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
   server: 104.18.32.47
   port: 443
   type: vless
@@ -228,43 +403,21 @@ proxies:
   xhttp-opts:
     path: /
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 3
-  server: lv.rexten.cc
-  port: 443
+- name: 🇨🇿 捷克 | CZE
+  server: 195.133.35.75
+  port: 1337
   type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  uuid: db9a9b0f-fd4c-404b-9437-16e567544665
   tls: true
-  packet-encoding: xudp
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
+    public-key: 8ik0rnxTlrrGfJaQnmLnUXpY0DSm_xohbJGvmfrbMSA
+    short-id: 459193ba
+  servername: czh.xanka.best
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 188.119.123.112
-  port: 49001
-  type: vless
-  uuid: 41784775-8846-4579-9d9d-9ad6ea802e2e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: _LbLyj6OynSREglFpkhdrxVmh_bf9p60uTEWfQbtUWo
-    short-id: 1a6b1f9d0e
-  servername: de-7.techprovide.icu
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: 185.225.19.39
-  port: 443
-  type: hysteria2
-  password: uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r
-  auth: uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r
-  sni: ro.h2corp.org
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 | SWE 5
+- name: 🇸🇪 瑞典 | SWE 2
   server: 143.246.197.86
   port: 443
   type: vless
@@ -277,33 +430,118 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 46.62.240.122
-  port: 40443
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: m.cnmjin.net.xiaoyan.io
+  port: 16616
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 45.155.52.231
+  port: 443
   type: vless
-  uuid: 641baa2f-6f74-4ecf-b948-032d19ba0142
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I
-    short-id: d4e5f60718293a4b
-  servername: www.nvidia.com
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  servername: ru2.skydrgn-online.online
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 5.83.129.90
+  port: 54177
+  type: hysteria
+  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
+  up: 500
+  down: 1000
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇹🇷 土耳其 | TUR
+  server: e1.cover20.ir
+  port: 51570
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: A33pWRIZnoJ6gaSK6Y5yrc5kBNKktoXblIm/nuHNhrU=
+  udp: true
+- name: 🇹🇷 土耳其 | TUR 6
+  server: sub.almavpn.shop
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LHZzf4y0j2WQlZsTh0NzPxVmTYufR-TA
+  udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 162.35.231.6
+  port: 443
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  tls: true
+  reality-opts:
+    public-key: O4of5fbG7Ns3fBdBF0bDU8Fa8q-mdk7YLgOgvAWPeF8
+    short-id: f85aebea
+  servername: media2.tcpdoor.net
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST 4
-  server: 150.241.101.218.fwqfw783rg2dad.website
-  port: 443
-  type: vless
-  uuid: 9efe092e-e4ae-4601-bb89-169fcb3db39b
-  tls: true
-  servername: 150.241.101.218.fwqfw783rg2dad.website
-  client-fingerprint: firefox
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16616
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /websocket
+    path: /
     headers:
-      Host: 150.241.101.218.fwqfw783rg2dad.website
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇩🇪 德国 | DEU 13
+  server: m.cnmjin.net.xiaoyan.io
+  port: 16644
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: 83.217.223.122
+  port: 443
+  type: vless
+  uuid: 7e760d89-a8f4-4a87-8f10-b4af28c61b7f
+  tls: true
+  packet-encoding: xudp
+  reality-opts:
+    public-key: tm9ddb_N0Wto30PZafl231j8zL-o4FmGVRxsbX_GbGQ
+    short-id: '2665'
+  servername: 5post-gate.x5.ru
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: 5post-gate.x5.ru
+    mode: auto
   udp: true
 - type: trojan
   name: 未知TROJAN-230|free-nodes
@@ -318,7 +556,123 @@ proxies:
     path: /assignment
     headers:
       host: www.calmlunch.com
-- name: 🇱🇻 拉脱维亚 | LVA 4
+- name: 🇹🇭 泰国 | THA 2
+  server: www.true.th
+  port: 80
+  type: vless
+  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /than
+    headers:
+      Host: d16l6nb4do0zu4.cloudfront.net
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: sw.rexten.cc
+  port: 443
+  type: vless
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: sw.rexten.cc
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 45.195.228.26
+  port: 443
+  type: vless
+  uuid: d2042070-c247-4226-a3ac-15337923e00d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
+    short-id: f45c9665f3261108
+  servername: storage.yandex.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 43.216.71.17
+  port: 443
+  type: vless
+  uuid: ce3794af-ef2c-4ca6-9032-6e259a703615
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: hl7n2f8wPw8wsZFSBdOv1b0wy5BJc7qOA_ktzVVUGAA
+    short-id: 6546bebc9cfcef14
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇰🇷 韩国 | KOR
+  server: 52.141.0.244
+  port: 443
+  type: vless
+  uuid: 5822b465-036b-4a3b-89d0-b3e52ae20815
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: fI-eoLmyyeYXgUHr2SWzHcwxkhxmDj2QBnivpUPYfVY
+    short-id: e3db542f549f5504
+  servername: www.stanford.edu
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 158.247.126.107
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 2.26.83.204
+  port: 443
+  type: vless
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  tls: true
+  reality-opts:
+    public-key: PaSevYhTNv2H4DybOmCBXmpsueeFXtJ7IMfVKyBckDQ
+    short-id: 7cefdad7acf2cb68
+  servername: id.vk.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 443
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: five.neobo-tooth.ru
+  port: 2053
+  type: vless
+  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+  tls: true
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: DUJWZCU-CjH9TglyqNQjydr7sp1ujsn2gHcXGWmgRj8
+    short-id: e0331b94eb540116
+  servername: vk.ru
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
   server: lv.rexten.cc
   port: 10443
   type: vless
@@ -333,242 +687,154 @@ proxies:
     grpc-mode: gun
     grpc-service-name: GunService
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 154.84.164.10
-  port: 443
-  type: vless
-  uuid: d2042070-c247-4226-a3ac-15337923e00d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
-    short-id: da147b40372a5fed
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 173.212.201.85
-  port: 443
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 205.237.109.219
+  port: 8443
   type: hysteria2
-  password: gf1:gfhysteria2024
-  auth: gf1:gfhysteria2024
-  sni: www.docker.com
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
   skip-cert-verify: true
-- name: 🇹🇭 泰国 | THA
-  server: 18.239.134.69
-  port: 80
+- name: 🇩🇪 德国 | DEU 12
+  server: 150.241.70.0
+  port: 443
   type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  tls: true
+  reality-opts:
+    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
+    short-id: 9d3734f3ff471b68
+  servername: stats.vk-portal.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: mind.cnaviptech.com
+  port: 8090
+  type: vless
+  uuid: 8918b670-d08f-49c5-aeb7-e8159f365418
   tls: false
-  network: ws
-  ws-opts:
-    path: /
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: 72.56.53.66
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 5.83.129.143
-  port: 26691
-  type: hysteria
-  auth_str: dongtaiwang.com
-  auth-str: dongtaiwang.com
-  up: 11 Mbps
-  down: 55 Mbps
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 193.124.254.60
-  port: 443
-  type: vless
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.rexten.cc
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- type: vless
-  name: 未知VLESS-641|free-nodes
-  server: www.true.th
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  ws-opts:
-    path: /
-    headers:
-      host: d1yxsk0zprgivr.cloudfront.net
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 85.155.226.134
-  port: 443
-  type: vless
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  servername: getsavesafe.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 89.125.124.104
-  port: 1337
-  type: vless
-  uuid: ccd2bfcd-b949-476d-bd6e-710a41021b1c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MKoeqrRMeryTxhSbcrPmoMZKKtd9268vwsiZ22w2Gig
-    short-id: be901ea3
-  servername: eng.xanka.best
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇬🇧 英国 | GBR
-  server: 139.59.191.88
-  port: 443
-  type: vless
-  uuid: a6c5f4c7-073f-416b-b5e3-4a86ec2d9f22
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: JeaMU58AmMJ2JqJ-QGotRFua9DYxxveqw7I_XMWCu34
-    short-id: 2da3ecc3ad9a323b
-  servername: www.stanford.edu
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 154.83.246.225
-  port: 443
-  type: vless
-  uuid: d2042070-c247-4226-a3ac-15337923e00d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
-    short-id: 500aec9e9e5e2212
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: 45.196.208.84
-  port: 443
-  type: vless
-  uuid: d2042070-c247-4226-a3ac-15337923e00d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-    short-id: 28047c78b3f5ee2c
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  network: tcp
+      Host:
+      - icloud.com
   udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
   - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
+  - 🇸🇬 新加坡 | SGP
+  - 🇭🇰 香港 | HKG
+  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 2
+  - 🇮🇳 印度 | IND
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇸🇪 瑞典 | SWE 7
+  - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇹🇷 土耳其 | TUR 5
+  - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇨🇿 捷克 | CZE
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
-  - 🇱🇻 拉脱维亚 | LVA 3
-  - 🇵🇱 波兰 | POL
-  - 🇷🇴 罗马尼亚 | ROU
-  - 🇸🇪 瑞典 | SWE 5
-  - 🇩🇪 德国 | DEU 11
-  - 🇪🇪 爱沙尼亚 | EST 4
+  - 🇩🇪 德国 | DEU 3
+  - 🇹🇷 土耳其 | TUR
+  - 🇹🇷 土耳其 | TUR 6
+  - 🇩🇪 德国 | DEU 8
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇩🇪 德国 | DEU 13
+  - 🇷🇺 俄罗斯 | RUS 5
   - 未知TROJAN-230|free-nodes
-  - 🇱🇻 拉脱维亚 | LVA 4
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇫🇷 法国 | FRA
+  - 🇹🇭 泰国 | THA 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇩🇪 德国 | DEU 4
+  - 🇲🇾 马来西亚 | MYS
+  - 🇰🇷 韩国 | KOR
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA
-  - 🇱🇻 拉脱维亚 | LVA 2
-  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 9
   - 🇱🇻 拉脱维亚 | LVA
-  - 未知VLESS-641|free-nodes
-  - 🇳🇱 荷兰 | NLD 9
-  - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇪🇸 西班牙 | ESP
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇩🇪 德国 | DEU 12
+  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇸🇬 新加坡 | SGP 4
+  - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇬🇧 英国 | GBR 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 14
+  - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱 荷兰 | NLD 3
+  - 未知TROJAN-230|free-nodes
+  - 🇩🇪 德国 | DEU 10
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇸🇪 瑞典 | SWE 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
