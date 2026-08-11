@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-11T10:48:11.762028+00:00'
+generated-at: '2026-08-11T11:41:46.833516+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 155.117.199.12
@@ -65,22 +65,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 18.179.40.96
-  port: 10035
-  type: vless
-  uuid: F5516AD2-22A9-413B-8DBE-60B72D30D31F
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 7
   server: 188.253.123.164
   port: 39561
@@ -118,23 +102,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: white-hill-f907.23-b68.workers.dev
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: jp5-r.link-t7.com
-  port: 10035
-  type: vless
-  uuid: F5516AD2-22A9-413B-8DBE-60B72D30D31F
-  tls: true
-  packet-encoding: xudp
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: sg3.xiaoliyu.cyou
@@ -218,18 +185,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 172.67.202.17
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nmslfangbinxing.pusytroller.gq
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 104.18.37.228
   port: 443
@@ -248,6 +203,18 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 172.67.202.17
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nmslfangbinxing.pusytroller.gq
+  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: cf5.466688.xyz
   port: 8880
@@ -259,6 +226,18 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
     headers:
       Host: broken-star-c5ae.446.workers.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 104.17.21.137
+  port: 8880
+  type: vless
+  uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lingering-grass-6728.131-a78.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 24
   server: 18.166.226.204
@@ -281,30 +260,6 @@ proxies:
     path: /
     headers:
       Host: free-7f1.pages.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.17.21.137
-  port: 8880
-  type: vless
-  uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-grass-6728.131-a78.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 104.16.101.215
-  port: 8880
-  type: vless
-  uuid: 0bd6aa8d-3bdb-4fa3-893e-75a844e2e409
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: wispy-cake-ec69.193-bc6.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 104.16.248.48
@@ -354,18 +309,6 @@ proxies:
     headers:
       Host: wild-mode-4ca6.234-8f6.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: cf5.466688.xyz
-  port: 8880
-  type: vless
-  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-    headers:
-      Host: empty-rain-1df4.332-633.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: cf5.466688.xyz
   port: 8880
@@ -400,24 +343,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: boal.rubyshow.ir
-  port: 443
-  type: vless
-  uuid: b995b891-7402-4798-aa24-73fcfed84bd4
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-  servername: test.rubyshow.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sendx
-    headers:
-      Host: test.rubyshow.ir
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 5.83.129.153
   port: 20088
@@ -431,14 +356,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 63.180.222.124
-  port: 22222
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 16
   server: 95.216.161.1
@@ -466,19 +383,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 45.130.125.112
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 69.46.46.123
   port: 443
@@ -505,22 +409,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 46.253.132.240
-  port: 9894
-  type: vless
-  uuid: 130e6aab-9eba-441e-9021-22cbccc72832
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aa
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: netherlands1.banovano.space
   port: 24382
@@ -607,14 +495,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 63.180.222.124
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl6.lckdwn.ru
   port: 443
@@ -625,14 +505,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 1yvnm8sv41
-- name: 🇩🇪 德国 | DEU 8
-  server: 63.180.222.124
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: xit.saturn-cloud.net
   port: 443
@@ -682,12 +554,18 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 46.8.228.91
-  port: 47424
+- name: 🇩🇪 德国 | DEU 13
+  server: 150.241.70.0
+  port: 443
   type: vless
-  uuid: 6de486c1-dbad-4540-8875-98c35e9cd173
-  tls: false
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  tls: true
+  packet-encoding: xudp
+  reality-opts:
+    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
+    short-id: 9d3734f3ff471b68
+  servername: stats.vk-portal.net
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇧🇷 巴西 | BRA
@@ -710,19 +588,6 @@ proxies:
     headers:
       Host: ftp.skylinknet.ir
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 94.249.225.83
-  port: 443
-  type: vless
-  uuid: f4dbc770-016d-4a0f-82f0-d83ee6f45da3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
-  servername: plucky-kestrel.cdn.cachefleet.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇲🇾 马来西亚 | MYS
   server: 155.117.199.12
   port: 29709
@@ -736,6 +601,19 @@ proxies:
   servername: cdnjs.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 94.249.225.83
+  port: 443
+  type: vless
+  uuid: f4dbc770-016d-4a0f-82f0-d83ee6f45da3
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
+  servername: plucky-kestrel.cdn.cachefleet.com
+  client-fingerprint: random
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 155.117.199.12
   port: 39313
@@ -769,6 +647,20 @@ proxies:
   servername: www.ya.ru
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: www.true.th
+  port: 443
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 163.5.153.153
@@ -810,6 +702,20 @@ proxies:
   servername: cdnjs.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 199.232.78.159
+  port: 443
+  type: vless
+  uuid: be42674a-296a-43d8-bf04-b8314d65ff63
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
+    headers:
+      Host: pane2.global.ssl.fastly.net
+  udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: in.good-1store.cv
   port: 443
@@ -831,19 +737,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇩🇪 德国 | DEU 10
-  server: 95.217.241.174
-  port: 55555
-  type: vless
-  uuid: 35dd6ec8-acb7-44be-9cde-7f03c6b9ef5b
-  tls: true
-  reality-opts:
-    public-key: O2bbfKBzFAKWuGpGOV8sy4-jtHWTqR-FmTytzi-4_FY
-    short-id: dcc923278ffdd028
-  servername: www.yahoo.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -852,11 +745,9 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
   - 🇸🇬 新加坡 | SGP 5
-  - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP 7
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 8
   - 🇭🇰 香港 | HKG
@@ -864,30 +755,24 @@ proxy-groups:
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 18
-  - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 7
   - 🇩🇪 德国 | DEU 16
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
@@ -895,27 +780,26 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 17
-  - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
-  - 🇩🇪 德国 | DEU 8
   - 🇮🇹 意大利 | ITA
   - 🇩🇪 德国 | DEU 11
   - 🇵🇱 波兰 | POL 2
   - 🇫🇷 法国 | FRA 3
-  - 🇩🇪 德国 | DEU 14
+  - 🇩🇪 德国 | DEU 13
   - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 4
-  - 🇳🇱 荷兰 | NLD 6
   - 🇲🇾 马来西亚 | MYS
+  - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 9
+  - 🇹🇭 泰国 | THA
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇫🇷 法国 | FRA 2
+  - 🇳🇱 荷兰 | NLD 3
   - 🇩🇪 德国 | DEU 12
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -930,9 +814,7 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -940,18 +822,16 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -959,19 +839,17 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 6
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 6
+  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 16
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 8
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 6
-  - 🇺🇸 美国 | USA 9
+  - 🇩🇪 德国 | DEU 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
