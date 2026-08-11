@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-11T20:39:46.771890+00:00'
+generated-at: '2026-08-11T21:42:21.688908+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP
   server: 141.193.213.20
@@ -22,6 +22,13 @@ proxies:
     path: /dula
     headers:
       Host: speed.dulacloud.store
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 45.32.16.53
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: uTBjZhDmOMwBVAJI
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 172.64.146.211
@@ -52,18 +59,17 @@ proxies:
     headers:
       Host: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 150.241.70.0
-  port: 443
+- name: 🇫🇷 法国 | FRA 7
+  server: 45.13.119.221
+  port: 20513
   type: vless
-  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  uuid: 4dd107cd-c388-403f-aedc-77a76bb9bc93
   tls: true
-  packet-encoding: xudp
   reality-opts:
-    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
-    short-id: 9d3734f3ff471b68
-  servername: stats.vk-portal.net
-  client-fingerprint: firefox
+    public-key: CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k
+    short-id: 285db1978fd0d8c1
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 7
@@ -79,6 +85,16 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: nl2.sferavpn.pro
+  port: 443
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  auth: cd74c0a406664a5bc0bac098220a2468
+  sni: nl2.sferavpn.pro
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 35.187.156.27
   port: 443
@@ -117,6 +133,19 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
+- name: 🇦🇹 奥地利 | AUT
+  server: 212.183.88.136
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl6.lckdwn.ru
   port: 443
@@ -141,19 +170,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 95.216.165.65
-  port: 443
-  type: vless
-  uuid: 22199ed8-5f22-4906-9917-67e3609d8776
-  tls: true
-  reality-opts:
-    public-key: XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg
-    short-id: 29fd3dc0210c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: xit.saturn-cloud.net
   port: 443
@@ -169,6 +185,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 95.216.165.65
+  port: 443
+  type: vless
+  uuid: 22199ed8-5f22-4906-9917-67e3609d8776
+  tls: true
+  reality-opts:
+    public-key: XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg
+    short-id: 29fd3dc0210c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- type: trojan
+  name: 未知TROJAN-230|free-nodes
+  server: 104.19.64.105
+  port: 443
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      host: www.calmlunch.com
 - name: 🇩🇪 德国 | DEU
   server: 5.83.129.153
   port: 20088
@@ -228,17 +270,21 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
-  - 🇩🇪 德国 | DEU 2
+  - 🇫🇷 法国 | FRA 7
   - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
+  - 🇦🇹 奥地利 | AUT
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
   - 🇮🇹 意大利 | ITA
+  - 🇩🇪 德国 | DEU 8
+  - 未知TROJAN-230|free-nodes
   - 🇩🇪 德国 | DEU
   - 未知VLESS-641|free-nodes
   - 🇦🇿 AZ_05
@@ -249,20 +295,16 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 7
+  - 🇫🇷 法国 | FRA 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 12
-  - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 7
+  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -278,6 +320,7 @@ proxy-groups:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
   - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
