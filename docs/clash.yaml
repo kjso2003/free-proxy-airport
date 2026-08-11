@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-11T16:25:56.204143+00:00'
+generated-at: '2026-08-11T17:26:31.199358+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP
   server: 141.193.213.20
@@ -149,19 +149,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇦🇹 奥地利 | AUT
-  server: 212.183.88.136
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl6.lckdwn.ru
   port: 443
@@ -295,7 +282,6 @@ proxy-groups:
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
-  - 🇦🇹 奥地利 | AUT
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
@@ -335,9 +321,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 12
-  - 🇬🇧 英国 | GBR
-  - 🇦🇹 奥地利 | AUT
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
