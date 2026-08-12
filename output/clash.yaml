@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-12T08:46:55.444851+00:00'
+generated-at: '2026-08-12T09:59:40.586374+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 3
   server: v9.hdacd.com
@@ -35,6 +35,21 @@ proxies:
   auth: 1427eb10-7529-4d38-a6a2-01b337868b37
   sni: sg3.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 26
+  server: 104.19.229.21
+  port: 443
+  type: trojan
+  password: MITIVPN
+  sni: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  udp: true
 - name: 🇺🇸 美国 | USA 34
   server: 104.16.148.5
   port: 443
@@ -87,20 +102,6 @@ proxies:
     headers:
       Host: po.fastbrokencompony.com
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: nuclear.us.kg
-  port: 443
-  type: vless
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  tls: true
-  servername: nuclear.us.kg
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free/1.226.227.169:50001
-    headers:
-      Host: nuclear.us.kg
-  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 172.67.152.71
   port: 8880
@@ -113,17 +114,20 @@ proxies:
     headers:
       Host: lively-dream-d892.262.workers.dev
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: log.bpminecraft.com
-  port: 8880
-  type: vless
-  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
-  tls: false
+- name: 🇺🇸 美国 | USA 38
+  server: 104.17.148.22
+  port: 443
+  type: trojan
+  password: MiTiVPN
+  sni: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: morning-feather-dc98.136-25b.workers.dev
+      Host: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
   udp: true
 - name: 🇺🇸 美国 | USA 39
   server: 104.20.37.53
@@ -149,19 +153,6 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: muddy-sky-4767.344-7a7.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 179.198.49.14
-  port: 443
-  type: vless
-  uuid: 4cfb9456-0921-4547-a684-4614980d4a86
-  tls: true
-  reality-opts:
-    public-key: 0tsW6-mbhq0zPODM7BlymfZDYAjSB5S5doDDk8qpYXE
-    short-id: 8e79809e9958ae22
-  servername: yandex.ru
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 22
   server: vpn-us-006.fastervpn.world
@@ -217,20 +208,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 199.232.78.159
-  port: 443
-  type: vless
-  uuid: 0f350a5d-e801-4eca-a1b9-abe9798ad48a
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pan1.global.ssl.fastly.net
-  udp: true
 - name: 🇩🇪 德国 | DEU 23
   server: de-193-58.neobo-tooth.ru
   port: 2053
@@ -265,33 +242,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇦🇹 奥地利 | AUT
-  server: 212.183.88.136
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
-- name: 🇦🇹 奥地利 | AUT 2
-  server: 46.8.210.121
-  port: 27455
-  type: vless
-  uuid: 16a1eeb0-8408-4592-a469-ecd33751021e
-  tls: true
-  alpn:
-  - h3
-  servername: mirage.flowwowdev.com
-  client-fingerprint: random
-  network: xhttp
-  xhttp-opts:
-    path: /
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 31.77.56.229
   port: 443
@@ -315,19 +265,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- type: trojan
-  name: 未知TROJAN-230|free-nodes
-  server: 104.19.64.105
-  port: 443
-  password: humanity
-  udp: true
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      host: www.calmlunch.com
 - name: 🇬🇧 英国 | GBR 2
   server: yg3.mangshe.xyz
   port: 2056
@@ -387,21 +324,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 21
-  server: Ggggggggggggggggggggggggggggggggggggggggg.kafsh-topakin.ir
-  port: 61325
-  type: vless
-  uuid: 87c7f9d4-d670-49e7-a004-0139ab852a71
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - samsungapps.com
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -409,36 +331,30 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 3
   - 🇸🇬 新加坡 | SGP 6
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 41
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 38
   - 🇺🇸 美国 | USA 39
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
   - 🇩🇪 德国 | DEU 18
   - 🇫🇷 法国 | FRA 22
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇫🇷 法国 | FRA 19
-  - 🇳🇱 荷兰 | NLD
   - 🇩🇪 德国 | DEU 23
   - 🇩🇪 德国 | DEU 21
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇦🇹 奥地利 | AUT
-  - 🇦🇹 奥地利 | AUT 2
   - 🇵🇱 波兰 | POL
   - 🇫🇷 法国 | FRA 3
-  - 未知TROJAN-230|free-nodes
   - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA
   - 🇹🇭 泰国 | THA
   - 未知VLESS-641|free-nodes
   - 🇵🇱 波兰 | POL 3
-  - 🇫🇷 法国 | FRA 21
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -453,35 +369,33 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 3
   - 🇸🇬 新加坡 | SGP 6
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 34
-  - 🇺🇸 美国 | USA 41
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 41
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 38
   - 🇺🇸 美国 | USA 39
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 41
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 28
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
