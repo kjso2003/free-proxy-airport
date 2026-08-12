@@ -7,36 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-12T01:40:46.976599+00:00'
+generated-at: '2026-08-12T04:04:25.192285+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 3
-  server: 34.124.166.13
-  port: 20243
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fB0gzruxHdrID18WQclmC5QGVCrHTqOwnqFosxh2TnY
-    short-id: 214dd1031b8a
-  servername: www.spotify.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 35.200.86.178
-  port: 21143
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VFcjMcy9uLRCq3dy9zqYFOPF73TAx6QO11rleDrfBgM
-    short-id: 274772e3550ee3eb
-  servername: www.spotify.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 178.128.112.70
   port: 443
@@ -69,20 +41,6 @@ proxies:
   auth: 1427eb10-7529-4d38-a6a2-01b337868b37
   sni: sg1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇯🇵 日本 | JPN
-  server: 34.124.166.13
-  port: 21443
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jxmd60h22_LgUlequekara-UbjKGbvqq1f8CBCLBek8
-    short-id: 08db2d117d
-  servername: djp01.ps5.update.playstation.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 30
   server: ytryurdj64bbb.localip.ir
   port: 443
@@ -98,6 +56,29 @@ proxies:
     path: /
     headers:
       Host: ro-3.ariyuz.org
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: vpn-us-006.fastervpn.world
+  port: 443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-006.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 26
+  server: 104.17.148.22
+  port: 443
+  type: trojan
+  password: MiTiVPN
+  sni: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
   udp: true
 - name: 🇺🇸 美国 | USA 21
   server: 104.16.150.130
@@ -127,28 +108,18 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: vpn-us-006.fastervpn.world
-  port: 443
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-006.fastervpn.world
-  skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 26
-  server: 104.17.148.22
+- name: 🇺🇸 美国 | USA 8
+  server: 172.64.152.23
   port: 443
   type: trojan
-  password: MiTiVPN
-  sni: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-  alpn:
-  - http/1.1
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /assignment
     headers:
-      Host: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+      Host: www.calmlunch.com
   udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 166.1.89.85
@@ -159,6 +130,19 @@ proxies:
   reality-opts:
     public-key: EYLZTm0VpViSmTLfehDg0DE57ZEp0P0hab5ME3pXrgs
     short-id: 9ccdca9f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: 204.48.20.223
+  port: 30906
+  type: vless
+  uuid: 43a13764-23dd-4e01-8b79-cde8a16e13ce
+  tls: true
+  reality-opts:
+    public-key: HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0
+    short-id: 17a94dc584e3
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
@@ -177,46 +161,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.152.23
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 204.48.20.223
-  port: 30906
-  type: vless
-  uuid: 43a13764-23dd-4e01-8b79-cde8a16e13ce
-  tls: true
-  reality-opts:
-    public-key: HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0
-    short-id: 17a94dc584e3
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 34.87.98.100
-  port: 12879
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cTFTQJQS_FCRtnEDixh2Ab92ZbM6EDiEGMNW3fCoHQo
-    short-id: 9ca80937b65d
-  servername: www.spotify.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 104.16.65.1
   port: 443
@@ -230,13 +174,6 @@ proxies:
     path: /
     headers:
       Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 | USA 2
-  server: 18.219.164.184
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇫🇷 法国 | FRA 27
   server: Ggggggggggggggggggggggggggggggggggggggggg.kafsh-topakin.ir
   port: 61325
@@ -278,20 +215,6 @@ proxies:
     short-id: a91045bc
   servername: www.samsung.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇮🇳 印度 | IND
-  server: 34.124.166.13
-  port: 20843
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 3gomAzFXNmwrb-llPQCDK_xkPFOyBmVKR52iy8U3yjg
-    short-id: aad7f0276f60244b
-  servername: www.spotify.com
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA 28
@@ -351,44 +274,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 45.90.162.226
-  port: 24443
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: pCIyfmbMRts0miZB4KFKNNm0zvJr0JEx8_XykIllwUo
-    short-id: 4d83d822573492aa
-  servername: www.vk.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: 34.87.98.100
-  port: 12012
-  type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: UbqTROWvFpdLOFLeYoTStrBKlEi9QzzsmBF0xJ4zqGY
-    short-id: 47668fe775a586ba
-  servername: www.spotify.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 62.113.103.10
-  port: 4100
-  type: vless
-  uuid: ea535a23-447f-4501-918c-de8a8b376bec
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
 - name: 🇫🇷 法国 | FRA 16
   server: Ggggggggggggggggggggggggggggggggggggggggg.kafsh-topakin.ir
   port: 61325
@@ -427,13 +312,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇹🇷 土耳其 | TUR
-  server: e1.cover20.ir
-  port: 51570
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3UN+UZNZfhF9a2pgOy0fenep0gHttiEZ0RxqixotwXc=
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: 91.196.32.163
   port: 443
@@ -481,34 +359,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 95.163.232.183
-  port: 443
-  type: vless
-  uuid: 5d00b816-f77f-4fd4-9f26-73cc24c2c8e1
-  tls: true
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: abcd
-  servername: 5post-gate.x5.ru
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 5post.gate.v1
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 138.124.72.220
-  port: 443
-  type: vless
-  uuid: 52bc7468-0c2f-4e9d-bdfa-e266242ab44b
-  tls: true
-  reality-opts:
-    public-key: fu-_qH499aSXYcsyiJIUf9o28LYahPCIFyRHrLWuCDI
-    short-id: 0a077a46
-  client-fingerprint: randomized
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 25
   server: Ggggggggggggggggggggggggggggggggggggggggg.kafsh-topakin.ir
   port: 61463
@@ -547,19 +397,6 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- type: trojan
-  name: 未知TROJAN-230|free-nodes
-  server: 104.19.64.105
-  port: 443
-  password: humanity
-  udp: true
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      host: www.calmlunch.com
 - name: 🇹🇭 泰国 | THA 2
   server: 18.239.83.52
   port: 443
@@ -574,6 +411,19 @@ proxies:
     headers:
       Host: d1yxsk0zprgivr.cloudfront.net
   udp: true
+- type: trojan
+  name: 未知TROJAN-230|free-nodes
+  server: 104.19.64.105
+  port: 443
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      host: www.calmlunch.com
 - name: 🇧🇷 巴西 | BRA
   server: 18.198.227.161
   port: 443
@@ -597,22 +447,6 @@ proxies:
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 95.163.232.183
-  port: 443
-  type: vless
-  uuid: 024ee768-97e4-4b30-802b-bd767c37225c
-  tls: true
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: abcd
-  servername: 5post-gate.x5.ru
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 5post.gate.v1
   udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 140.248.186.45
@@ -704,24 +538,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇫🇷 法国 | FRA 12
-  server: fr186.mechvpn.online
-  port: 443
-  type: vless
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: yg3.mangshe.xyz
-  port: 2056
-  type: hysteria2
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  auth: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: yg3.mangshe.xyz
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 | POL 3
   server: 144.31.3.136
   port: 443
@@ -735,6 +551,14 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: yg3.mangshe.xyz
+  port: 2056
+  type: hysteria2
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  auth: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  sni: yg3.mangshe.xyz
+  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 12
   server: 86.53.105.117
   port: 33014
@@ -798,53 +622,40 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
-  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 2
   - 🇫🇷 法国 | FRA 27
   - 🇹🇭 泰国 | THA 3
   - 🇩🇪 德国 | DEU 2
-  - 🇮🇳 印度 | IND
   - 🇫🇷 法国 | FRA 28
   - 🇰🇷 韩国 | KOR 2
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇷🇺 俄罗斯 | RUS 3
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇷🇺 俄罗斯 | RUS
   - 🇫🇷 法国 | FRA 16
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇹🇷 土耳其 | TUR
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 8
-  - 🇵🇱 波兰 | POL 2
   - 🇫🇷 法国 | FRA 25
   - 🇫🇷 法国 | FRA 17
   - 🇩🇪 德国 | DEU 13
-  - 未知TROJAN-230|free-nodes
   - 🇹🇭 泰国 | THA 2
+  - 未知TROJAN-230|free-nodes
   - 🇧🇷 巴西 | BRA
   - 🇫🇷 法国 | FRA 34
-  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇵🇱 波兰 | POL 4
   - 🇨🇴 哥伦比亚 | COL
@@ -852,9 +663,8 @@ proxy-groups:
   - 🇹🇭 泰国 | THA
   - 🇹🇭 泰国 | THA 5
   - 🇩🇪 德国 | DEU
-  - 🇫🇷 法国 | FRA 12
-  - 🇬🇧 英国 | GBR
   - 🇵🇱 波兰 | POL 3
+  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 12
   - 🇫🇷 法国 | FRA 24
   - 🇫🇷 法国 | FRA 8
@@ -865,49 +675,46 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN
+  - 🇸🇬 新加坡 | SGP
+  - 🇭🇰 香港 | HKG
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 33
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 16
   - 🇨🇴 哥伦比亚 | COL
-  - 🇫🇷 法国 | FRA 28
-  - 🇫🇷 法国 | FRA 27
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 26
+  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
