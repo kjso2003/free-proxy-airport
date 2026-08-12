@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-12T18:59:44.517686+00:00'
+generated-at: '2026-08-12T20:02:36.856708+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 13.208.169.24
@@ -121,20 +121,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 7
-  server: usejh2.neobo-tooth.ru
-  port: 2053
-  type: vless
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY
-    short-id: 1eb8ea8dae937ae0
-  servername: vk.ru
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 5
   server: 78.17.208.22
   port: 443
@@ -147,6 +133,20 @@ proxies:
     short-id: fdda9806fe5d8584
   servername: fr05.skorostnet.space
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 7
+  server: usejh2.neobo-tooth.ru
+  port: 2053
+  type: vless
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY
+    short-id: 1eb8ea8dae937ae0
+  servername: vk.ru
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 2
@@ -232,14 +232,6 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 157.137.213.138
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: n1.famlegacy.online
   port: 443
@@ -253,6 +245,14 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 157.137.213.138
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU
   server: dns.tokyoservice.ir
   port: 2082
@@ -263,13 +263,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: AIbOe_791iQ4k6kPUgdsO7B9
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.231.73
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - type: vless
   name: 未知VLESS-641|free-nodes
   server: www.true.th
@@ -284,6 +277,13 @@ proxies:
     path: /
     headers:
       host: d1yxsk0zprgivr.cloudfront.net
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.231.73
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -297,8 +297,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 23
   - 🇫🇷 法国 | FRA 6
-  - 🇫🇷 法国 | FRA 7
   - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 7
   - 🇩🇪 德国 | DEU 2
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS
@@ -306,11 +306,11 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 8
   - 未知TROJAN-230|free-nodes
   - 🇫🇷 法国 | FRA 4
-  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU 9
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU
-  - 🇨🇴 哥伦比亚 | COL 2
   - 未知VLESS-641|free-nodes
+  - 🇨🇴 哥伦比亚 | COL 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -344,10 +344,10 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 19
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇯🇵 日本 | JPN 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
