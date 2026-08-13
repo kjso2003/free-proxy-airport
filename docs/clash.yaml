@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-13T08:18:53.592342+00:00'
+generated-at: '2026-08-13T09:40:27.149645+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: engaged-ram.rooster465.autos
@@ -137,18 +137,6 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-lab-91a6.54-8c3.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: 89.208.244.252
   port: 13779
@@ -175,6 +163,19 @@ proxies:
     headers:
       Host: wild-frog-54a9.170-dcc.workers.dev
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 172.64.152.23
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 - name: 🇺🇸 美国 | USA 32
   server: 38.99.248.120
   port: 50160
@@ -183,6 +184,18 @@ proxies:
   auth: 2c1611f83747dd3694e0e90cbf7d4e29
   sni: 38-99-248-120.liao.kdns.fr
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 23
+  server: 35.212.204.142
+  port: 56723
+  type: vmess
+  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 195.211.98.214
   port: 443
@@ -196,18 +209,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 23
-  server: 35.212.204.142
-  port: 56723
-  type: vmess
-  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 28
   server: 172.64.80.1
@@ -225,13 +226,6 @@ proxies:
     headers:
       Host: france.io-com-de-dev.org
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 84.235.160.177
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇩🇪 德国 | DEU 18
   server: 5.83.129.143
   port: 26691
@@ -276,22 +270,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇫🇷 法国 | FRA 19
-  server: 8.6.112.0
-  port: 443
-  type: vless
-  uuid: 1c2a94fa-8329-4ff5-b351-25e197acd836
-  tls: true
-  alpn:
-  - http/1.1
-  servername: polshaov.ochmaybrooooo.online
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: polshaov.ochmaybrooooo.online
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: dnlch.mostserv.xyz
   port: 443
@@ -348,20 +326,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: 51.250.4.141
-  port: 8443
-  type: vless
-  uuid: 716b4e8e-482f-462e-9c69-9df1d235e0c2
-  tls: true
-  servername: cloudflare.vhub.pro
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /websocket?ed=2560
-    headers:
-      Host: cloudflare.vhub.pro
-  udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 82.117.255.87
   port: 443
@@ -374,33 +338,6 @@ proxies:
     short-id: b70076439f4a1340
   servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 13
-  server: 198.105.112.56
-  port: 443
-  type: vless
-  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Oyd0sn1z_6uNSN6AN63Q7aBq7AUQ1bOsB9MT3FyyiRM
-    short-id: 837fa04e73d6b581
-  servername: www.ya.ru
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇩🇪 德国 | DEU 8
-  server: 31.77.152.224
-  port: 443
-  type: vless
-  uuid: 176bc48c-460b-4260-abbd-68fd5ea85270
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY
-    short-id: a368b80ef68dd678
-  servername: gm10.mcqueenconnection.ru
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 11
@@ -431,6 +368,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- type: trojan
+  name: 未知TROJAN-230|free-nodes
+  server: 104.19.64.105
+  port: 443
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      host: www.calmlunch.com
 - name: 🇧🇷 巴西 | BRA
   server: 163.176.133.70
   port: 59319
@@ -443,31 +393,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 🇲🇾 马来西亚 | MYS
-  server: 205.186.67.233
-  port: 13779
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: p05.rghvf.sbs
-  port: 1233
-  type: vmess
-  uuid: 68adffea-4146-4f92-b2f9-955cd634c274
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: gb.uniquenames.net
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 84.201.178.175
   port: 443
@@ -481,20 +406,6 @@ proxies:
   servername: www.vk.com
   client-fingerprint: random
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 12
-  server: ld.242311.xyz
-  port: 443
-  type: vless
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ld.242311.xyz
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 200.165.228.47
@@ -521,6 +432,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- type: vless
+  name: 未知VLESS-641|free-nodes
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  ws-opts:
+    path: /
+    headers:
+      host: d1yxsk0zprgivr.cloudfront.net
 - name: 🇱🇻 拉脱维亚 | LVA
   server: laoye.in-gect.fun
   port: 2053
@@ -614,37 +539,31 @@ proxy-groups:
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 28
-  - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪 德国 | DEU 18
   - 🇫🇷 法国 | FRA 5
   - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 10
-  - 🇫🇷 法国 | FRA 19
   - 🇳🇱 荷兰 | NLD 4
   - 🇱🇹 立陶宛 | LTU
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇩🇪 德国 | DEU 19
-  - 🇩🇪 德国 | DEU 17
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇳🇱 荷兰 | NLD 13
-  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
   - 🇳🇱 荷兰 | NLD 11
+  - 未知TROJAN-230|free-nodes
   - 🇧🇷 巴西 | BRA
   - 🇬🇧 英国 | GBR 2
-  - 🇲🇾 马来西亚 | MYS
-  - 🇰🇷 韩国 | KOR
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 12
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
+  - 未知VLESS-641|free-nodes
   - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 9
@@ -678,12 +597,12 @@ proxy-groups:
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 32
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 28
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -691,14 +610,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇳🇱 荷兰 | NLD 12
-  - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 13
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 23
   - 🇳🇱 荷兰 | NLD 10
+  - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 34
+  - 🇧🇷 巴西 | BRA
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
