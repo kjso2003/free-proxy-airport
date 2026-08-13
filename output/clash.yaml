@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-13T18:59:07.384713+00:00'
+generated-at: '2026-08-13T19:57:53.548122+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: v9.hdacd.com
@@ -27,20 +27,6 @@ proxies:
   auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 91.193.58.250
-  port: 2096
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-  udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: hk2-r.link-t7.com
   port: 10127
@@ -57,19 +43,26 @@ proxies:
     grpc-mode: gun
     grpc-service-name: update
   udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 91.193.58.250
+  port: 2096
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: improved-anteater.rooster465.autos
   port: 443
   type: trojan
   password: AE62539071
   skip-cert-verify: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 0ccenterhk-c.center-link.org
-  port: 611
-  type: ss
-  cipher: aes-128-gcm
-  password: 929c5ce8-222b-4d93-a80f-9ed580e2e8c1
-  udp: true
 - name: 🇯🇵 日本 | JPN 4
   server: xmmcf.130209.xyz
   port: 8443
@@ -242,6 +235,21 @@ proxies:
     grpc-mode: gun
     grpc-service-name: update
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 104.18.32.47
+  port: 443
+  type: vless
+  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
+  tls: true
+  alpn:
+  - h3
+  servername: rus.aba-hum.store
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    mode: auto
+  udp: true
 - name: 🇰🇷 韩国 | KOR 4
   server: kr2-r.link-t7.com
   port: 10047
@@ -257,21 +265,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 104.18.32.47
-  port: 443
-  type: vless
-  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
-  tls: true
-  alpn:
-  - h3
-  servername: rus.aba-hum.store
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    mode: auto
   udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: 62.60.159.137
@@ -402,6 +395,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- type: trojan
+  name: 未知TROJAN-230|free-nodes
+  server: 104.19.64.105
+  port: 443
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      host: www.calmlunch.com
 - name: 🇸🇪 瑞典 | SWE
   server: 2.27.23.44
   port: 43327
@@ -434,20 +440,6 @@ proxies:
   auth: Apt1923_N9x234gn_Nal5Nx3j_s
   sni: grape-power-pl.ddnsguru.com
   skip-cert-verify: true
-- type: vless
-  name: 未知VLESS-641|free-nodes
-  server: www.true.th
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  ws-opts:
-    path: /
-    headers:
-      host: d1yxsk0zprgivr.cloudfront.net
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 104.165.205.226
   port: 9443
@@ -456,13 +448,21 @@ proxies:
   auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
   sni: onecloudstream.com
   skip-cert-verify: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 149.130.172.133
-  port: 62145
+- name: 🇷🇸 塞尔维亚 | SRB
+  server: 176.109.106.34
+  port: 9888
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
+  uuid: 130e6aab-9eba-441e-9021-22cbccc72832
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: whole-woodcock.rooster465.autos
@@ -499,10 +499,9 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰 香港 | HKG 3
+  - 🇸🇬 新加坡 | SGP 5
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN
@@ -516,8 +515,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 14
   - 🇫🇷 法国 | FRA 5
   - 🇰🇷 韩国 | KOR 2
-  - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇰🇷 韩国 | KOR 4
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 10
   - 🇰🇷 韩国 | KOR 3
@@ -529,13 +528,13 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 | ROU
   - 🇵🇱 波兰 | POL 2
   - 🇳🇱 荷兰 | NLD 11
+  - 未知TROJAN-230|free-nodes
   - 🇸🇪 瑞典 | SWE
   - 🇰🇷 韩国 | KOR
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU
-  - 未知VLESS-641|free-nodes
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇷🇸 塞尔维亚 | SRB
   - 🇳🇱 荷兰 | NLD 3
   - 🇳🇱 荷兰 | NLD 9
   - 🇫🇷 法国 | FRA 11
@@ -555,7 +554,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
@@ -576,14 +574,14 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 26
   - 🇳🇱 荷兰 | NLD 9
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇨🇴 哥伦比亚 | COL
   - 🇯🇵 日本 | JPN 2
-  - 🇺🇸 美国 | USA 14
   - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
