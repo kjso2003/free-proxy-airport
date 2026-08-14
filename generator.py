@@ -35,7 +35,6 @@ MAX_RETRIES = 2
 MAX_WORKERS = int(os.getenv("FREE_PROXY_AIRPORT_MAX_WORKERS", "24"))
 MAX_CANDIDATES = int(os.getenv("FREE_PROXY_AIRPORT_MAX_CANDIDATES", "0"))
 
-
 SOURCE_GROUPS = [
     {
         "name": "free-vpn-anti-rkn-1",
@@ -78,7 +77,6 @@ SOURCE_GROUPS = [
         "fallbacks": [],
     },
 ]
-
 
 SUPPORTED_PROXY_TYPES = {
     "ss", "ssr", "vmess", "vless", "trojan", 
@@ -263,6 +261,7 @@ def sanitize_and_deduplicate(proxies: list[dict[str, Any]]) -> list[dict[str, An
         if fingerprint in seen_fingerprints: continue
         seen_fingerprints.add(fingerprint)
 
+        # 确保名字绝对存在且不冲突
         base_name = str(proxy["name"]).strip() or f"node-{index}"
         name = base_name
         suffix = 2
@@ -280,13 +279,31 @@ def normalize_proxy(raw: dict[str, Any], index: int) -> dict[str, Any] | None:
     if proxy_type not in SUPPORTED_PROXY_TYPES: return None
     if proxy_type == "hy2": proxy_type = "hysteria2"
     proxy["type"] = proxy_type
+    
+    # 基础字段校验
     name = str(proxy.get("name", "")).strip() or f"node-{index}"
     server = str(proxy.get("server", "")).strip()
     if not server: return None
     try: port = int(proxy.get("port"))
     except Exception: return None
     if port <= 0 or port > 65535: return None
+    
     proxy["name"], proxy["server"], proxy["port"] = name, server, port
+
+    # ================= 核心修复区 =================
+    # 严格校验协议必填字段，拦截“毒节点”
+    if proxy_type == "vmess":
+        if not proxy.get("uuid"): return None
+        if "cipher" not in proxy: proxy["cipher"] = "auto"
+        if "alterId" not in proxy: proxy["alterId"] = 0
+    elif proxy_type == "vless":
+        if not proxy.get("uuid"): return None
+    elif proxy_type == "ss":
+        if not proxy.get("cipher") or not proxy.get("password"): return None
+    elif proxy_type in ("trojan", "hysteria", "hysteria2", "tuic"):
+        if not proxy.get("password"): return None
+    # ==============================================
+
     return proxy
 
 def proxy_fingerprint(proxy: dict[str, Any]) -> str:
