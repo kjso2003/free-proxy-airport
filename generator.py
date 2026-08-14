@@ -27,7 +27,7 @@ import requests
 import yaml
 
 VERSION = "v7"
-OUTPUT_PATH = Path("output/clash.yaml")
+OUTPUT_PATH = Path("docs/clash.yaml")  # 适配 CI 测试要求，输出到 docs 目录
 TEST_URL = "http://www.gstatic.com/generate_204"
 SOURCE_TIMEOUT = 10 
 LATENCY_TIMEOUT_MS = 5000
@@ -35,6 +35,7 @@ MAX_RETRIES = 2
 MAX_WORKERS = int(os.getenv("FREE_PROXY_AIRPORT_MAX_WORKERS", "24"))
 MAX_CANDIDATES = int(os.getenv("FREE_PROXY_AIRPORT_MAX_CANDIDATES", "0"))
 
+# ===== 请在这里保留你完整的 SOURCE_GROUPS 列表 =====
 SOURCE_GROUPS = [
     {
         "name": "free-vpn-anti-rkn-1",
@@ -77,6 +78,7 @@ SOURCE_GROUPS = [
         "fallbacks": [],
     },
 ]
+# ===================================================
 
 SUPPORTED_PROXY_TYPES = {
     "ss", "ssr", "vmess", "vless", "trojan", 
@@ -261,7 +263,6 @@ def sanitize_and_deduplicate(proxies: list[dict[str, Any]]) -> list[dict[str, An
         if fingerprint in seen_fingerprints: continue
         seen_fingerprints.add(fingerprint)
 
-        # 确保名字绝对存在且不冲突
         base_name = str(proxy["name"]).strip() or f"node-{index}"
         name = base_name
         suffix = 2
@@ -280,7 +281,6 @@ def normalize_proxy(raw: dict[str, Any], index: int) -> dict[str, Any] | None:
     if proxy_type == "hy2": proxy_type = "hysteria2"
     proxy["type"] = proxy_type
     
-    # 基础字段校验
     name = str(proxy.get("name", "")).strip() or f"node-{index}"
     server = str(proxy.get("server", "")).strip()
     if not server: return None
@@ -290,8 +290,6 @@ def normalize_proxy(raw: dict[str, Any], index: int) -> dict[str, Any] | None:
     
     proxy["name"], proxy["server"], proxy["port"] = name, server, port
 
-    # ================= 核心修复区 =================
-    # 严格校验协议必填字段，拦截“毒节点”
     if proxy_type == "vmess":
         if not proxy.get("uuid"): return None
         if "cipher" not in proxy: proxy["cipher"] = "auto"
@@ -302,7 +300,6 @@ def normalize_proxy(raw: dict[str, Any], index: int) -> dict[str, Any] | None:
         if not proxy.get("cipher") or not proxy.get("password"): return None
     elif proxy_type in ("trojan", "hysteria", "hysteria2", "tuic"):
         if not proxy.get("password"): return None
-    # ==============================================
 
     return proxy
 
@@ -482,7 +479,8 @@ def main() -> None:
     hk_names = [m.proxy["name"] for m in metrics if m.region == "HK"] or ["DIRECT"]
     jp_names = [m.proxy["name"] for m in metrics if m.region == "JP"] or ["DIRECT"]
     us_names = [m.proxy["name"] for m in metrics if m.region == "US"] or ["DIRECT"]
-    auto_names = [m.proxy["name"] for m in metrics[:min(30, len(metrics))]]
+    all_names = [m.proxy["name"] for m in metrics[:min(50, len(metrics))]] or ["DIRECT"]
+    auto_names = [m.proxy["name"] for m in metrics[:min(30, len(metrics))]] or ["DIRECT"]
 
     config = {
         "mixed-port": 7890,
@@ -492,12 +490,21 @@ def main() -> None:
         "proxies": [m.proxy for m in metrics],
         "proxy-groups": [
             {"name": "AUTO-FAST", "type": "url-test", "proxies": auto_names, "url": TEST_URL, "interval": 300},
-            {"name": "HK-POOL", "type": "select", "proxies": hk_names},
-            {"name": "JP-POOL", "type": "select", "proxies": jp_names},
-            {"name": "US-POOL", "type": "select", "proxies": us_names},
-            {"name": "PROXY", "type": "select", "proxies": ["AUTO-FAST", "HK-POOL", "JP-POOL", "US-POOL", "DIRECT"]},
+            {"name": "HK-POOL", "type": "url-test", "proxies": hk_names, "url": TEST_URL, "interval": 300},
+            {"name": "JP-POOL", "type": "url-test", "proxies": jp_names, "url": TEST_URL, "interval": 300},
+            {"name": "US-POOL", "type": "url-test", "proxies": us_names, "url": TEST_URL, "interval": 300},
+            {"name": "AI-POOL", "type": "url-test", "proxies": all_names, "url": TEST_URL, "interval": 300},
+            {"name": "FALLBACK", "type": "fallback", "proxies": all_names, "url": TEST_URL, "interval": 300},
+            {"name": "PROXY", "type": "select", "proxies": ["AUTO-FAST", "HK-POOL", "JP-POOL", "US-POOL", "AI-POOL", "FALLBACK", "DIRECT"]},
         ],
-        "rules": ["MATCH,PROXY"]
+        "rules": [
+            "DOMAIN-SUFFIX,openai.com,AI-POOL",
+            "DOMAIN-SUFFIX,chatgpt.com,AI-POOL",
+            "DOMAIN-SUFFIX,claude.ai,AI-POOL",
+            "DOMAIN-SUFFIX,anthropic.com,AI-POOL",
+            "GEOIP,CN,DIRECT",
+            "MATCH,PROXY"
+        ]
     }
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
