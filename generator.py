@@ -68,6 +68,336 @@ SOURCE_GROUPS = [
             "discover:free-clash-v2ray",
         ],
     },
+    {
+        "name": "free-vpn-anti-rkn-1",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-2",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-3",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/2.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-4",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/2.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-5",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-6",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-7",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/4.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-8",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/4.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-9",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-10",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-11",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/6.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-12",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/6.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-13",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/7.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-14",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/7.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-15",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/8.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-16",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/8.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-17",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/9.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-18",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/9.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-19",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-20",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-21",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/11.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-22",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/11.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-23",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/12.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-24",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/12.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-25",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/13.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-26",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/13.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-27",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/14.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-28",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/14.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-29",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/15.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-30",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/15.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-31",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/16.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-32",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/16.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-33",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/17.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-34",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/17.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-35",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/18.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-36",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/18.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-37",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/19.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-38",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/19.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-39",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/20.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-40",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/20.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-41",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/21.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-42",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/21.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-43",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/22.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-44",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/22.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-45",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/23.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-46",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/23.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-47",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/24.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-48",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/24.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-49",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/25.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-50",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/25.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-51",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/26.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-52",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/26.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-53",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/27.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-54",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-55",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-56",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/29.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-57",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/30.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-58",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/31.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-59",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-60",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-61",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-62",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.2.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-63",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/34.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-subscriptions",
+        "primary": "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "igareck",
+        "primary": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "Rayan-Config",
+        "primary": "https://raw.githubusercontent.com/Rayan-Config/C-Sub/refs/heads/main/configs/proxy.txt",
+        "fallbacks": [],
+    },
 ]
 
 SUPPORTED_PROXY_TYPES = {
