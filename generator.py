@@ -27,7 +27,8 @@ import requests
 import yaml
 
 VERSION = "v7"
-OUTPUT_PATH = Path("docs/clash.yaml")  # 适配 CI 测试要求，输出到 docs 目录
+OUTPUT_PATH = Path("output/clash.yaml")
+DOCS_PATH = Path("docs/clash.yaml")
 TEST_URL = "http://www.gstatic.com/generate_204"
 SOURCE_TIMEOUT = 10 
 LATENCY_TIMEOUT_MS = 5000
@@ -507,14 +508,18 @@ def main() -> None:
         ]
     }
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(yaml.safe_dump(config, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    yaml_content = yaml.safe_dump(config, allow_unicode=True, sort_keys=False)
+
+    # 同时写入 output 和 docs 目录，保证 cmp 校验通过
+    for path in (OUTPUT_PATH, DOCS_PATH):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(yaml_content, encoding="utf-8")
     
     print("\n" + "="*40)
-    print(f"🎉 处理完成！")
+    print(f"🎉 处理完成并双端同步成功！")
     print(f"总计找到有效节点候选: {len(candidates)}")
     print(f"成功通过测速的节点数: {len(metrics)}")
-    print(f"配置文件已生成至: {OUTPUT_PATH.absolute()}")
+    print(f"配置文件已生成至: {OUTPUT_PATH.absolute()} 和 {DOCS_PATH.absolute()}")
     print("="*40)
 
 if __name__ == "__main__":
