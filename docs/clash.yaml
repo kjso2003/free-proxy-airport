@@ -3,28 +3,34 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: '[OpenRay] 🇯🇵 JP-4093'
+- name: '[OpenRay] 🇯🇵 JP-4117'
   type: trojan
-  server: exciting-grizzly.rooster465.autos
+  server: charmed-fly.rooster465.autos
   port: 443
   password: AE62539071
   security: tls
-- name: '[OpenRay] 🇯🇵 JP-4126'
+- name: '[OpenRay] 🇯🇵 JP-4083'
   type: trojan
-  server: safe-frog.rooster465.autos
+  server: fun-salmon.rooster465.autos
   port: 443
   password: AE62539071
   security: tls
-- name: '[OpenRay] 🇭🇰 HK-2438'
+  network: tcp
+  servername: fun-salmon.rooster465.autos
+- name: '[OpenRay] 🇸🇬 SG-2441'
   type: trojan
-  server: strong-haddock.rooster465.autos
+  server: excited-sole.rooster465.autos
   port: 443
   password: AE62539071
   security: tls
-  servername: strong-haddock.rooster465.autos
-- name: '[OpenRay] 🇺🇸 US-24283'
+- name: '[OpenRay] 🇭🇰 HK-2380'
+  type: vless
+  server: 182.16.61.4
+  port: 45647
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+- name: '[OpenRay] 🇺🇸 US-24282'
   type: trojan
-  server: arriving-colt.rooster465.autos
+  server: dear-hermit.rooster465.autos
   port: 443
   password: AE62539071
   security: tls
@@ -34,12 +40,6 @@ proxies:
   port: 443
   uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
   network: ws
-- name: shadowsocks-27269
-  type: ss
-  server: 138.199.42.68
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: shadowsocks-196
   type: ss
   server: 37.19.198.244
@@ -52,51 +52,27 @@ proxies:
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: shadowsocks-193
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-163
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-159
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: shadowsocks-192
   type: ss
   server: 37.19.198.236
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: shadowsocks-194
+- name: shadowsocks-496614106
   type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-468218613
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: shadowsocks-27269
   type: ss
-  server: 138.197.141.58
+  server: 138.199.42.68
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: shadowsocks-415243975
+- name: shadowsocks-468218613
   type: ss
-  server: 23.150.248.20
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qB2Cv9VIlujj
-- name: shadowsocks-166
-  type: ss
-  server: 137.184.174.93
+  server: 138.197.141.58
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
@@ -106,31 +82,42 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: RSo52SbxW40r
-- name: shadowsocks-487917493
+- name: shadowsocks-166
   type: ss
-  server: 142.4.216.225
+  server: 137.184.174.93
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: shadowsocks-159
+  type: ss
+  server: 156.146.38.170
   port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: shadowsocks-194
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: shadowsocks-415243975
+  type: ss
+  server: 23.150.248.20
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: shadowsocks-387719515
+  password: qB2Cv9VIlujj
+- name: shadowsocks-163
   type: ss
-  server: 18.188.213.207
+  server: 156.146.38.168
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: shadowsocks-428711842
   type: ss
   server: 3.131.38.54
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: vless-474875702
-  type: vless
-  server: 70.39.197.9
-  port: 59216
-  uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
-  security: 'false'
-  network: tcp
 - name: shadowsocks-157
   type: ss
   server: 108.181.0.177
@@ -143,6 +130,25 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: G5p6ww4o67HB
+- name: 4FreeIran-ba7c2f84b8
+  type: vless
+  server: 70.39.197.9
+  port: 59216
+  uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
+  network: tcp
+- name: shadowsocks-224639175
+  type: ss
+  server: 70.39.198.35
+  port: 54166
+  cipher: chacha20-ietf-poly1305
+  password: EvLfWGe0AKvK
+- name: vless-335072399
+  type: vless
+  server: 180.178.60.253
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  security: none
+  network: tcp
 - name: shadowsocks-468218487
   type: ss
   server: 138.199.43.159
@@ -155,38 +161,12 @@ proxies:
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: shadowsocks-465806702
-  type: ss
-  server: ca225.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: shadowsocks-156
-  type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-224639175
-  type: ss
-  server: 70.39.198.35
-  port: 54166
-  cipher: chacha20-ietf-poly1305
-  password: EvLfWGe0AKvK
 - name: shadowsocks-155
   type: ss
   server: 173.244.56.6
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: trojan-485789374
-  type: trojan
-  server: 14.1.28.76
-  port: 50740
-  password: r49gssuondznyu2eex83
-  network: tcp
-  servername: 14.1.28.76
-  skip-cert-verify: true
 - name: vless-467980769
   type: vless
   server: 149.130.189.173
@@ -194,474 +174,88 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   security: none
   network: tcp
-- name: shadowsocks-415241978
+- name: vless-496627692
+  type: vless
+  server: 157.137.224.224
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  security: none
+  network: tcp
+- name: vless-496627691
+  type: vless
+  server: 157.137.222.20
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  security: none
+  network: tcp
+- name: vless-496627693
+  type: vless
+  server: 157.137.225.34
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  security: none
+  network: tcp
+- name: shadowsocks-156
   type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: shadowsocks-468218514
-  type: ss
-  server: 107.151.182.197
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: shadowsocks-45641610
-  type: ss
-  server: 158.173.20.208
+  server: 173.244.56.9
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: shadowsocks-165
-  type: ss
-  server: 146.70.61.37
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: shadowsocks-240
   type: ss
   server: 94.156.250.148
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
-- name: shadowsocks-25267
-  type: ss
-  server: 213.109.147.242
-  port: 62685
-  cipher: chacha20-ietf-poly1305
-  password: VpKABcOpNNA0l5G2AVOmw8
-- name: shadowsocks-205
-  type: ss
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-- name: shadowsocks-273
-  type: ss
-  server: 82.38.31.2
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-488065856
-  type: ss
-  server: 129.151.92.159
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: shadowsocks-130088
-  type: ss
-  server: 82.38.31.9
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-168341641
-  type: ss
-  server: 193.29.139.223
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-277388490
-  type: ss
-  server: 193.29.139.225
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: trojan-468154150
-  type: trojan
-  server: moral-cow.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: moral-cow.rooster465.autos
-- name: shadowsocks-209
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: shadowsocks-174
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-48399240
-  type: ss
-  server: 82.38.31.39
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-91981760
-  type: ss
-  server: 82.38.31.174
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-468218595
-  type: ss
-  server: 146.70.23.32
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: shadowsocks-185
-  type: ss
-  server: 82.38.31.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11027
-  type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-488065857
-  type: ss
-  server: 130.61.114.19
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: shadowsocks-11031
-  type: ss
-  server: 82.38.31.213
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.187-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.187
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-40118927
-  type: ss
-  server: 82.38.31.34
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-125944315
-  type: ss
-  server: 82.38.31.162
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.210-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-178
-  type: ss
-  server: 82.38.31.219
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-200379481
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: shadowsocks-11019
-  type: ss
-  server: 82.38.31.180
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-266
-  type: ss
-  server: 82.38.31.216
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.176-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.176
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.191-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.191
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.208-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.208
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-482887638
-  type: ss
-  server: 82.38.31.149
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11046
-  type: ss
-  server: 82.38.31.29
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: shadowsocks-428711839
   type: ss
   server: 3.66.86.250
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: shadowsocks-16136
+- name: shadowsocks-205
   type: ss
-  server: 82.38.31.181
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-127246
-  type: ss
-  server: 193.29.139.144
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.214-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.214
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '[OpenRay] 🇳🇱 NL-9506'
-  type: ss
-  server: 82.38.31.174
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-482887637
-  type: ss
-  server: 193.29.139.230
+  server: 109.201.152.181
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-112078279
-  type: ss
-  server: 82.38.31.36
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-176
-  type: ss
-  server: 82.38.31.57
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-171
-  type: ss
-  server: 82.38.31.17
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-177
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-114874950
-  type: ss
-  server: 193.29.139.132
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11044
-  type: ss
-  server: 82.38.31.164
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11020
-  type: ss
-  server: 82.38.31.183
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-415242972
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: shadowsocks-72830589
-  type: ss
-  server: 82.38.31.156
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-96653029
-  type: ss
-  server: 82.38.31.36
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11033
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.199-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.199
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-98971312
-  type: ss
-  server: 82.38.31.49
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-158885953
-  type: ss
-  server: 193.29.139.147
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-60057373
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.205-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.217-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '[OpenRay] 🇳🇱 NL-10104'
-  type: ss
-  server: 82.38.31.201
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-258605573
-  type: ss
-  server: 82.38.31.42
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11026
-  type: ss
-  server: 82.38.31.200
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11049
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-10899
-  type: ss
-  server: 82.38.31.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: trojan-278435185
-  type: trojan
-  server: natural-collie.rooster465.autos
-  port: 443
-  password: ND91608427
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: vless-494494371
+  type: vless
+  server: 52.59.68.6
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  security: none
   network: tcp
-  servername: natural-collie.rooster465.autos
-  skip-cert-verify: true
-- name: shadowsocks-11048
+- name: vless-496673017
+  type: vless
+  server: 52.59.68.6
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  security: none
+  network: tcp
+- name: vless-496671893
+  type: vless
+  server: 164.90.191.172
+  port: 47260
+  uuid: dbe453d8-112d-4bad-b353-3ccf60044a23
+  security: none
+  network: tcp
+- name: vless-494494370
+  type: vless
+  server: 52.59.68.6
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  security: none
+  network: tcp
+- name: shadowsocks-488065857
   type: ss
-  server: 82.38.31.3
-  port: 8080
+  server: 130.61.114.19
+  port: 59924
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11042
-  type: ss
-  server: 82.38.31.11
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-129825
-  type: ss
-  server: 82.38.31.182
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
 - name: '@Rayan_Config-82.38.31.179-@beepassvpn_bot'
   type: ss
   server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11021
-  type: ss
-  server: 82.38.31.185
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11045
-  type: ss
-  server: 82.38.31.18
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-274
-  type: ss
-  server: 82.38.31.10
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-170
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: trojan-470979978
-  type: trojan
-  server: pet-ghost.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-- name: shadowsocks-11029
-  type: ss
-  server: 82.38.31.211
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11030
-  type: ss
-  server: 82.38.31.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-198822224
-  type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: shadowsocks-10898
-  type: ss
-  server: 82.38.31.203
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-166303196
-  type: ss
-  server: 193.29.139.198
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -671,52 +265,95 @@ proxies:
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.218-@beepassvpn_bot'
+- name: shadowsocks-127246
   type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11023
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-268
-  type: ss
-  server: 82.38.31.35
+  server: 193.29.139.144
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-277388489
+- name: shadowsocks-168341641
   type: ss
-  server: 193.29.139.129
+  server: 193.29.139.223
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-188
+  type: ss
+  server: 82.38.31.149
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-177
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: trojan-485789374
+  type: trojan
+  server: 14.1.28.76
+  port: 50740
+  password: r49gssuondznyu2eex83
+  network: tcp
+  servername: 14.1.28.76
+  skip-cert-verify: true
+- name: '@Rayan_Config-82.38.31.191-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-468218595
+  type: ss
+  server: 146.70.23.32
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: shadowsocks-16136
+  type: ss
+  server: 82.38.31.181
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-482887639
+  type: ss
+  server: 82.38.31.164
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-96653029
+  type: ss
+  server: 82.38.31.36
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-60057373
+  type: ss
+  server: 82.38.31.48
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-10898
+  type: ss
+  server: 82.38.31.203
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
 - name: '@Rayan_Config-82.38.31.184-@beepassvpn_bot'
   type: ss
   server: 82.38.31.184
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-275
+- name: '@Rayan_Config-82.38.31.214-@beepassvpn_bot'
   type: ss
-  server: 82.38.31.7
+  server: 82.38.31.214
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: vless-483694854
-  type: vless
-  server: 217.60.99.49
-  port: 9999
-  uuid: f83d8e60-f039-45c8-95d2-2a44c59025f6
-  security: none
-  network: raw
-- name: shadowsocks-11028
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-166303196
   type: ss
-  server: 82.38.31.207
+  server: 193.29.139.198
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -726,166 +363,33 @@ proxies:
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11047
+- name: shadowsocks-40118927
   type: ss
-  server: 82.38.31.32
-  port: 443
+  server: 82.38.31.34
+  port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-258
-  type: ss
-  server: 82.38.31.35
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: trojan-468154107
-  type: trojan
-  server: bright-baboon.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: bright-baboon.rooster465.autos
 - name: shadowsocks-179
   type: ss
   server: 193.29.139.235
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: trojan-468154115
-  type: trojan
-  server: dear-hermit.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: dear-hermit.rooster465.autos
-- name: shadowsocks-331336152
+- name: shadowsocks-48399240
   type: ss
-  server: 193.29.139.212
+  server: 82.38.31.39
   port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: shadowsocks-428711836
-  type: ss
-  server: 18.199.102.146
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: shadowsocks-211463809
-  type: ss
-  server: 31.76.30.79
-  port: 10808
-  cipher: chacha20-ietf-poly1305
-  password: TmXSpcRBbhvHDg66bo2w89bToxQsbMoa
-- name: shadowsocks-474582630
-  type: ss
-  server: 65.109.208.236
-  port: 51550
-  cipher: 2022-blake3-aes-256-gcm
-  password: QWeMgf/309xkXdEzs9xaUU2DkuqVUEB+0jfmDQ4gsFk=:EFUWQ5XSyYC8/iD044lN91hV7fIiyJW4HrKFj3D7g1s=
-- name: vless-490104153
-  type: vless
-  server: 65.109.208.236
-  port: 36751
-  uuid: 5bd67b1f-9870-44a7-bddb-1614ce7d74ea
-  security: none
-  network: raw
-- name: vless-475007676
-  type: vless
-  server: freetg.strettenvpn.com
-  port: 9999
-  uuid: f83d8e60-f039-45c8-95d2-2a44c59025f6
-  security: 'false'
-  network: tcp
-- name: shadowsocks-398004833
-  type: ss
-  server: 93.123.13.7
-  port: 25783
-  cipher: chacha20-ietf-poly1305
-  password: 8cmuvza9gyetx0z8
-- name: shadowsocks-173
-  type: ss
-  server: 82.38.31.15
-  port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: vless-474870682
-  type: vless
-  server: 93.119.168.215
-  port: 60771
-  uuid: 060a5db6-7ff9-4a64-87c1-8a27be4f11ab
-  security: 'false'
-  network: tcp
-- name: shadowsocks-16132
+- name: shadowsocks-254910437
   type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: vless-465827642
-  type: vless
-  server: 93.123.13.7
-  port: 15139
-  uuid: ab16b404-1d3a-4ba6-a37c-67bed61e3b5d
-  security: none
-  network: tcp
-- name: '@Rayan_Config-82.38.31.202-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.202
+  server: 82.38.31.175
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11052
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-186
   type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: shadowsocks-218
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-465806703
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: shadowsocks-465806704
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: shadowsocks-211
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: vless-46184914
-  type: vless
-  server: 85.159.228.250
-  port: 25703
-  uuid: 7e5964d036b843ff885b86c4d3bfd466
-  security: none
-  network: tcp
-- name: shadowsocks-19056434
-  type: ss
-  server: 92.112.126.90
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: wwzVn2ZnHfqYa6l8EWh3eY
-- name: trojan-457468721
-  type: trojan
-  server: present-warthog.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: shadowsocks-49012021
-  type: ss
-  server: 82.38.31.46
+  server: 193.29.139.204
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -895,97 +399,425 @@ proxies:
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: vless-470978124
+- name: shadowsocks-11019
+  type: ss
+  server: 82.38.31.180
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11020
+  type: ss
+  server: 82.38.31.183
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-274
+  type: ss
+  server: 82.38.31.10
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '@Rayan_Config-82.38.31.208-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.208
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-91981760
+  type: ss
+  server: 82.38.31.174
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-482887638
+  type: ss
+  server: 82.38.31.149
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-130088
+  type: ss
+  server: 82.38.31.9
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-83630747
+  type: ss
+  server: 82.38.31.174
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-125944315
+  type: ss
+  server: 82.38.31.162
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-268
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-11047
+  type: ss
+  server: 82.38.31.32
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '@Rayan_Config-82.38.31.190-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '@Rayan_Config-82.38.31.199-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '@Rayan_Config-82.38.31.210-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.210
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-482887637
+  type: ss
+  server: 193.29.139.230
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-11029
+  type: ss
+  server: 82.38.31.211
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '[OpenRay] 🇩🇪 DE-22081'
   type: vless
-  server: 193.58.121.95
-  port: 2096
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  server: 217.60.99.49
+  port: 9999
+  uuid: f83d8e60-f039-45c8-95d2-2a44c59025f6
   security: none
-  network: ws
-  servername: de-193-58.neobo-tooth.ru
-- name: vless-483545768
+  network: tcp
+- name: shadowsocks-11031
+  type: ss
+  server: 82.38.31.213
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11028
+  type: ss
+  server: 82.38.31.207
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-258605572
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11049
+  type: ss
+  server: 82.38.31.47
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-114874950
+  type: ss
+  server: 193.29.139.132
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '@Rayan_Config-82.38.31.176-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.176
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '@Rayan_Config-82.38.31.202-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11033
+  type: ss
+  server: 82.38.31.215
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-200379481
+  type: ss
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: shadowsocks-11021
+  type: ss
+  server: 82.38.31.185
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11030
+  type: ss
+  server: 82.38.31.212
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-209
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: '@Rayan_Config-82.38.31.205-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11024
+  type: ss
+  server: 82.38.31.195
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-11045
+  type: ss
+  server: 82.38.31.18
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-171
+  type: ss
+  server: 82.38.31.17
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-10899
+  type: ss
+  server: 82.38.31.204
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-53939390
+  type: ss
+  server: 82.38.31.28
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-176
+  type: ss
+  server: 82.38.31.57
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '@Rayan_Config-82.38.31.218-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-170
+  type: ss
+  server: 82.38.31.16
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-185
+  type: ss
+  server: 82.38.31.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-275
+  type: ss
+  server: 82.38.31.7
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '@Rayan_Config-82.38.31.194-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.194
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-72830589
+  type: ss
+  server: 82.38.31.156
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-165
+  type: ss
+  server: 146.70.61.37
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: shadowsocks-496602568
+  type: ss
+  server: 163.176.9.233
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zvF08Bwd2j17r3Sg+VIFRKvF9JuHqm9e4AJM8opefY0=
+- name: shadowsocks-468218514
+  type: ss
+  server: 107.151.182.197
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: vless-269029048
   type: vless
-  server: neth.lckdwn.ru
-  port: 443
-  uuid: 0db4a87c-c280-4a5f-ae97-903768c5ef4c
+  server: 93.119.168.215
+  port: 60771
+  uuid: 060a5db6-7ff9-4a64-87c1-8a27be4f11ab
   security: none
-  network: ws
-- name: shadowsocks-234
+  network: tcp
+- name: shadowsocks-496602563
   type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: shadowsocks-10992
+  server: 163.176.240.6
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Wy1UImjn4slIMGk7alrakt+yyl9YHXCMhtO5RypXDPE=
+- name: shadowsocks-496602561
   type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: shadowsocks-25076
+  server: 163.176.115.182
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9jbr4rN/jUHADrXAvzott4jArdE7p9kmG9Ya2DJw/iw=
+- name: shadowsocks-496602565
   type: ss
-  server: switcher-nick-croquet.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: RFK38Cg7APneSB5cWDcpbm
-- name: shadowsocks-130302
+  server: 163.176.85.126
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tmNoITDlBC6uGpvPYjou7PZKAH2MOs9tHjig37+TT/Q=
+- name: shadowsocks-398004833
   type: ss
-  server: 92.112.126.90
-  port: 443
+  server: 93.123.13.7
+  port: 25783
   cipher: chacha20-ietf-poly1305
-  password: RFK38Cg7APneSB5cWDcpbm
-- name: shadowsocks-24133
-  type: ss
-  server: switcher-nick-croquet.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: wwzVn2ZnHfqYa6l8EWh3eY
-- name: shadowsocks-335128325
-  type: ss
-  server: au1.levikogjgfdd.ir
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: vless-470980167
+  password: 8cmuvza9gyetx0z8
+- name: vless-89074
   type: vless
-  server: estproxy2.lockdwn.com
-  port: 443
-  uuid: 19f54e37-5fae-47f6-bc10-e71ccbc58389
+  server: freetg.strettenvpn.com
+  port: 9999
+  uuid: f83d8e60-f039-45c8-95d2-2a44c59025f6
   security: none
-  network: ws
-  servername: estproxy2.lockdwn.com
-- name: vless-470980166
+  network: tcp
+- name: vless-398007836
   type: vless
-  server: 94.183.170.231
-  port: 443
-  uuid: 19f54e37-5fae-47f6-bc10-e71ccbc58389
+  server: 93.123.13.7
+  port: 15139
+  uuid: ab16b404-1d3a-4ba6-a37c-67bed61e3b5d
   security: none
-  network: ws
-  servername: 94.183.170.231
-- name: shadowsocks-290
+  network: tcp
+- name: '@Rayan_Config-82.38.31.187-@beepassvpn_bot'
   type: ss
-  server: switcher-nick-croquet.freesocks.work
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: trojan-470979930
+  type: trojan
+  server: moral-cow.rooster465.autos
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-- name: shadowsocks-376006390
-  type: ss
-  server: 217.28.129.81
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  password: AE62539071
+  network: tcp
+- name: trojan-474782659
+  type: trojan
+  server: sharing-duck.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: sharing-duck.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-277378248
+  type: trojan
+  server: natural-collie.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: natural-collie.rooster465.autos
+- name: trojan-269029136
+  type: trojan
+  server: devoted-tapir.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: devoted-tapir.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474779723
+  type: trojan
+  server: bright-baboon.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: bright-baboon.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-461629162
+  type: trojan
+  server: liked-serval.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: liked-serval.rooster465.autos
+  skip-cert-verify: true
 - name: shadowsocks-276
   type: ss
   server: 213.202.208.199
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
-- name: shadowsocks-26744
+- name: trojan-474779744
+  type: trojan
+  server: dominant-jaguar.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: dominant-jaguar.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-470979978
+  type: trojan
+  server: pet-ghost.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+- name: trojan-268441753
+  type: trojan
+  server: fleet-bonefish.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: fleet-bonefish.rooster465.autos
+- name: '@Rayan_Config-82.38.31.217-@beepassvpn_bot'
   type: ss
-  server: 154.46.31.106
+  server: 82.38.31.217
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-465806704
+  type: ss
+  server: pl140.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: ytw2awn
+- name: shadowsocks-465806703
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+- name: vless-46184914
+  type: vless
+  server: 85.159.228.250
+  port: 25703
+  uuid: 7e5964d036b843ff885b86c4d3bfd466
+  security: none
+  network: tcp
 - name: vless-483603377
   type: vless
   server: deproxy2.lckdwn.ru
@@ -993,30 +825,247 @@ proxies:
   uuid: d1b4fb49-f835-4c10-83e1-cb70238d39b5
   security: none
   network: ws
+- name: shadowsocks-213
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: shadowsocks-211
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: shadowsocks-218
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: trojan-116312
+  type: trojan
+  server: 193.148.19.210
+  port: 52794
+  password: 2eutknankxtbgkwcajzt
+  network: tcp
+  servername: www.vk.com
+  skip-cert-verify: true
+- name: '[OpenRay] 🇫🇷 FR-4098'
+  type: trojan
+  server: great-krill.rooster465.autos
+  port: 443
+  password: QV31589740
+  security: tls
+  servername: great-krill.rooster465.autos
 - name: shadowsocks-130484
   type: ss
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
+- name: vless-370772845
+  type: vless
+  server: 94.183.170.231
+  port: 443
+  uuid: 19f54e37-5fae-47f6-bc10-e71ccbc58389
+  security: none
+  network: ws
+- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]
+  type: vless
+  server: 31.77.203.95
+  port: 443
+  uuid: 4e7eb9d5-022a-4b0a-ba37-2d1be458947b
+  security: none
+  network: ws
+- name: shadowsocks-376006390
+  type: ss
+  server: 217.28.129.81
+  port: 42982
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+- name: shadowsocks-11026
+  type: ss
+  server: 82.38.31.200
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: trojan-335068471
+  type: trojan
+  server: discrete-basilisk.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+- name: shadowsocks-429834180
+  type: ss
+  server: 61.231.48.199
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 Taiwan, Taipei | [BL]
+  type: vless
+  server: 220.130.75.247
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  security: none
+  network: tcp
+- name: shadowsocks-234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: '[OpenRay] 🇳🇱 NL-9726'
+  type: vless
+  server: mypanel.unixzone.us
+  port: 12068
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  security: none
+  network: ws
+  servername: mypanel.unixzone.us
+- name: shadowsocks-336700747
+  type: ss
+  server: autodiscover.fuzzyaytor.cyou
+  port: 42982
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+- name: shadowsocks-10992
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: vless-391663887
+  type: vless
+  server: estproxy2.lockdwn.com
+  port: 443
+  uuid: 19f54e37-5fae-47f6-bc10-e71ccbc58389
+  security: none
+  network: ws
+- name: shadowsocks-335128325
+  type: ss
+  server: au1.levikogjgfdd.ir
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: vless-391878948
+  type: vless
+  server: de-193-58.neobo-tooth.ru
+  port: 2096
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  security: none
+  network: ws
 - name: shadowsocks-126340
   type: ss
   server: 167.150.100.115
   port: 27755
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: shadowsocks-482887639
-  type: ss
-  server: 82.38.31.164
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: trojan-260700858
+- name: trojan-474782581
   type: trojan
-  server: social-mutt.rooster465.autos
+  server: game-thrush.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: game-thrush.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-461629128
+  type: trojan
+  server: harmless-imp.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: harmless-imp.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-470979977
+  type: trojan
+  server: nearby-egret.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
+- name: trojan-280979829
+  type: trojan
+  server: real-werewolf.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: real-werewolf.rooster465.autos
+- name: trojan-474779753
+  type: trojan
+  server: evolving-kangaroo.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: evolving-kangaroo.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-201299290
+  type: trojan
+  server: 161.34.39.108
+  port: 443
+  password: tsuchiya
+  network: tcp
+  servername: aa.ccmusic.jp
+  skip-cert-verify: true
+- name: trojan-461629130
+  type: trojan
+  server: maximum-elk.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: maximum-elk.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-481458210
+  type: trojan
+  server: premium-weevil.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: premium-weevil.rooster465.autos
+- name: trojan-465911220
+  type: trojan
+  server: polished-imp.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: polished-imp.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782641
+  type: trojan
+  server: prepared-thrush.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: prepared-thrush.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-492257038
+  type: trojan
+  server: clear-snail.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-474782591
+  type: trojan
+  server: helpful-possum.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: helpful-possum.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-280979832
+  type: trojan
+  server: picked-guinea.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: picked-guinea.rooster465.autos
+- name: trojan-461629126
+  type: trojan
+  server: intimate-koi.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: intimate-koi.rooster465.autos
   skip-cert-verify: true
 - name: trojan-468076258
   type: trojan
@@ -1025,131 +1074,124 @@ proxies:
   password: AE62539071
   network: tcp
   servername: better-molly.rooster465.autos
-- name: shadowsocks-299806588
-  type: ss
-  server: 36.224.177.236
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: shadowsocks-429834180
-  type: ss
-  server: 61.231.48.199
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: shadowsocks-289214843
-  type: ss
-  server: 36.224.177.236
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: trojan-260700908
+- name: trojan-474779759
   type: trojan
-  server: upright-impala.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468154106
-  type: trojan
-  server: balanced-goat.rooster465.autos
+  server: fun-poodle.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: balanced-goat.rooster465.autos
-- name: shadowsocks-487917494
-  type: ss
-  server: 54.36.174.134
+  servername: fun-poodle.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782678
+  type: trojan
+  server: together-mayfly.rooster465.autos
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
+  password: AE62539071
+  network: tcp
+  servername: together-mayfly.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782620
+  type: trojan
+  server: modern-bulldog.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: modern-bulldog.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474779745
+  type: trojan
+  server: easy-barnacle.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: easy-barnacle.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474779737
+  type: trojan
+  server: deep-ringtail.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: deep-ringtail.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782635
+  type: trojan
+  server: polished-katydid.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: polished-katydid.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-461629133
+  type: trojan
+  server: inviting-burro.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: inviting-burro.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-494467696
+  type: trojan
+  server: improved-anteater.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: improved-anteater.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782692
+  type: trojan
+  server: whole-perch.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: whole-perch.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782605
+  type: trojan
+  server: joint-ewe.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: joint-ewe.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782608
+  type: trojan
+  server: learning-ibex.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: learning-ibex.rooster465.autos
+  skip-cert-verify: true
 - name: trojan-470979948
   type: trojan
   server: rich-gelding.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-- name: trojan-461629131
+- name: trojan-474782616
   type: trojan
-  server: on-roughy.rooster465.autos
+  server: main-impala.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: on-roughy.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-490088150
-  type: trojan
-  server: literate-cow.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: raw
-- name: trojan-260700847
-  type: trojan
-  server: picked-guinea.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-481458201
-  type: trojan
-  server: glowing-iguana.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: glowing-iguana.rooster465.autos
-- name: trojan-468154111
+  servername: main-impala.rooster465.autos
+- name: trojan-474779728
   type: trojan
   server: clear-heron.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: clear-heron.rooster465.autos
-- name: trojan-494467695
-  type: trojan
-  server: eager-camel.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: eager-camel.rooster465.autos
   skip-cert-verify: true
-- name: trojan-461629134
+- name: trojan-470979923
   type: trojan
-  server: awaited-lark.rooster465.autos
+  server: known-albacore.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: awaited-lark.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-470979965
+- name: trojan-453179898
   type: trojan
-  server: whole-perch.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-468813218
-  type: trojan
-  server: definite-hen.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: definite-hen.rooster465.autos
-- name: trojan-468215564
-  type: trojan
-  server: premium-perch.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: premium-perch.rooster465.autos
-- name: trojan-468154160
-  type: trojan
-  server: proper-mouse.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: proper-mouse.rooster465.autos
-- name: trojan-470979936
-  type: trojan
-  server: outgoing-ladybird.rooster465.autos
+  server: on-roughy.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
@@ -1160,116 +1202,6 @@ proxies:
   password: ND91608427
   network: tcp
   servername: perfect-slug.rooster465.autos
-- name: trojan-468215555
-  type: trojan
-  server: fun-salmon.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: fun-salmon.rooster465.autos
-- name: trojan-470979946
-  type: trojan
-  server: real-cardinal.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-494467696
-  type: trojan
-  server: improved-anteater.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: improved-anteater.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-468215404
-  type: trojan
-  server: helpful-possum.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-468215562
-  type: trojan
-  server: definite-panda.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: definite-panda.rooster465.autos
-- name: trojan-494465695
-  type: trojan
-  server: charmed-fly.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: charmed-fly.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-470979964
-  type: trojan
-  server: whole-grub.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-470979977
-  type: trojan
-  server: nearby-egret.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-- name: trojan-470979963
-  type: trojan
-  server: well-jennet.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-257074127
-  type: trojan
-  server: stunning-mite.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  servername: stunning-mite.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-470979938
-  type: trojan
-  server: pleased-pelican.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-461629126
-  type: trojan
-  server: intimate-koi.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: intimate-koi.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-492257038
-  type: trojan
-  server: clear-snail.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-260700905
-  type: trojan
-  server: thankful-mustang.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468154171
-  type: trojan
-  server: superb-dory.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: superb-dory.rooster465.autos
-- name: trojan-481458215
-  type: trojan
-  server: tough-robin.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: tough-robin.rooster465.autos
 - name: trojan-280979827
   type: trojan
   server: adjusted-labrador.rooster465.autos
@@ -1277,104 +1209,46 @@ proxies:
   password: ND91608427
   network: tcp
   servername: adjusted-labrador.rooster465.autos
-- name: trojan-260700835
+- name: trojan-257074065
   type: trojan
-  server: healthy-louse.rooster465.autos
+  server: better-molly.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
+  servername: better-molly.rooster465.autos
   skip-cert-verify: true
-- name: trojan-257074093
+- name: trojan-474782611
   type: trojan
-  server: devoted-heron.rooster465.autos
+  server: literate-cow.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: literate-cow.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074077
+  type: trojan
+  server: tough-robin.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
-  servername: devoted-heron.rooster465.autos
+  servername: tough-robin.rooster465.autos
   skip-cert-verify: true
-- name: trojan-470979896
+- name: trojan-474782597
   type: trojan
-  server: evolving-kangaroo.rooster465.autos
+  server: immortal-woodcock.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-- name: trojan-494465696
-  type: trojan
-  server: clear-killdeer.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: clear-killdeer.rooster465.autos
+  servername: immortal-woodcock.rooster465.autos
   skip-cert-verify: true
-- name: trojan-481458214
+- name: trojan-474782584
   type: trojan
-  server: supreme-lobster.rooster465.autos
+  server: glowing-iguana.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: supreme-lobster.rooster465.autos
-- name: trojan-468154163
-  type: trojan
-  server: relevant-cicada.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: relevant-cicada.rooster465.autos
-- name: trojan-461629122
-  type: trojan
-  server: new-antelope.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: new-antelope.rooster465.autos
+  servername: glowing-iguana.rooster465.autos
   skip-cert-verify: true
-- name: trojan-453054123
-  type: trojan
-  server: current-barnacle.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-257074087
-  type: trojan
-  server: real-werewolf.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  servername: real-werewolf.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-453177869
-  type: trojan
-  server: coherent-newt.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-470979937
-  type: trojan
-  server: pet-antelope.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-468154157
-  type: trojan
-  server: polished-katydid.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: polished-katydid.rooster465.autos
-- name: trojan-487212346
-  type: trojan
-  server: social-mutt.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-453179878
-  type: trojan
-  server: inviting-burro.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
 - name: trojan-461629132
   type: trojan
   server: climbing-frog.rooster465.autos
@@ -1383,72 +1257,27 @@ proxies:
   network: tcp
   servername: climbing-frog.rooster465.autos
   skip-cert-verify: true
-- name: trojan-481458210
+- name: trojan-453179892
   type: trojan
-  server: premium-weevil.rooster465.autos
+  server: modest-pup.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: premium-weevil.rooster465.autos
-- name: trojan-280979823
+  servername: modest-pup.rooster465.autos
+- name: trojan-455144249
   type: trojan
-  server: better-molly.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-- name: trojan-470979966
-  type: trojan
-  server: wise-longhorn.rooster465.autos
+  server: central-jawfish.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-- name: trojan-260700823
+- name: trojan-474779757
   type: trojan
-  server: casual-bee.rooster465.autos
+  server: frank-frog.rooster465.autos
   port: 443
-  password: ND91608427
+  password: AE62539071
   network: tcp
+  servername: frank-frog.rooster465.autos
   skip-cert-verify: true
-- name: trojan-470979957
-  type: trojan
-  server: sweeping-parakeet.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-468154116
-  type: trojan
-  server: deep-ringtail.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: deep-ringtail.rooster465.autos
-- name: trojan-453054124
-  type: trojan
-  server: engaged-ram.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  skip-cert-verify: true
-- name: 🇹🇼 Taiwan, Taipei | [BL]
-  type: vless
-  server: 220.130.75.247
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  security: none
-  network: tcp
-- name: shadowsocks-241
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: trojan-280979836
-  type: trojan
-  server: moral-buzzard.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  servername: moral-buzzard.rooster465.autos
 - name: trojan-280979822
   type: trojan
   server: internal-sunbird.rooster465.autos
@@ -1456,98 +1285,150 @@ proxies:
   password: ND91608427
   network: tcp
   servername: internal-sunbird.rooster465.autos
-- name: trojan-481458206
+- name: trojan-302283440
   type: trojan
-  server: main-impala.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: main-impala.rooster465.autos
-- name: trojan-468154130
-  type: trojan
-  server: game-thrush.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: game-thrush.rooster465.autos
-- name: trojan-461629129
-  type: trojan
-  server: grateful-crawdad.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: grateful-crawdad.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-468215563
-  type: trojan
-  server: shining-haddock.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: shining-haddock.rooster465.autos
-- name: trojan-455144256
-  type: trojan
-  server: easy-barnacle.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-280979830
-  type: trojan
-  server: tough-robin.rooster465.autos
+  server: casual-bee.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
-  servername: tough-robin.rooster465.autos
-- name: trojan-468215561
+  servername: casual-bee.rooster465.autos
+- name: trojan-470979964
   type: trojan
-  server: right-seahorse.rooster465.autos
+  server: whole-grub.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: right-seahorse.rooster465.autos
-- name: trojan-468154149
+- name: trojan-302283443
   type: trojan
-  server: modern-bulldog.rooster465.autos
+  server: healthy-louse.rooster465.autos
   port: 443
-  password: AE62539071
+  password: ND91608427
   network: tcp
-  servername: modern-bulldog.rooster465.autos
-- name: trojan-470979961
+  servername: healthy-louse.rooster465.autos
+- name: shadowsocks-11023
+  type: ss
+  server: 82.38.31.193
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: trojan-257074127
   type: trojan
-  server: upward-yak.rooster465.autos
+  server: stunning-mite.rooster465.autos
   port: 443
-  password: AE62539071
+  password: ND91608427
   network: tcp
-- name: trojan-468154128
-  type: trojan
-  server: fun-poodle.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: fun-poodle.rooster465.autos
-- name: trojan-468154126
-  type: trojan
-  server: frank-frog.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: frank-frog.rooster465.autos
-- name: trojan-465911220
-  type: trojan
-  server: polished-imp.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: polished-imp.rooster465.autos
+  servername: stunning-mite.rooster465.autos
   skip-cert-verify: true
-- name: trojan-494467697
+- name: trojan-494465696
   type: trojan
-  server: prepared-thrush.rooster465.autos
+  server: clear-killdeer.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: prepared-thrush.rooster465.autos
+  servername: clear-killdeer.rooster465.autos
   skip-cert-verify: true
+- name: trojan-453054123
+  type: trojan
+  server: current-barnacle.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-455144248
+  type: trojan
+  server: balanced-goat.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-453179895
+  type: trojan
+  server: new-antelope.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-453179915
+  type: trojan
+  server: relevant-cicada.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-453062272
+  type: trojan
+  server: safe-frog.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: safe-frog.rooster465.autos
+- name: trojan-280979826
+  type: trojan
+  server: sensible-mongrel.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: sensible-mongrel.rooster465.autos
+- name: trojan-461629134
+  type: trojan
+  server: awaited-lark.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: awaited-lark.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-280979834
+  type: trojan
+  server: thankful-mustang.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: thankful-mustang.rooster465.autos
+- name: trojan-453062271
+  type: trojan
+  server: novel-bat.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: novel-bat.rooster465.autos
+- name: trojan-453179872
+  type: trojan
+  server: ideal-phoenix.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-474779750
+  type: trojan
+  server: engaged-ram.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: engaged-ram.rooster465.autos
+- name: trojan-474779738
+  type: trojan
+  server: definite-hen.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: definite-hen.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782645
+  type: trojan
+  server: proper-mouse.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: proper-mouse.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-470979937
+  type: trojan
+  server: pet-antelope.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-453177880
+  type: trojan
+  server: eager-camel.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
 - name: trojan-280979833
   type: trojan
   server: sure-humpback.rooster465.autos
@@ -1555,133 +1436,349 @@ proxies:
   password: ND91608427
   network: tcp
   servername: sure-humpback.rooster465.autos
-- name: trojan-468815218
+- name: trojan-257074086
   type: trojan
-  server: ideal-phoenix.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: ideal-phoenix.rooster465.autos
-- name: shadowsocks-303
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: shadowsocks-246
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: trojan-468154143
-  type: trojan
-  server: joint-ewe.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: joint-ewe.rooster465.autos
-- name: shadowsocks-236
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: trojan-481458208
-  type: trojan
-  server: novel-bat.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: novel-bat.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-470979958
-  type: trojan
-  server: together-mayfly.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-468154146
-  type: trojan
-  server: learning-ibex.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: learning-ibex.rooster465.autos
-- name: trojan-468215553
-  type: trojan
-  server: modest-pup.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: modest-pup.rooster465.autos
-- name: trojan-257074073
-  type: trojan
-  server: sensible-mongrel.rooster465.autos
+  server: moral-buzzard.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
-  servername: sensible-mongrel.rooster465.autos
+  servername: moral-buzzard.rooster465.autos
   skip-cert-verify: true
-- name: trojan-468154148
+- name: trojan-481458209
   type: trojan
-  server: maximum-elk.rooster465.autos
+  server: outgoing-ladybird.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: maximum-elk.rooster465.autos
-- name: shadowsocks-278
-  type: ss
-  server: 218.237.185.230
-  port: 4652
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: trojan-468154145
+  servername: outgoing-ladybird.rooster465.autos
+- name: trojan-474782646
   type: trojan
-  server: known-albacore.rooster465.autos
+  server: pure-kodiak.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: known-albacore.rooster465.autos
-- name: vless-470984239
-  type: vless
-  server: de-193-58.neobo-tooth.ru
-  port: 2096
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  security: none
-  network: ws
-  servername: de-193-58.neobo-tooth.ru
+  servername: pure-kodiak.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-496537582
+  type: trojan
+  server: grateful-crawdad.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-470979961
+  type: trojan
+  server: upward-yak.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-310598161
+  type: trojan
+  server: devoted-heron.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: devoted-heron.rooster465.autos
+- name: trojan-470979957
+  type: trojan
+  server: sweeping-parakeet.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-474782647
+  type: trojan
+  server: real-cardinal.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: real-cardinal.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-122310
+  type: trojan
+  server: aa.ccmusic.jp
+  port: 443
+  password: tsuchiya
+  network: tcp
 - name: shadowsocks-283
   type: ss
   server: 221.139.79.57
   port: 13979
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: shadowsocks-4892330
-  type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]
-  type: vless
-  server: 31.77.203.95
+- name: trojan-470979956
+  type: trojan
+  server: superb-dory.rooster465.autos
   port: 443
-  uuid: 4e7eb9d5-022a-4b0a-ba37-2d1be458947b
-  security: none
-  network: ws
-- name: shadowsocks-125093
+  password: AE62539071
+  network: tcp
+- name: trojan-481458215
+  type: trojan
+  server: tough-robin.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: tough-robin.rooster465.autos
+- name: trojan-470979963
+  type: trojan
+  server: well-jennet.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-474782638
+  type: trojan
+  server: premium-perch.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: premium-perch.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474779730
+  type: trojan
+  server: coherent-newt.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: coherent-newt.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-275291732
+  type: trojan
+  server: upright-impala.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: upright-impala.rooster465.autos
+- name: trojan-474782653
+  type: trojan
+  server: right-seahorse.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: right-seahorse.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-487212346
+  type: trojan
+  server: social-mutt.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-280979825
+  type: trojan
+  server: social-mutt.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: social-mutt.rooster465.autos
+- name: shadowsocks-98143583
   type: ss
-  server: 102.129.229.85
-  port: 31700
-  cipher: chacha20-ietf-poly1305
-  password: d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo=
-- name: shadowsocks-336700747
-  type: ss
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  server: 38.54.93.66
+  port: 49692
+  cipher: rc4-md5
+  password: ad80f76711ec7213
+- name: trojan-461629142
+  type: trojan
+  server: glorious-lark.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: glorious-lark.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782658
+  type: trojan
+  server: saved-ghoul.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: saved-ghoul.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782600
+  type: trojan
+  server: infinite-tuna.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: infinite-tuna.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074097
+  type: trojan
+  server: humorous-malamute.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: humorous-malamute.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-453179865
+  type: trojan
+  server: gorgeous-hookworm.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: gorgeous-hookworm.rooster465.autos
+- name: trojan-474782637
+  type: trojan
+  server: precious-racer.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: precious-racer.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074109
+  type: trojan
+  server: select-ferret.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: select-ferret.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474779724
+  type: trojan
+  server: capable-jay.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: capable-jay.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-453179899
+  type: trojan
+  server: oriented-pegasus.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-255434906
+  type: trojan
+  server: moved-meerkat.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: moved-meerkat.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-465910220
+  type: trojan
+  server: causal-ladybug.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: causal-ladybug.rooster465.autos
+- name: trojan-474779758
+  type: trojan
+  server: full-mayfly.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: full-mayfly.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074110
+  type: trojan
+  server: striking-maggot.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: striking-maggot.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074104
+  type: trojan
+  server: intimate-moray.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: intimate-moray.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782664
+  type: trojan
+  server: square-gnat.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: square-gnat.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-496537581
+  type: trojan
+  server: firm-krill.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-474782618
+  type: trojan
+  server: main-whippet.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: main-whippet.rooster465.autos
+- name: trojan-474779733
+  type: trojan
+  server: darling-mutt.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: darling-mutt.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074101
+  type: trojan
+  server: distinct-llama.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: distinct-llama.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-453062273
+  type: trojan
+  server: viable-serval.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: viable-serval.rooster465.autos
+- name: trojan-481294279
+  type: trojan
+  server: humorous-llama.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: humorous-llama.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-257074098
+  type: trojan
+  server: chief-bluegill.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: chief-bluegill.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-470979940
+  type: trojan
+  server: possible-yeti.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-268441809
+  type: trojan
+  server: saving-octopus.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: saving-octopus.rooster465.autos
+- name: trojan-257074096
+  type: trojan
+  server: grateful-owl.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: grateful-owl.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-470979955
+  type: trojan
+  server: square-skink.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-474779718
+  type: trojan
+  server: allowed-hermit.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: allowed-hermit.rooster465.autos
+  skip-cert-verify: true
 - name: trojan-488062307
   type: trojan
   server: prepared-monitor.rooster465.autos
@@ -1690,322 +1787,149 @@ proxies:
   network: tcp
   servername: prepared-monitor.rooster465.autos
   skip-cert-verify: true
-- name: trojan-468154131
+- name: trojan-455144262
   type: trojan
   server: glorious-glider.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: glorious-glider.rooster465.autos
-- name: trojan-260700843
-  type: trojan
-  server: moved-meerkat.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-425704516
-  type: trojan
-  server: upward-puma.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  servername: upward-puma.rooster465.autos
-- name: trojan-468154125
-  type: trojan
-  server: firm-krill.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: firm-krill.rooster465.autos
-- name: trojan-485705022
-  type: trojan
-  server: wanted-marmoset.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: wanted-marmoset.rooster465.autos
-- name: trojan-468154154
-  type: trojan
-  server: oriented-pegasus.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: oriented-pegasus.rooster465.autos
-- name: trojan-264868662
-  type: trojan
-  server: uncommon-feline.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  servername: uncommon-feline.rooster465.autos
-- name: trojan-260700836
-  type: trojan
-  server: humorous-malamute.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-260700854
-  type: trojan
-  server: select-ferret.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468215293
-  type: trojan
-  server: darling-mutt.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-260700828
-  type: trojan
-  server: definite-malamute.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-260700849
+- name: trojan-257074105
   type: trojan
   server: pure-ram.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
+  servername: pure-ram.rooster465.autos
   skip-cert-verify: true
-- name: trojan-468154108
-  type: trojan
-  server: capable-jay.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: capable-jay.rooster465.autos
-- name: trojan-470979951
-  type: trojan
-  server: saved-ghoul.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: shadowsocks-98143583
-  type: ss
-  server: 38.54.93.66
-  port: 49692
-  cipher: rc4-md5
-  password: ad80f76711ec7213
-- name: trojan-470979962
-  type: trojan
-  server: viable-serval.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-470979940
-  type: trojan
-  server: possible-yeti.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-283703025
-  type: trojan
-  server: saving-octopus.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-- name: trojan-468215559
-  type: trojan
-  server: light-sheepdog.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: light-sheepdog.rooster465.autos
-- name: trojan-481458207
-  type: trojan
-  server: main-whippet.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: main-whippet.rooster465.autos
-- name: trojan-260700839
-  type: trojan
-  server: intimate-moray.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468154132
-  type: trojan
-  server: glorious-lark.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: glorious-lark.rooster465.autos
-- name: trojan-260700831
-  type: trojan
-  server: distinct-llama.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-260700825
-  type: trojan
-  server: chief-bluegill.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468215408
-  type: trojan
-  server: gorgeous-hookworm.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: gorgeous-hookworm.rooster465.autos
-- name: trojan-470979949
-  type: trojan
-  server: sacred-hound.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-260700827
+- name: trojan-257074095
   type: trojan
   server: communal-sunbird.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
+  servername: communal-sunbird.rooster465.autos
   skip-cert-verify: true
-- name: '[OpenRay] 🇰🇷 KR-2559'
-  type: trojan
-  server: grateful-owl.rooster465.autos
-  port: 443
-  password: ND91608427
-  security: tls
-  servername: grateful-owl.rooster465.autos
-- name: trojan-260700841
-  type: trojan
-  server: main-whippet.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-483474691
-  type: trojan
-  server: causal-ladybug.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: causal-ladybug.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-260700902
-  type: trojan
-  server: striking-maggot.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468154139
-  type: trojan
-  server: infinite-tuna.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: infinite-tuna.rooster465.autos
-- name: trojan-492357451
-  type: trojan
-  server: humorous-llama.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-468154127
-  type: trojan
-  server: full-mayfly.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: full-mayfly.rooster465.autos
 - name: trojan-470979954
   type: trojan
   server: skilled-monster.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-- name: trojan-468154120
+- name: trojan-461629139
   type: trojan
   server: eager-platypus.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: eager-platypus.rooster465.autos
-- name: trojan-470979955
+  skip-cert-verify: true
+- name: trojan-481296261
   type: trojan
-  server: square-skink.rooster465.autos
+  server: wanted-marmoset.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-- name: trojan-468154101
+  servername: wanted-marmoset.rooster465.autos
+  skip-cert-verify: true
+- name: '[OpenRay] 🇰🇷 KR-2669'
   type: trojan
-  server: allowed-hermit.rooster465.autos
+  server: upward-puma.rooster465.autos
+  port: 443
+  password: ND91608427
+  security: tls
+  servername: upward-puma.rooster465.autos
+- name: trojan-470979949
+  type: trojan
+  server: sacred-hound.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: allowed-hermit.rooster465.autos
-- name: trojan-481458205
+- name: trojan-257074108
+  type: trojan
+  server: exotic-chow.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: exotic-chow.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-262786504
+  type: trojan
+  server: main-whippet.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: main-whippet.rooster465.autos
+- name: trojan-474782609
+  type: trojan
+  server: light-sheepdog.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: light-sheepdog.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-279493860
+  type: trojan
+  server: definite-malamute.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: definite-malamute.rooster465.autos
+- name: trojan-474779755
+  type: trojan
+  server: exciting-grizzly.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: exciting-grizzly.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-453062270
   type: trojan
   server: magnetic-haddock.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: magnetic-haddock.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-468815220
-  type: trojan
-  server: precious-racer.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: precious-racer.rooster465.autos
-- name: trojan-470979895
-  type: trojan
-  server: engaged-skink.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-- name: trojan-260700832
-  type: trojan
-  server: exotic-chow.rooster465.autos
-  port: 443
-  password: ND91608427
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-413876829
-  type: trojan
-  server: 18.162.120.218
-  port: 11035
-  password: BxceQaOe
-  network: tcp
-  servername: t.me%2fripaojiedian
-  skip-cert-verify: true
-- name: trojan-468154102
+- name: trojan-455144247
   type: trojan
   server: allowing-halibut.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: allowing-halibut.rooster465.autos
-- name: trojan-468215558
-  type: trojan
-  server: square-gnat.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: square-gnat.rooster465.autos
-- name: vless-463880255
+- name: vless-425785811
   type: vless
-  server: 52.74.176.20
-  port: 443
-  uuid: 5ad0bed3-68ac-495e-b778-8b2d0e1dc176
+  server: 93.123.13.7
+  port: 15755
+  uuid: c863c8f0-cda1-429c-be76-cbefc8a418a1
   security: none
-  network: ws
+  network: tcp
+- name: trojan-257074102
+  type: trojan
+  server: uncommon-feline.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: uncommon-feline.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-429843172
+  type: trojan
+  server: 18.162.120.218
+  port: 11035
+  password: BxceQaOe
+  network: tcp
+  servername: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: shadowsocks-125093
+  type: ss
+  server: 102.129.229.85
+  port: 31700
+  cipher: chacha20-ietf-poly1305
+  password: d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo=
+- name: trojan-494469696
+  type: trojan
+  server: v1in2.stableq.top
+  port: 24408
+  password: b1d610a5-6d57-482b-b93b-5ad28ccc3533
+  network: tcp
 - name: trojan-95305971
   type: trojan
   server: 139.59.238.97
@@ -2014,36 +1938,55 @@ proxies:
   network: tcp
   servername: 139.59.238.97
   skip-cert-verify: true
-- name: trojan-483474689
+- name: trojan-474782663
+  type: trojan
+  server: smooth-hornet.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: smooth-hornet.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-465910218
   type: trojan
   server: absolute-hare.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: absolute-hare.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-468815219
-  type: trojan
-  server: noted-bass.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: noted-bass.rooster465.autos
-- name: trojan-468813216
-  type: trojan
-  server: adapted-whippet.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: adapted-whippet.rooster465.autos
-- name: trojan-483476689
+- name: trojan-465911219
   type: trojan
   server: massive-terrapin.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: massive-terrapin.rooster465.autos
-  skip-cert-verify: true
+- name: trojan-465835916
+  type: trojan
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: sacred-anemone.rooster465.autos
+- name: trojan-465910219
+  type: trojan
+  server: adapted-martin.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: adapted-martin.rooster465.autos
+- name: trojan-453062274
+  type: trojan
+  server: wise-longhorn.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: wise-longhorn.rooster465.autos
+- name: trojan-470979932
+  type: trojan
+  server: noted-bass.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
 - name: trojan-494467698
   type: trojan
   server: rested-osprey.rooster465.autos
@@ -2052,402 +1995,285 @@ proxies:
   network: tcp
   servername: rested-osprey.rooster465.autos
   skip-cert-verify: true
-- name: trojan-483474690
-  type: trojan
-  server: adapted-martin.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: adapted-martin.rooster465.autos
-  skip-cert-verify: true
-- name: trojan-488062308
+- name: trojan-465911221
   type: trojan
   server: rich-mule.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: rich-mule.rooster465.autos
-- name: trojan-468154262
+- name: trojan-481458203
   type: trojan
-  server: sacred-anemone.rooster465.autos
+  server: integral-quetzal.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: sacred-anemone.rooster465.autos
-- name: trojan-468817216
+  servername: integral-quetzal.rooster465.autos
+- name: trojan-474779746
+  type: trojan
+  server: elegant-marten.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: elegant-marten.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782660
   type: trojan
   server: simple-rodent.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: simple-rodent.rooster465.autos
-- name: trojan-468215289
-  type: trojan
-  server: integral-quetzal.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
   skip-cert-verify: true
-- name: shadowsocks-419356365
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-- name: trojan-468154170
+- name: trojan-465912217
   type: trojan
-  server: stirred-buck.rooster465.autos
+  server: supreme-lobster.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: stirred-buck.rooster465.autos
-- name: shadowsocks-184
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: trojan-468815216
-  type: trojan
-  server: excited-sole.rooster465.autos
+  servername: supreme-lobster.rooster465.autos
+  skip-cert-verify: true
+- name: vless-463880255
+  type: vless
+  server: 52.74.176.20
   port: 443
-  password: AE62539071
-  network: tcp
-  servername: excited-sole.rooster465.autos
-- name: trojan-468817217
+  uuid: 5ad0bed3-68ac-495e-b778-8b2d0e1dc176
+  security: none
+  network: ws
+- name: trojan-269060762
   type: trojan
-  server: smooth-hornet.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: smooth-hornet.rooster465.autos
-- name: shadowsocks-2149595
-  type: ss
-  server: 92.112.126.90
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-- name: trojan-468227531
-  type: trojan
-  server: smiling-ray.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: smiling-ray.rooster465.autos
-- name: trojan-470979974
-  type: trojan
-  server: dynamic-grubworm.rooster465.autos
+  server: upright-hamster.rooster465.autos
   port: 443
   password: ND91608427
   network: tcp
-- name: trojan-468227522
+- name: trojan-474782587
   type: trojan
-  server: humorous-parakeet.rooster465.autos
+  server: grand-grub.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-- name: trojan-468227527
-  type: trojan
-  server: modest-foal.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: modest-foal.rooster465.autos
-- name: trojan-488062306
-  type: trojan
-  server: novel-mouse.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: novel-mouse.rooster465.autos
-- name: trojan-468227534
+  servername: grand-grub.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782690
   type: trojan
   server: wealthy-loon.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
   servername: wealthy-loon.rooster465.autos
-- name: trojan-468227521
-  type: trojan
-  server: dynamic-grubworm.rooster465.autos
-  port: 443
-  password: AE62539071
-  network: tcp
-  servername: dynamic-grubworm.rooster465.autos
-- name: trojan-468227525
+  skip-cert-verify: true
+- name: trojan-455144266
   type: trojan
   server: magical-kodiak.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
-  servername: magical-kodiak.rooster465.autos
-- name: trojan-468215302
+- name: trojan-474782595
+  type: trojan
+  server: humorous-parakeet.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: humorous-parakeet.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-474782662
+  type: trojan
+  server: smiling-ray.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: smiling-ray.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-313390424
+  type: trojan
+  server: ace-starling.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+- name: trojan-455144267
+  type: trojan
+  server: modest-foal.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+- name: trojan-485687777
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: strong-haddock.rooster465.autos
+- name: trojan-474782626
+  type: trojan
+  server: novel-mouse.rooster465.autos
+  port: 443
+  password: AE62539071
+  network: tcp
+  servername: novel-mouse.rooster465.autos
+  skip-cert-verify: true
+- name: trojan-268441824
+  type: trojan
+  server: dynamic-grubworm.rooster465.autos
+  port: 443
+  password: ND91608427
+  network: tcp
+  servername: dynamic-grubworm.rooster465.autos
+- name: trojan-453181871
   type: trojan
   server: upright-bedbug.rooster465.autos
   port: 443
   password: AE62539071
   network: tcp
+- name: trojan-494469695
+  type: trojan
+  server: v1in2.stableq.top
+  port: 24407
+  password: b1d610a5-6d57-482b-b93b-5ad28ccc3533
+  network: tcp
+- name: vless-161154332
+  type: vless
+  server: 180.178.60.252
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  security: none
+  network: tcp
+- name: vless-270693467
+  type: vless
+  server: 182.16.61.3
+  port: 45647
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  security: none
+  network: raw
+- name: trojan-70506696
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  network: tcp
+  servername: t.me%2fripaojiedian
   skip-cert-verify: true
-- name: shadowsocks-11024
+- name: vless-213129951
+  type: vless
+  server: 89.208.113.16
+  port: 443
+  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
+  security: none
+  network: raw
+- name: shadowsocks-482887636
   type: ss
-  server: 82.38.31.195
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11012
-  type: ss
-  server: 198.98.53.130
+  server: 193.29.139.225
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: shadowsocks-125111
-  type: ss
-  server: 103.120.178.193
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz
-- name: trojan-402262862
-  type: trojan
-  server: t11.qifei.app
-  port: 55682
-  password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
-  network: tcp
-  servername: t11.qifei.app
-  skip-cert-verify: true
-- name: '[OpenRay] 🇵🇱 PL-1916'
-  type: vless
-  server: support.zoom.us.beichuan.serv00.net
-  port: 9815
-  uuid: 37a0bd7c-8b9f-4693-8916-bd1e2da0a817
-  security: none
-  network: ws
-- name: shadowsocks-482887635
-  type: ss
-  server: 89.125.33.16
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: 36-MSsmwqV497atZ2dngqyJegd2kT6gf
-- name: shadowsocks-260
-  type: ss
-  server: p141.panda001.net
-  port: 4652
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇳🇱 The Netherlands [*CIDR]
-  type: vless
-  server: 85.198.103.253
-  port: 21018
-  uuid: f5a0d1e9-a6da-49dc-86ed-afefa39ce3ed
-  security: none
-  network: tcp
-- name: shadowsocks-212
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-- name: shadowsocks-11078
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: shadowsocks-11081
-  type: ss
-  server: 92.118.205.211
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: shadowsocks-27048
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: '@Rayan_Config-82.38.31.190-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-254910437
-  type: ss
-  server: 82.38.31.175
-  port: 8080
-  cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-415243973
-  type: ss
-  server: 188.116.23.244
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: eVC634QvVk5l
-- name: 4Kian-6f57773e2f
-  type: vless
-  server: 182.16.61.2
-  port: 45647
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-  security: none
-  network: tcp
-- name: shadowsocks-465806706
-  type: ss
-  server: 79.175.134.49
-  port: 39880
-  cipher: aes-256-gcm
-  password: PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4=
-- name: shadowsocks-335127322
-  type: ss
-  server: nl1.levikogjgfdd.ir
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-- name: shadowsocks-217
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-- name: vless-470975905
-  type: vless
-  server: 85.17.145.65
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
-  security: none
-  network: ws
-  servername: 85.17.145.65
-- name: shadowsocks-188
-  type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-53939390
-  type: ss
-  server: 82.38.31.28
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-56693562
-  type: ss
-  server: 82.38.31.26
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-287
-  type: ss
-  server: 211.178.105.134
-  port: 6123
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - '[OpenRay] 🇯🇵 JP-4093'
-  - '[OpenRay] 🇯🇵 JP-4126'
-  - '[OpenRay] 🇭🇰 HK-2438'
-  - '[OpenRay] 🇺🇸 US-24283'
+  - '[OpenRay] 🇯🇵 JP-4117'
+  - '[OpenRay] 🇯🇵 JP-4083'
+  - '[OpenRay] 🇸🇬 SG-2441'
+  - '[OpenRay] 🇭🇰 HK-2380'
+  - '[OpenRay] 🇺🇸 US-24282'
   - 🇺🇸 United States, New York | [BL]
-  - shadowsocks-27269
   - shadowsocks-196
   - shadowsocks-195
-  - shadowsocks-193
-  - shadowsocks-163
-  - shadowsocks-159
   - shadowsocks-192
-  - shadowsocks-194
+  - shadowsocks-496614106
+  - shadowsocks-27269
   - shadowsocks-468218613
-  - shadowsocks-415243975
-  - shadowsocks-166
   - shadowsocks-10989
-  - shadowsocks-487917493
-  - shadowsocks-387719515
+  - shadowsocks-166
+  - shadowsocks-159
+  - shadowsocks-194
+  - shadowsocks-415243975
+  - shadowsocks-163
   - shadowsocks-428711842
-  - vless-474875702
   - shadowsocks-157
   - shadowsocks-154
+  - 4FreeIran-ba7c2f84b8
+  - shadowsocks-224639175
+  - vless-335072399
   - shadowsocks-468218487
   - shadowsocks-208
-  - shadowsocks-465806702
-  - shadowsocks-156
-  - shadowsocks-224639175
   - shadowsocks-155
-  - trojan-485789374
+  - vless-467980769
+  - vless-496627692
+  - vless-496627691
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: HK-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇭🇰 HK-2438'
+  - '[OpenRay] 🇭🇰 HK-2380'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: JP-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇯🇵 JP-4093'
-  - '[OpenRay] 🇯🇵 JP-4126'
+  - '[OpenRay] 🇯🇵 JP-4117'
+  - '[OpenRay] 🇯🇵 JP-4083'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: US-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇺🇸 US-24283'
+  - '[OpenRay] 🇺🇸 US-24282'
   - 🇺🇸 United States, New York | [BL]
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: AI-POOL
   type: url-test
   proxies: &id001
-  - '[OpenRay] 🇯🇵 JP-4093'
-  - '[OpenRay] 🇯🇵 JP-4126'
-  - '[OpenRay] 🇭🇰 HK-2438'
-  - '[OpenRay] 🇺🇸 US-24283'
+  - '[OpenRay] 🇯🇵 JP-4117'
+  - '[OpenRay] 🇯🇵 JP-4083'
+  - '[OpenRay] 🇸🇬 SG-2441'
+  - '[OpenRay] 🇭🇰 HK-2380'
+  - '[OpenRay] 🇺🇸 US-24282'
   - 🇺🇸 United States, New York | [BL]
-  - shadowsocks-27269
   - shadowsocks-196
   - shadowsocks-195
-  - shadowsocks-193
-  - shadowsocks-163
-  - shadowsocks-159
   - shadowsocks-192
-  - shadowsocks-194
+  - shadowsocks-496614106
+  - shadowsocks-27269
   - shadowsocks-468218613
-  - shadowsocks-415243975
-  - shadowsocks-166
   - shadowsocks-10989
-  - shadowsocks-487917493
-  - shadowsocks-387719515
+  - shadowsocks-166
+  - shadowsocks-159
+  - shadowsocks-194
+  - shadowsocks-415243975
+  - shadowsocks-163
   - shadowsocks-428711842
-  - vless-474875702
   - shadowsocks-157
   - shadowsocks-154
+  - 4FreeIran-ba7c2f84b8
+  - shadowsocks-224639175
+  - vless-335072399
   - shadowsocks-468218487
   - shadowsocks-208
-  - shadowsocks-465806702
-  - shadowsocks-156
-  - shadowsocks-224639175
   - shadowsocks-155
-  - trojan-485789374
   - vless-467980769
-  - shadowsocks-415241978
-  - shadowsocks-468218514
-  - shadowsocks-45641610
-  - shadowsocks-165
+  - vless-496627692
+  - vless-496627691
+  - vless-496627693
+  - shadowsocks-156
   - shadowsocks-240
-  - shadowsocks-25267
+  - shadowsocks-428711839
   - shadowsocks-205
-  - shadowsocks-273
-  - shadowsocks-488065856
-  - shadowsocks-130088
+  - vless-494494371
+  - vless-496673017
+  - vless-496671893
+  - vless-494494370
+  - shadowsocks-488065857
+  - '@Rayan_Config-82.38.31.179-@beepassvpn_bot'
+  - shadowsocks-277388491
+  - shadowsocks-127246
   - shadowsocks-168341641
-  - shadowsocks-277388490
-  - trojan-468154150
-  - shadowsocks-209
-  - shadowsocks-174
-  - shadowsocks-48399240
-  - shadowsocks-91981760
+  - shadowsocks-188
+  - shadowsocks-177
+  - trojan-485789374
+  - '@Rayan_Config-82.38.31.191-@beepassvpn_bot'
   - shadowsocks-468218595
-  - shadowsocks-185
+  - shadowsocks-16136
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: FALLBACK
