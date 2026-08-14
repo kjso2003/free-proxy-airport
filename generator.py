@@ -21,7 +21,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qs, unquote, urlparse, quote  # 修复: 增加了 quote
+from urllib.parse import parse_qs, unquote, urlparse, quote
 
 import requests
 import yaml
@@ -29,61 +29,32 @@ import yaml
 VERSION = "v7"
 OUTPUT_PATH = Path("output/clash.yaml")
 TEST_URL = "http://www.gstatic.com/generate_204"
-# 优化: 缩短超时时间并减少重试，避免死等
 SOURCE_TIMEOUT = 10 
 LATENCY_TIMEOUT_MS = 5000
 MAX_RETRIES = 2
 MAX_WORKERS = int(os.getenv("FREE_PROXY_AIRPORT_MAX_WORKERS", "24"))
 MAX_CANDIDATES = int(os.getenv("FREE_PROXY_AIRPORT_MAX_CANDIDATES", "0"))
 
+# ===== 请在这里保留你完整的 SOURCE_GROUPS 列表 =====
 SOURCE_GROUPS = [
     {
-        "name": "free-vpn-anti-rkn-1",
-        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.1.txt",
+        "name": "openRunner clash-freenode",
+        "primary": "https://raw.githubusercontent.com/openRunner/clash-freenode/main/sub.yaml",
         "fallbacks": [],
     },
     {
-        "name": "free-vpn-anti-rkn-2",
-        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.1.txt",
+        "name": "snakem982 proxypool",
+        "primary": "https://raw.githubusercontent.com/snakem982/proxypool/main/clash.yaml",
         "fallbacks": [],
     },
-    {
-        "name": "free-vpn-anti-rkn-3",
-        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.1.txt",
-        "fallbacks": [],
-    },
-    {
-        "name": "free-vpn-anti-rkn-4",
-        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.1.txt",
-        "fallbacks": [],
-    },
-    {
-        "name": "free-vpn-anti-rkn-5",
-        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.1.txt",
-        "fallbacks": [],
-    },
-    {
-        "name": "free-vpn-subscriptions",
-        "primary": "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
-        "fallbacks": [],
-    },
-    {
-        "name": "igareck",
-        "primary": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt",
-        "fallbacks": [],
-    },
-    {
-        "name": "Rayan-Config",
-        "primary": "https://raw.githubusercontent.com/Rayan-Config/C-Sub/refs/heads/main/configs/proxy.txt",
-        "fallbacks": [],
-    },
+    # ... 请粘贴你原有的节点源 ...
 ]
+# ===================================================
 
 SUPPORTED_PROXY_TYPES = {
     "ss", "ssr", "vmess", "vless", "trojan", 
     "hysteria", "hysteria2", "hy2", "tuic", "socks5", "http"
 }
-
 
 @dataclass
 class ProxyMetric:
@@ -91,7 +62,6 @@ class ProxyMetric:
     latency: int
     region: str
     health_score: float
-
 
 def fetch_text(url: str, retries: int = MAX_RETRIES) -> str:
     headers = {
@@ -110,7 +80,6 @@ def fetch_text(url: str, retries: int = MAX_RETRIES) -> str:
                 time.sleep(1 * attempt)
     raise RuntimeError(f"failed: {last_error}")
 
-
 def maybe_base64_decode(text: str) -> str:
     compact = "".join(text.split())
     if not compact or len(compact) % 4 != 0:
@@ -123,27 +92,20 @@ def maybe_base64_decode(text: str) -> str:
         return text
     return decoded if "proxies:" in decoded or "://" in decoded else text
 
-
 def load_yaml_document(text: str) -> Any:
     try:
         decoded = maybe_base64_decode(text)
         return yaml.safe_load(decoded)
-    except yaml.YAMLError as exc:
+    except yaml.YAMLError:
         return None
-
 
 def parse_uri_proxy(line: str) -> dict[str, Any] | None:
     line = line.strip()
-    if not line or line.startswith("#"):
-        return None
-    
+    if not line or line.startswith("#"): return None
     match = re.match(r"^([a-z0-9]+)://", line)
-    if not match:
-        return None
-    
+    if not match: return None
     scheme = match.group(1).lower()
-    if scheme not in SUPPORTED_PROXY_TYPES and scheme != "hy2":
-        return None
+    if scheme not in SUPPORTED_PROXY_TYPES and scheme != "hy2": return None
 
     try:
         parsed = urlparse(line)
@@ -156,8 +118,7 @@ def parse_uri_proxy(line: str) -> dict[str, Any] | None:
         }
 
         if scheme in ("vless", "trojan", "vmess"):
-            if parsed.username:
-                proxy["uuid" if scheme in ("vless", "vmess") else "password"] = parsed.username
+            if parsed.username: proxy["uuid" if scheme in ("vless", "vmess") else "password"] = parsed.username
             query = parse_qs(parsed.query)
             if "security" in query: proxy["security"] = query["security"][0]
             if "type" in query: proxy["network"] = query["type"][0]
@@ -166,7 +127,6 @@ def parse_uri_proxy(line: str) -> dict[str, Any] | None:
             if "allowInsecure" in query or "insecure" in query:
                 val = query.get("allowInsecure", query.get("insecure", ["0"]))[0]
                 proxy["skip-cert-verify"] = val in ("1", "true", "True")
-
         elif scheme == "ss":
             if parsed.username:
                 try:
@@ -181,7 +141,6 @@ def parse_uri_proxy(line: str) -> dict[str, Any] | None:
     except Exception:
         return None
 
-
 def extract_proxy_block(text: str) -> list[Any]:
     lines = maybe_base64_decode(text).splitlines()
     start: int | None = None
@@ -189,8 +148,7 @@ def extract_proxy_block(text: str) -> list[Any]:
         if re.match(r"^proxies\s*:\s*$", line):
             start = index
             break
-    if start is None:
-        return []
+    if start is None: return []
 
     block: list[str] = []
     for line in lines[start + 1:]:
@@ -206,44 +164,33 @@ def extract_proxy_block(text: str) -> list[Any]:
         return parsed["proxies"]
     return []
 
-
 def extract_proxies(text: str) -> list[dict[str, Any]]:
     document = load_yaml_document(text)
     proxies: list[Any] = []
-    if isinstance(document, dict):
-        proxies = document.get("proxies", [])
-    elif isinstance(document, list):
-        proxies = document
+    if isinstance(document, dict): proxies = document.get("proxies", [])
+    elif isinstance(document, list): proxies = document
     
-    if not proxies:
-        proxies = extract_proxy_block(text)
-
+    if not proxies: proxies = extract_proxy_block(text)
     if not proxies:
         decoded_text = maybe_base64_decode(text)
         for line in decoded_text.splitlines():
-            parsed_proxy = parse_uri_proxy(line)
-            if parsed_proxy:
+            if parsed_proxy := parse_uri_proxy(line):
                 proxies.append(parsed_proxy)
 
     clean: list[dict[str, Any]] = []
     for proxy in proxies:
-        if isinstance(proxy, dict):
-            clean.append(dict(proxy))
+        if isinstance(proxy, dict): clean.append(dict(proxy))
     return clean
 
-
-# 优化: 并发抓取源，极大提升速度
 def collect_proxies() -> tuple[int, list[dict[str, Any]]]:
     collected: list[dict[str, Any]] = []
-    
     def fetch_source(source: dict) -> list[dict[str, Any]]:
         source_found = []
         for url in expand_source_urls(source):
             print(f"[FETCH] 正在抓取 -> {url}")
             try:
                 text = fetch_text(url)
-                found = extract_proxies(text)
-                if found:
+                if found := extract_proxies(text):
                     print(f"[OK] 成功抓取: {source['name']} ({len(found)} 节点)")
                     source_found.extend(found)
                     break
@@ -251,28 +198,21 @@ def collect_proxies() -> tuple[int, list[dict[str, Any]]]:
                 print(f"[WARN] 抓取失败: {source['name']} | 错误: {exc}")
         return source_found
 
-    # 10 个线程并发抓取
     with ThreadPoolExecutor(max_workers=10) as executor:
         futures = [executor.submit(fetch_source, src) for src in SOURCE_GROUPS]
         for future in as_completed(futures):
-            try:
-                collected.extend(future.result())
-            except Exception as e:
-                pass
+            try: collected.extend(future.result())
+            except Exception: pass
 
     sanitized = sanitize_and_deduplicate(collected)
     if MAX_CANDIDATES > 0 and len(sanitized) > MAX_CANDIDATES:
-        print(f"[WARN] 限制测试节点数，从 {len(sanitized)} 截断为 {MAX_CANDIDATES}")
         sanitized = sanitized[:MAX_CANDIDATES]
     return len(collected), sanitized
 
-
 def expand_source_urls(source: dict[str, Any]) -> list[str]:
     urls = [str(source["primary"])]
-    for item in source.get("fallbacks", []):
-        urls.append(str(item))
+    for item in source.get("fallbacks", []): urls.append(str(item))
     return unique_ordered(urls)
-
 
 def unique_ordered(items: list[str]) -> list[str]:
     seen: set[str] = set()
@@ -283,20 +223,15 @@ def unique_ordered(items: list[str]) -> list[str]:
             result.append(item)
     return result
 
-
 def sanitize_and_deduplicate(proxies: list[dict[str, Any]]) -> list[dict[str, Any]]:
     seen_fingerprints: set[str] = set()
     seen_names: set[str] = set()
     result: list[dict[str, Any]] = []
 
     for index, raw in enumerate(proxies, start=1):
-        proxy = normalize_proxy(raw, index)
-        if not proxy:
-            continue
-
+        if not (proxy := normalize_proxy(raw, index)): continue
         fingerprint = proxy_fingerprint(proxy)
-        if fingerprint in seen_fingerprints:
-            continue
+        if fingerprint in seen_fingerprints: continue
         seen_fingerprints.add(fingerprint)
 
         base_name = str(proxy["name"]).strip() or f"node-{index}"
@@ -310,7 +245,6 @@ def sanitize_and_deduplicate(proxies: list[dict[str, Any]]) -> list[dict[str, An
         result.append(proxy)
     return result
 
-
 def normalize_proxy(raw: dict[str, Any], index: int) -> dict[str, Any] | None:
     proxy = {key: value for key, value in raw.items() if value is not None}
     proxy_type = str(proxy.get("type", "")).lower().strip()
@@ -320,14 +254,11 @@ def normalize_proxy(raw: dict[str, Any], index: int) -> dict[str, Any] | None:
     name = str(proxy.get("name", "")).strip() or f"node-{index}"
     server = str(proxy.get("server", "")).strip()
     if not server: return None
-    try:
-        port = int(proxy.get("port"))
-    except Exception:
-        return None
+    try: port = int(proxy.get("port"))
+    except Exception: return None
     if port <= 0 or port > 65535: return None
     proxy["name"], proxy["server"], proxy["port"] = name, server, port
     return proxy
-
 
 def proxy_fingerprint(proxy: dict[str, Any]) -> str:
     important = {
@@ -336,12 +267,10 @@ def proxy_fingerprint(proxy: dict[str, Any]) -> str:
     }
     return hashlib.sha256(json.dumps(important, sort_keys=True).encode("utf-8")).hexdigest()
 
-
 def find_free_port() -> int:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         sock.bind(("127.0.0.1", 0))
         return int(sock.getsockname()[1])
-
 
 def find_or_install_mihomo() -> Path:
     for name in ("mihomo", "clash-meta", "clash"):
@@ -352,8 +281,7 @@ def find_or_install_mihomo() -> Path:
     install_dir = Path(tempfile.gettempdir()) / "free-proxy-airport-mihomo"
     install_dir.mkdir(parents=True, exist_ok=True)
     binary = install_dir / ("mihomo.exe" if os.name == "nt" else "mihomo")
-    if binary.exists():
-        return binary
+    if binary.exists(): return binary
 
     print("[INFO] 未找到本地代理内核，准备下载 Mihomo...")
     url = select_mihomo_asset()
@@ -365,7 +293,6 @@ def find_or_install_mihomo() -> Path:
         shutil.copy2(extracted, binary)
         binary.chmod(binary.stat().st_mode | stat.S_IXUSR)
     return binary
-
 
 def select_mihomo_asset() -> str:
     api_url = "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest"
@@ -382,7 +309,6 @@ def select_mihomo_asset() -> str:
             return asset.get("browser_download_url", "")
     raise RuntimeError("未找到适用的 Mihomo 内核包")
 
-
 def download_file(url: str, directory: Path) -> Path:
     target = directory / Path(url.split("?")[0]).name
     with requests.get(url, stream=True, timeout=30) as response:
@@ -391,7 +317,6 @@ def download_file(url: str, directory: Path) -> Path:
             for chunk in response.iter_content(chunk_size=1024 * 512):
                 if chunk: file.write(chunk)
     return target
-
 
 def extract_mihomo_binary(archive: Path, directory: Path) -> Path:
     if archive.suffix == ".gz":
@@ -407,19 +332,19 @@ def extract_mihomo_binary(archive: Path, directory: Path) -> Path:
                 return path
     raise RuntimeError("不支持的压缩格式")
 
-
 def write_benchmark_config(path: Path, proxies: list[dict[str, Any]], controller_port: int) -> None:
     config = {
         "mixed-port": find_free_port(),
         "allow-lan": False,
-        "mode": "rule",
-        "log-level": "warning",
+        "mode": "global",
+        "log-level": "info",
         "external-controller": f"127.0.0.1:{controller_port}",
+        "dns": {"enable": False},
+        "geodata-mode": False,
         "proxies": proxies,
         "proxy-groups": [{"name": "BENCHMARK", "type": "select", "proxies": [str(p["name"]) for p in proxies] or ["DIRECT"]}],
     }
     path.write_text(yaml.safe_dump(config, allow_unicode=True), encoding="utf-8")
-
 
 def benchmark_proxies(proxies: list[dict[str, Any]]) -> list[ProxyMetric]:
     if not proxies: return []
@@ -433,10 +358,22 @@ def benchmark_proxies(proxies: list[dict[str, Any]]) -> list[ProxyMetric]:
         controller_url = f"http://127.0.0.1:{controller_port}"
         write_benchmark_config(config_path, proxies, controller_port)
 
-        process = subprocess.Popen([str(engine), "-d", str(temp_dir), "-f", str(config_path)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        process = subprocess.Popen(
+            [str(engine), "-d", str(temp_dir), "-f", str(config_path)], 
+            stdout=subprocess.PIPE, 
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
         try:
             for _ in range(30):
-                if process.poll() is not None: raise RuntimeError("Mihomo 异常退出")
+                if process.poll() is not None:
+                    error_log = process.stdout.read()
+                    print(f"\n" + "="*40)
+                    print(f"[FATAL ERROR] Mihomo 启动失败！内核报错信息如下:")
+                    print(error_log)
+                    print("="*40 + "\n")
+                    raise RuntimeError("Mihomo 异常退出，请查看上方的内核报错信息。")
                 try:
                     if requests.get(f"{controller_url}/version", timeout=1).status_code == 200: break
                 except: pass
@@ -448,7 +385,6 @@ def benchmark_proxies(proxies: list[dict[str, Any]]) -> list[ProxyMetric]:
             except: process.kill()
         return metrics
 
-
 def run_delay_tests(controller_url: str, proxies: list[dict[str, Any]]) -> list[ProxyMetric]:
     workers = max(1, min(MAX_WORKERS, len(proxies)))
     metrics: list[ProxyMetric] = []
@@ -458,16 +394,13 @@ def run_delay_tests(controller_url: str, proxies: list[dict[str, Any]]) -> list[
             futures = {executor.submit(test_single_proxy, session, controller_url, proxy): proxy for proxy in proxies}
             for completed, future in enumerate(as_completed(futures), start=1):
                 try:
-                    if metric := future.result():
-                        metrics.append(metric)
-                except Exception as exc:
-                    pass
+                    if metric := future.result(): metrics.append(metric)
+                except Exception: pass
                 if completed % 50 == 0 or completed == len(futures):
                     print(f"[INFO] 测速进度: {completed}/{len(futures)} | 存活节点: {len(metrics)}")
                     
     metrics.sort(key=lambda item: item.health_score, reverse=True)
     return metrics
-
 
 def test_single_proxy(session: requests.Session, controller_url: str, proxy: dict[str, Any]) -> ProxyMetric | None:
     name = str(proxy["name"])
@@ -484,7 +417,6 @@ def test_single_proxy(session: requests.Session, controller_url: str, proxy: dic
         pass
     return None
 
-
 def detect_region(name: str) -> str:
     text = name.lower()
     if any(t in text for t in ["hk", "hong kong", "香港"]): return "HK"
@@ -492,7 +424,6 @@ def detect_region(name: str) -> str:
     if any(t in text for t in ["us", "united states", "美国"]): return "US"
     if any(t in text for t in ["sg", "singapore", "新加坡"]): return "SG"
     return "OTHER"
-
 
 def main() -> None:
     total_raw, candidates = collect_proxies()
@@ -532,7 +463,6 @@ def main() -> None:
     print(f"成功通过测速的节点数: {len(metrics)}")
     print(f"配置文件已生成至: {OUTPUT_PATH.absolute()}")
     print("="*40)
-
 
 if __name__ == "__main__":
     main()
