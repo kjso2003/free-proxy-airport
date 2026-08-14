@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-14T01:41:22.691672+00:00'
+generated-at: '2026-08-14T04:05:46.655092+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: 202.146.222.89
@@ -49,21 +49,6 @@ proxies:
     headers:
       Host: hongkong.11459178.xyz
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: jp2-r.link-t7.com
-  port: 10032
-  type: vless
-  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
 - name: 🇯🇵 日本 | JPN 6
   server: jp1-r.link-t7.com
   port: 10031
@@ -112,21 +97,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: update
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: jp1-r.link-t7.com
-  port: 10031
-  type: vless
-  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
 - name: 🇸🇬 新加坡 | SGP
   server: sg4-r.link-t7.com
   port: 10039
@@ -151,19 +121,21 @@ proxies:
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 195.211.99.49
-  port: 443
+- name: 🇸🇬 新加坡 | SGP 2
+  server: sg1-r.link-t7.com
+  port: 10036
   type: vless
-  uuid: 7eed6d87-ecf6-467b-a8ca-52071fa84fca
+  uuid: CB9C296F-A571-4B73-961E-142D832F35D0
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: VRrsZmyM-QD8YgLGgy2h3pMLbauIBCMoGN2pc8Xt5hE
-    short-id: b605d4e8b7f453ab
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  network: tcp
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: us1-r.link-t7.com
@@ -231,6 +203,20 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Ziq2yDCbCX0W6GGNC0ba4L99ILN7CVkwZnhtasd/yEU=
+- name: 🇺🇸 美国 | USA 14
+  server: pg-usa2-443-vless-tcp.gigatapbot.top
+  port: 443
+  type: vless
+  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
+    short-id: c577182abe08e64c
+  servername: pg-usa2-443-vless-tcp.gigatapbot.top
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: us2-r.link-t7.com
   port: 10239
@@ -269,22 +255,6 @@ proxies:
   auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
   sni: onecloudstream.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 | KOR 6
-  server: kr5-r.link-t7.com
-  port: 10050
-  type: vless
-  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 162.249.124.99
   port: 8443
@@ -293,20 +263,6 @@ proxies:
   auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: mercedes-grape.yyuyy.com
   skip-cert-verify: true
-- name: 🇮🇳 印度 | IND
-  server: 198.105.113.205
-  port: 443
-  type: vless
-  uuid: 18fd025a-eeb7-4860-b468-299a80b1b2c6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uFpKFKMzIJcnqfmvL8x7ykGigDW23kPkxpTkvwHJzgo
-    short-id: fab4
-  servername: india-cdn.linus-qanary.lol
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇰🇷 韩国 | KOR 2
   server: kr2-r.link-t7.com
   port: 10047
@@ -364,13 +320,6 @@ proxies:
     headers:
       Host: live.ok.ru
   udp: true
-- name: 🇧🇷 巴西 | BRA 5
-  server: 163.176.167.126
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WC7Y53q25ImOJmR/KOwzc1Ec77kXtL5Oxm7RR9MeRXo=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: neth.lckdwn.ru
   port: 443
@@ -382,37 +331,6 @@ proxies:
     path: /
     headers:
       Host: neth.lckdwn.ru
-  udp: true
-- name: 🇰🇷 韩国 | KOR 3
-  server: kr2-r.link-t7.com
-  port: 10047
-  type: vless
-  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 176.109.106.34
-  port: 9888
-  type: vless
-  uuid: 130e6aab-9eba-441e-9021-22cbccc72832
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 31.77.196.201
@@ -468,16 +386,6 @@ proxies:
   auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
   sni: speedtestmark.com
   skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: v4.hdacd.com
-  port: 30804
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 162.249.124.102
   port: 8443
@@ -486,12 +394,6 @@ proxies:
   auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: mercedes-grape.yyuyy.com
   skip-cert-verify: true
-- name: 🇧🇷 巴西 | BRA 2
-  server: 164.152.41.210
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Vmx6M+UKDzQxzXfFy+JeKe8J7CUMdrA/pWe9hMpyGKY=
 - name: 🇩🇪 德国 | DEU 8
   server: srvhy1.ezcon24.online
   port: 8443
@@ -620,6 +522,13 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 158.247.125.22
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇱🇻 拉脱维亚 | LVA 8
   server: laoye.in-gect.fun
   port: 2053
@@ -633,35 +542,6 @@ proxies:
   servername: vk.ru
   client-fingerprint: edge
   network: tcp
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: gorbachev-new-th.kvnfreetest.uk
-  port: 55443
-  type: hysteria2
-  password: 083417772bc618cd61f0cca23dd91680
-  auth: 083417772bc618cd61f0cca23dd91680
-  sni: gorbachev-new-th.kvnfreetest.uk
-  skip-cert-verify: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 158.247.125.22
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 199.232.78.159
-  port: 443
-  type: vless
-  uuid: be42674a-296a-43d8-bf04-b8314d65ff63
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
-    headers:
-      Host: pane2.global.ssl.fastly.net
   udp: true
 - name: 🇮🇩 印尼 | IDN
   server: 202.47.89.133
@@ -678,6 +558,28 @@ proxies:
   ws-opts:
     path: /dkfjh222
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 199.232.78.159
+  port: 443
+  type: vless
+  uuid: be42674a-296a-43d8-bf04-b8314d65ff63
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
+    headers:
+      Host: pane2.global.ssl.fastly.net
+  udp: true
+- name: 🇹🇭 泰国 | THA
+  server: gorbachev-new-th.kvnfreetest.uk
+  port: 55443
+  type: hysteria2
+  password: 083417772bc618cd61f0cca23dd91680
+  auth: 083417772bc618cd61f0cca23dd91680
+  sni: gorbachev-new-th.kvnfreetest.uk
+  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 9
   server: 95.85.239.230
   port: 443
@@ -706,6 +608,13 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.231.23
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪 德国 | DEU
   server: 5.83.129.143
   port: 26691
@@ -727,34 +636,6 @@ proxies:
   auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
   sni: speedtestmark.com
   skip-cert-verify: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.231.23
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 193.233.126.82
-  port: 9443
-  type: vless
-  uuid: 37a098ab-8fec-4352-8ee8-294ae5bca68f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Te5lrfzw_MytTzQJB92DhWw7fk1qTK3mhzz7Bz41gVc
-    short-id: 0240e83f65a25e
-  servername: www.amd.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇧🇷 巴西 | BRA 3
-  server: 137.131.154.109
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3sN3flK4QS70Seqs/gqSfJg9/N4PVMv7kHbSRtVdWK8=
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 140.248.186.45
   port: 443
@@ -810,42 +691,34 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
   - 🇭🇰 香港 | HKG 5
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 11
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 22
   - 🇹🇭 泰国 | THA 3
   - 🇱🇻 拉脱维亚 | LVA 9
-  - 🇰🇷 韩国 | KOR 6
   - 🇩🇪 德国 | DEU 2
-  - 🇮🇳 印度 | IND
   - 🇰🇷 韩国 | KOR 2
   - 🇱🇻 拉脱维亚 | LVA 6
   - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇧🇷 巴西 | BRA 5
   - 🇳🇱 荷兰 | NLD 4
-  - 🇰🇷 韩国 | KOR 3
-  - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇦🇫 AF_54
   - 🇰🇷 韩国 | KOR 5
   - 🇱🇻 拉脱维亚 | LVA 3
   - 🇱🇻 拉脱维亚 | LVA 7
-  - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
-  - 🇧🇷 巴西 | BRA 2
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
   - 🇫🇷 法国 | FRA 10
@@ -858,18 +731,16 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 | LVA 5
   - 🇩🇪 德国 | DEU 4
   - 🇧🇷 巴西 | BRA 4
-  - 🇱🇻 拉脱维亚 | LVA 8
-  - 🇹🇭 泰国 | THA
   - 🇨🇴 哥伦比亚 | COL
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇱🇻 拉脱维亚 | LVA 8
   - 🇮🇩 印尼 | IDN
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU 9
   - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇧🇷 巴西 | BRA 3
   - 🇬🇧 英国 | GBR
   - 🇰🇷 韩国 | KOR 7
   - 🇩🇪 德国 | DEU 10
@@ -889,22 +760,20 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 5
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 23
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -912,18 +781,16 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 22
-  - 🇺🇸 美国 | USA 9
-  - 🇧🇷 巴西 | BRA 5
-  - 🇧🇷 巴西 | BRA 4
-  - 🇧🇷 巴西 | BRA
-  - 🇧🇷 巴西 | BRA 3
-  - 🇧🇷 巴西 | BRA 2
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 3
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 9
+  - 🇧🇷 巴西 | BRA 4
+  - 🇧🇷 巴西 | BRA
+  - 🇯🇵 日本 | JPN 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
