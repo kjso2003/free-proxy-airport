@@ -35,21 +35,50 @@ MAX_RETRIES = 2
 MAX_WORKERS = int(os.getenv("FREE_PROXY_AIRPORT_MAX_WORKERS", "24"))
 MAX_CANDIDATES = int(os.getenv("FREE_PROXY_AIRPORT_MAX_CANDIDATES", "0"))
 
-# ===== 请在这里保留你完整的 SOURCE_GROUPS 列表 =====
+
 SOURCE_GROUPS = [
     {
-        "name": "openRunner clash-freenode",
-        "primary": "https://raw.githubusercontent.com/openRunner/clash-freenode/main/sub.yaml",
+        "name": "free-vpn-anti-rkn-1",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.1.txt",
         "fallbacks": [],
     },
     {
-        "name": "snakem982 proxypool",
-        "primary": "https://raw.githubusercontent.com/snakem982/proxypool/main/clash.yaml",
+        "name": "free-vpn-anti-rkn-2",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.1.txt",
         "fallbacks": [],
     },
-    # ... 请粘贴你原有的节点源 ...
+    {
+        "name": "free-vpn-anti-rkn-3",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-4",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-anti-rkn-5",
+        "primary": "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.1.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "free-vpn-subscriptions",
+        "primary": "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "igareck",
+        "primary": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt",
+        "fallbacks": [],
+    },
+    {
+        "name": "Rayan-Config",
+        "primary": "https://raw.githubusercontent.com/Rayan-Config/C-Sub/refs/heads/main/configs/proxy.txt",
+        "fallbacks": [],
+    },
 ]
-# ===================================================
+
 
 SUPPORTED_PROXY_TYPES = {
     "ss", "ssr", "vmess", "vless", "trojan", 
