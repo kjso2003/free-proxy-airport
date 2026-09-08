@@ -3,33 +3,39 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: '[OpenRay] 🇯🇵 JP-4217'
+- name: '[OpenRay] 🇸🇬 SG-2634'
   type: trojan
-  server: communal-troll.rooster465.autos
-  port: 443
-  password: FH72359861
-  security: tls
-  servername: communal-troll.rooster465.autos
-- name: '[OpenRay] 🇸🇬 SG-2614'
-  type: trojan
-  server: curious-llama.rooster465.autos
+  server: assuring-werewolf.rooster465.autos
   port: 443
   password: EQ30679154
   security: tls
   network: tcp
-  servername: curious-llama.rooster465.autos
-- name: '[OpenRay] 🇯🇵 JP-4168'
+- name: '[OpenRay] 🇯🇵 JP-4205'
   type: trojan
-  server: flying-swift.rooster465.autos
+  server: living-hagfish.rooster465.autos
   port: 443
   password: FH72359861
   security: tls
-- name: '[OpenRay] 🇯🇵 JP-4117'
+- name: '[OpenRay] 🇯🇵 JP-4272'
   type: trojan
-  server: charmed-fly.rooster465.autos
+  server: adapting-giraffe.rooster465.autos
   port: 443
-  password: AE62539071
+  password: FH72359861
   security: tls
+  servername: adapting-giraffe.rooster465.autos
+- name: '[OpenRay] 🇯🇵 JP-4183'
+  type: trojan
+  server: settled-camel.rooster465.autos
+  port: 443
+  password: FH72359861
+  security: tls
+- name: '[OpenRay] 🇯🇵 JP-4318'
+  type: trojan
+  server: wealthy-gobbler.rooster465.autos
+  port: 443
+  password: EQ30679154
+  security: tls
+  servername: wealthy-gobbler.rooster465.autos
 - name: '[OpenRay] 🇯🇵 JP-3989'
   type: trojan
   server: tough-robin.rooster465.autos
@@ -37,21 +43,29 @@ proxies:
   password: ND91608427
   security: tls
   servername: tough-robin.rooster465.autos
-- name: '[OpenRay] 🇯🇵 JP-4093'
+- name: '[OpenRay] 🇸🇬 SG-2565'
   type: trojan
-  server: exciting-grizzly.rooster465.autos
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  password: PQ05174892
+  security: tls
+  network: tcp
+  servername: sacred-anemone.rooster465.autos
+- name: '[OpenRay] 🇯🇵 JP-4294'
+  type: trojan
+  server: mighty-lemming.rooster465.autos
+  port: 443
+  password: PQ05174892
+  security: tls
+- name: '[OpenRay] 🇯🇵 JP-4137'
+  type: trojan
+  server: pet-antelope.rooster465.autos
   port: 443
   password: AE62539071
   security: tls
-- name: '[OpenRay] 🇯🇵 JP-4193'
+- name: '[OpenRay] 🇭🇰 HK-2455'
   type: trojan
-  server: wise-gibbon.rooster465.autos
-  port: 443
-  password: FH72359861
-  security: tls
-- name: '[OpenRay] 🇭🇰 HK-2458'
-  type: trojan
-  server: choice-worm.rooster465.autos
+  server: modern-bedbug.rooster465.autos
   port: 443
   password: FH72359861
   security: tls
@@ -61,108 +75,128 @@ proxies:
   port: 443
   password: ND91608427
   security: tls
-- name: '[OpenRay] 🇺🇸 US-26438'
+- name: '[OpenRay] 🇺🇸 US-25455'
+  type: ss
+  server: 15.204.247.175
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇸 United States, Miami | [BL]
   type: vless
-  server: 206.1.96.28
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
-  security: none
-  network: tcp
-- name: shadowsocks-163
+  server: 45.91.138.67
+  port: 2096
+  uuid: e666041f-8a25-4f05-812d-a5984e748497
+  network: ws
+- name: shadowsocks-157
   type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-696792823
-  type: ss
-  server: 154.127.56.212
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: shadowsocks-159
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: trojan-246566047
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+- name: trojan-1080833949
   type: trojan
-  server: 64.94.95.115
-  port: 57142
-  password: kkzh2prsyr2ik47as615
+  server: 107.150.105.84
+  port: 46292
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
   network: tcp
-  servername: 64.94.95.115
+  servername: www.microsoft.com#free x114 @outline_vpn
   skip-cert-verify: true
-- name: shadowsocks-158
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: trojan-1002196466
+  type: trojan
+  server: us01.duotg.top
+  port: 38261
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-912447962
+  type: trojan
+  server: 107.150.105.84
+  port: 38261
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  servername: www.microsoft.com
+  skip-cert-verify: true
+- name: trojan-826756143
+  type: trojan
+  server: us01.duotg.top
+  port: 20065
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  servername: www.microsoft.com
+  skip-cert-verify: true
+- name: trojan-1030272172
+  type: trojan
+  server: 107.150.105.84
+  port: 20065
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-912445321
+  type: trojan
+  server: 107.150.105.84
+  port: 54657
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  servername: us01.duotg.top
+  skip-cert-verify: true
+- name: trojan-1060914015
+  type: trojan
+  server: 107.150.105.84
+  port: 59385
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  skip-cert-verify: true
+- name: trojan-1160538917
+  type: trojan
+  server: 107.150.105.84
+  port: 27732
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  servername: us01.duotg.top
+  skip-cert-verify: true
+- name: trojan-855957152
+  type: trojan
+  server: us01.duotg.top
+  port: 59385
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  servername: us01.duotg.top
+  skip-cert-verify: true
+- name: trojan-1002282332
+  type: trojan
+  server: us01.duotg.top
+  port: 27732
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  skip-cert-verify: true
 - name: shadowsocks-194
   type: ss
   server: 156.146.38.169
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: vless-1173147422
-  type: vless
-  server: 88.216.73.74
-  port: 443
-  uuid: 493024a4-2da7-4ff9-9bc7-fdd5543141d2
-  security: none
-  network: ws
-- name: shadowsocks-193
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: trojan-198807551
+- name: trojan-856212267
+  type: trojan
+  server: us01.duotg.top
+  port: 46292
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  network: tcp
+  servername: www.microsoft.com
+  skip-cert-verify: true
+- name: trojan-213108940
   type: trojan
   server: 64.94.95.114
   port: 57142
   password: kkzh2prsyr2ik47as615
   network: tcp
+  servername: 64.94.95.114
   skip-cert-verify: true
-- name: shadowsocks-1118951746
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: shadowsocks-192
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-196
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-1154628815
-  type: ss
-  server: 15.204.246.189
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: shadowsocks-166
-  type: ss
-  server: 137.184.174.93
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: trojan-213108941
+- name: trojan-168427355
   type: trojan
-  server: 64.94.95.117
+  server: 64.94.95.115
   port: 57142
   password: kkzh2prsyr2ik47as615
   network: tcp
-  servername: 64.94.95.117
   skip-cert-verify: true
 - name: trojan-143578
   type: trojan
@@ -171,15 +205,23 @@ proxies:
   password: kkzh2prsyr2ik47as615
   network: tcp
   skip-cert-verify: true
-- name: shadowsocks-156
+- name: trojan-120887
+  type: trojan
+  server: 64.94.95.117
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  network: tcp
+  servername: static.rutube.ru
+  skip-cert-verify: true
+- name: shadowsocks-951795693
   type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-809724024
+  server: 15.204.246.108
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: shadowsocks-1154628815
   type: ss
-  server: 51.79.64.198
+  server: 15.204.246.189
   port: 8119
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
@@ -189,328 +231,115 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: YHtesZ0qvgtg
-- name: shadowsocks-468218514
-  type: ss
-  server: 107.151.182.197
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: shadowsocks-468218487
-  type: ss
-  server: 138.199.43.159
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: shadowsocks-157
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-- name: shadowsocks-155
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: trojan-1040387524
+- name: trojan-1192978766
   type: trojan
-  server: us01.duotg.top
-  port: 20065
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  server: 64.20.209.125
+  port: 443
+  password: UQfj7bdfjibTjpUHfg72aew51S7fB32g
   network: tcp
-  servername: www.microsoft.com#3🐲@oneclickvpnkeyshysteria2://umndu7jgfyujpvjvm2sw9hl0rryljngzvwru2hzwehyzkkrx@hold.wwwinternetvideo.click:443/?insecure=1
   skip-cert-verify: true
-- name: trojan-855763679
+- name: shadowsocks-166
+  type: ss
+  server: 137.184.174.93
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: trojan-855957144
   type: trojan
   server: us01.duotg.top
   port: 54657
   password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
   network: tcp
-  servername: www.microsoft.com
-  skip-cert-verify: true
-- name: shadowsocks-208
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: trojan-859744348
-  type: trojan
-  server: us01.duotg.top
-  port: 59385
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  network: tcp
   servername: us01.duotg.top
   skip-cert-verify: true
-- name: trojan-1030272172
-  type: trojan
-  server: 107.150.105.84
-  port: 20065
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  network: tcp
-  skip-cert-verify: true
-- name: trojan-1081204195
-  type: trojan
-  server: 107.150.105.84
-  port: 46292
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  network: tcp
-  servername: www.microsoft.com#free x114 @outline_vpn
-  skip-cert-verify: true
-- name: trojan-860042488
-  type: trojan
-  server: us01.duotg.top
-  port: 27732
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  network: tcp
-  servername: www.microsoft.com
-  skip-cert-verify: true
-- name: trojan-855957127
-  type: trojan
-  server: us01.duotg.top
-  port: 38261
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  network: tcp
-  servername: us01.duotg.top
-  skip-cert-verify: true
-- name: trojan-1173147423
-  type: trojan
-  server: 100.42.228.109
-  port: 443
-  password: BxceQaOe
-  network: tcp
-  servername: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: vless-1164808486
+- name: vless-1191343664
   type: vless
-  server: 152.70.56.139
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 13.39.171.238
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   security: none
   network: tcp
-- name: shadowsocks-717969008
+- name: shadowsocks-217
   type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: shadowsocks-717969059
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: vless-1163871241
-  type: vless
-  server: 92.5.231.61
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  security: none
-  network: tcp
-- name: shadowsocks-696780670
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: vless-1160568967
-  type: vless
-  server: 141.144.198.50
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  security: none
-  network: tcp
-- name: shadowsocks-468218613
-  type: ss
-  server: 138.197.141.58
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: vless-1165015544
-  type: vless
-  server: 193.123.36.228
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  security: none
-  network: tcp
-- name: shadowsocks-381349764
-  type: ss
-  server: 64.176.73.160
+  server: 108.181.58.239
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-- name: shadowsocks-83630747
+  password: CJmTCCx7Ltud
+- name: shadowsocks-1061764005
   type: ss
-  server: 82.38.31.174
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-271
-  type: ss
-  server: 141.98.101.181
+  server: 18.170.35.229
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: shadowsocks-268
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-415243973
-  type: ss
-  server: 188.116.23.244
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: eVC634QvVk5l
-- name: shadowsocks-11028
-  type: ss
-  server: 82.38.31.207
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11027
-  type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11033
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-696792831
-  type: ss
-  server: 31.57.35.41
-  port: 65443
   cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: shadowsocks-49012021
+  password: amazonskr05
+- name: '[OpenRay] 🇩🇪 DE-18891'
   type: ss
-  server: 82.38.31.46
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-200379481
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: '@Rayan_Config-82.38.31.202-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.202
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
 - name: shadowsocks-91981760
   type: ss
   server: 82.38.31.174
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-258605572
+- name: '[OpenRay] 🇳🇱 NL-10488'
   type: ss
-  server: 82.38.31.201
+  server: 188.116.23.244
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: eVC634QvVk5l
+- name: shadowsocks-949634791
+  type: ss
+  server: 36.224.151.80
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: shadowsocks-11045
+  type: ss
+  server: 82.38.31.18
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-11027
+  type: ss
+  server: 82.38.31.206
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-860380330
+- name: '[OpenRay] 🇳🇱 NL-8690'
   type: ss
-  server: 193.29.139.180
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-522222549
-  type: ss
-  server: 82.38.31.48
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.199-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.199
+  server: 82.38.31.215
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11044
-  type: ss
-  server: 82.38.31.164
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-277388491
-  type: ss
-  server: 193.29.139.230
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-921920790
-  type: ss
-  server: 82.38.31.175
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-541381980
-  type: ss
-  server: 82.38.31.26
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-274
-  type: ss
-  server: 82.38.31.10
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: shadowsocks-10899
   type: ss
   server: 82.38.31.204
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11026
+- name: shadowsocks-168341641
   type: ss
-  server: 82.38.31.200
+  server: 193.29.139.223
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-860329168
+- name: shadowsocks-274
   type: ss
-  server: 193.29.139.249
+  server: 82.38.31.10
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-11047
+- name: shadowsocks-11028
   type: ss
-  server: 82.38.31.32
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-482887637
-  type: ss
-  server: 193.29.139.230
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-178
-  type: ss
-  server: 82.38.31.219
+  server: 82.38.31.207
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.179-@beepassvpn_bot'
+- name: '@Rayan_Config-82.38.31.208-@beepassvpn_bot'
   type: ss
-  server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.187-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.187
+  server: 82.38.31.208
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -520,63 +349,27 @@ proxies:
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-173
+- name: shadowsocks-258
   type: ss
-  server: 82.38.31.15
+  server: 82.38.31.35
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-415242972
+- name: shadowsocks-258605573
   type: ss
-  server: 51.255.13.232
-  port: 8388
+  server: 82.38.31.42
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-96653029
+  type: ss
+  server: 82.38.31.36
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: '@Rayan_Config-82.38.31.210-@beepassvpn_bot'
   type: ss
   server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.217-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-11042
-  type: ss
-  server: 82.38.31.11
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-254910437
-  type: ss
-  server: 82.38.31.175
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.218-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-960882553
-  type: ss
-  server: 82.38.31.42
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-717969033
-  type: ss
-  server: 217.30.10.44
-  port: 9052
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: '@Rayan_Config-82.38.31.191-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.191
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -586,34 +379,52 @@ proxies:
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.194-@beepassvpn_bot'
+- name: shadowsocks-277388490
   type: ss
-  server: 82.38.31.194
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.214-@beepassvpn_bot'
-  type: ss
-  server: 82.38.31.214
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-72830589
-  type: ss
-  server: 82.38.31.156
+  server: 193.29.139.225
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.190-@beepassvpn_bot'
+- name: '@Rayan_Config-82.38.31.184-@beepassvpn_bot'
   type: ss
-  server: 82.38.31.190
+  server: 82.38.31.184
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-921920789
+- name: '@Rayan_Config-82.38.31.202-@beepassvpn_bot'
   type: ss
-  server: 193.29.139.249
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '@Rayan_Config-82.38.31.217-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.217
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-541381980
+  type: ss
+  server: 82.38.31.26
   port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-268
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-482887637
+  type: ss
+  server: 193.29.139.230
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-171
+  type: ss
+  server: 82.38.31.17
+  port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: '@Rayan_Config-82.38.31.205-@beepassvpn_bot'
@@ -622,301 +433,459 @@ proxies:
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: '@Rayan_Config-82.38.31.184-@beepassvpn_bot'
+- name: '@Rayan_Config-82.38.31.218-@beepassvpn_bot'
   type: ss
-  server: 82.38.31.184
+  server: 82.38.31.218
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-174
+- name: shadowsocks-11020
   type: ss
-  server: 82.38.31.155
+  server: 82.38.31.183
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-277388489
+  type: ss
+  server: 193.29.139.129
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: '@Rayan_Config-82.38.31.208-@beepassvpn_bot'
+- name: shadowsocks-323
   type: ss
-  server: 82.38.31.208
+  server: 5.188.181.201
+  port: 9014
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: shadowsocks-178
+  type: ss
+  server: 82.38.31.219
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: shadowsocks-482887636
+- name: shadowsocks-696792833
   type: ss
-  server: 193.29.139.225
+  server: 95.170.13.47
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: vless-1191335258
+  type: vless
+  server: 13.39.171.238
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  security: none
+  network: tcp
+- name: shadowsocks-11026
+  type: ss
+  server: 82.38.31.200
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-200379481
+  type: ss
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: shadowsocks-696792825
+  type: ss
+  server: 181.41.201.242
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: '@Rayan_Config-82.38.31.191-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-179
+  type: ss
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '@Rayan_Config-82.38.31.179-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-717969033
+  type: ss
+  server: 217.30.10.44
+  port: 9052
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: shadowsocks-522222548
+  type: ss
+  server: 82.38.31.18
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-16132
+- name: shadowsocks-1188287489
   type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: shadowsocks-11052
+  server: 195.133.23.200
+  port: 10661
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: shadowsocks-696780670
   type: ss
-  server: 140.174.184.5
-  port: 8388
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: shadowsocks-738053629
+  type: ss
+  server: 217.30.10.44
+  port: 9095
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: shadowsocks-11044
+  type: ss
+  server: 82.38.31.164
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: trojan-1040387451
-  type: trojan
-  server: us01.duotg.top
-  port: 46292
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: vless-813576379
+  type: vless
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  security: none
+  network: ws
+- name: shadowsocks-717969059
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: vless-663902650
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  security: none
   network: tcp
-  servername: www.microsoft.com#🐲97@oneclickvpnkeys
-  skip-cert-verify: true
-- name: vless-1048975370
+- name: vless-808976549
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  security: none
+  network: ws
+  servername: usejh2.neobo-tooth.ru
+- name: '@Rayan_Config-82.38.31.199-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: vless-1044858953
   type: vless
   server: 31.76.76.28
   port: 443
   uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
   security: none
   network: ws
-- name: vless-656041580
+- name: 4Sarina-300258ce28
   type: vless
-  server: 134.122.202.244
-  port: 44915
-  uuid: 0ca45842-71e2-47fe-889f-9e75f93ea459
-  security: none
-  network: tcp
-- name: shadowsocks-696780669
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: shadowsocks-951685696
-  type: ss
-  server: 84.247.155.196
+  server: 193.23.194.167
   port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: shadowsocks-176
-  type: ss
-  server: 82.38.31.57
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: shadowsocks-1175398965
-  type: ss
-  server: 161.118.246.63
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: U+EK9KPHFjgHVYQvMuZBd0o4PfWSyxVtTyFFbJ6ww4A=
-- name: 4FreeIran-a244d5103a
-  type: vless
-  server: 94.183.209.42
-  port: 443
-  uuid: 84c898c4-6990-4121-ae51-27d989f5ce39
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
   security: none
   network: ws
-- name: '[OpenRay] 🇵🇱 PL-2114'
-  type: trojan
-  server: game-firefly.rooster465.autos
-  port: 443
-  password: FH72359861
-  security: tls
-- name: shadowsocks-817206649
+- name: 🇩🇪 Germany, Düsseldorf | [BL]
+  type: vless
+  server: 179.61.145.72
+  port: 2096
+  uuid: e666041f-8a25-4f05-812d-a5984e748497
+  network: ws
+- name: shadowsocks-1182910585
   type: ss
-  server: 49.254.204.133
-  port: 1774
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: shadowsocks-287
-  type: ss
-  server: 211.178.105.134
-  port: 6123
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: shadowsocks-1160568980
-  type: ss
-  server: 15.204.233.41
-  port: 8882
+  server: 166.88.130.218
+  port: 10661
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: trojan-2493849
+  password: fbcec76953a2d173
+- name: trojan-1101785648
   type: trojan
   server: 119.246.1.143
   port: 443
   password: BxceQaOe
   network: tcp
-  servername: t.me/ripaojiedian
+  servername: t.me
   skip-cert-verify: true
-- name: 4Sarina-f021bf1ed5
+- name: shadowsocks-819466008
+  type: ss
+  server: 91.201.65.122
+  port: 9053
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
+- name: vless-1183891290
   type: vless
-  server: laoye.in-gect.fun
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  server: 2.27.205.59
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
   security: none
   network: ws
-  servername: laoye.in-gect.fun
-- name: shadowsocks-419356365
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+  servername: 2.27.205.59
 - name: '@Rayan_Config-82.38.31.176-@beepassvpn_bot'
   type: ss
   server: 82.38.31.176
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: trojan-1155245935
+- name: '@Rayan_Config-82.38.31.194-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.194
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-173
+  type: ss
+  server: 82.38.31.15
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-700118639
+  type: ss
+  server: 82.38.31.11
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: trojan-1061945940
   type: trojan
   server: 139.59.238.97
   port: 50573
   password: pvZE3UfT0ziK1omVLlsjINBqeqqwab1M
   network: tcp
-  servername: telegram-leviko_v2ray
+  servername: ww12.levikogjgfdd.ir
   skip-cert-verify: true
-- name: vless-702719096
+- name: vless-656041581
   type: vless
   server: 137.220.221.179
   port: 443
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   security: none
   network: tcp
+- name: '[OpenRay] 🇵🇱 PL-2114'
+  type: trojan
+  server: game-firefly.rooster465.autos
+  port: 443
+  password: FH72359861
+  security: tls
+- name: vless-1048975449
+  type: vless
+  server: neth8.lunariai.ru
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  security: none
+  network: ws
+- name: 4Mohsen-d2eda3a97f
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  security: none
+  network: ws
+- name: shadowsocks-11042
+  type: ss
+  server: 82.38.31.11
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: trojan-1060820836
+  type: trojan
+  server: ww12.levikogjgfdd.ir
+  port: 50573
+  password: pvZE3UfT0ziK1omVLlsjINBqeqqwab1M
+  network: tcp
+  servername: ww12.levikogjgfdd.ir
+  skip-cert-verify: true
+- name: '@Rayan_Config-82.38.31.190-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: shadowsocks-331336152
+  type: ss
+  server: 193.29.139.212
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: vless-868400818
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  security: none
+  network: ws
+  servername: 94.183.170.135
+- name: shadowsocks-1182908719
+  type: ss
+  server: 212.192.15.86
+  port: 10661
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+- name: shadowsocks-11047
+  type: ss
+  server: 82.38.31.32
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: shadowsocks-287
+  type: ss
+  server: 211.178.105.134
+  port: 6123
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: shadowsocks-696792801
   type: ss
   server: 118.107.222.231
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: trojan-1058910665
-  type: trojan
-  server: ww12.levikogjgfdd.ir
-  port: 50573
-  password: pvZE3UfT0ziK1omVLlsjINBqeqqwab1M
-  network: tcp
-  skip-cert-verify: true
-- name: vless-1168808183
-  type: vless
-  server: 144.21.34.170
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  security: none
-  network: tcp
-- name: shadowsocks-186
+- name: '[OpenRay] 🇳🇱 NL-7213'
   type: ss
-  server: 193.29.139.204
+  server: 82.38.31.155
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '@Rayan_Config-82.38.31.187-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇵🇱 Poland, Gdansk | [BL]
+  type: vless
+  server: 222.167.246.16
+  port: 2096
+  uuid: e666041f-8a25-4f05-812d-a5984e748497
+  network: ws
+- name: '@Rayan_Config-82.38.31.214-@beepassvpn_bot'
+  type: ss
+  server: 82.38.31.214
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - '[OpenRay] 🇯🇵 JP-4217'
-  - '[OpenRay] 🇸🇬 SG-2614'
-  - '[OpenRay] 🇯🇵 JP-4168'
-  - '[OpenRay] 🇯🇵 JP-4117'
+  - '[OpenRay] 🇸🇬 SG-2634'
+  - '[OpenRay] 🇯🇵 JP-4205'
+  - '[OpenRay] 🇯🇵 JP-4272'
+  - '[OpenRay] 🇯🇵 JP-4183'
+  - '[OpenRay] 🇯🇵 JP-4318'
   - '[OpenRay] 🇯🇵 JP-3989'
-  - '[OpenRay] 🇯🇵 JP-4093'
-  - '[OpenRay] 🇯🇵 JP-4193'
-  - '[OpenRay] 🇭🇰 HK-2458'
+  - '[OpenRay] 🇸🇬 SG-2565'
+  - '[OpenRay] 🇯🇵 JP-4294'
+  - '[OpenRay] 🇯🇵 JP-4137'
+  - '[OpenRay] 🇭🇰 HK-2455'
   - '[OpenRay] 🇭🇰 HK-2358'
-  - '[OpenRay] 🇺🇸 US-26438'
-  - shadowsocks-163
-  - shadowsocks-696792823
-  - shadowsocks-159
-  - trojan-246566047
-  - shadowsocks-158
+  - '[OpenRay] 🇺🇸 US-25455'
+  - 🇺🇸 United States, Miami | [BL]
+  - shadowsocks-157
+  - trojan-1080833949
+  - trojan-1002196466
+  - trojan-912447962
+  - trojan-826756143
+  - trojan-1030272172
+  - trojan-912445321
+  - trojan-1060914015
+  - trojan-1160538917
+  - trojan-855957152
+  - trojan-1002282332
   - shadowsocks-194
-  - vless-1173147422
-  - shadowsocks-193
-  - trojan-198807551
-  - shadowsocks-1118951746
-  - shadowsocks-192
-  - shadowsocks-196
-  - shadowsocks-1154628815
-  - shadowsocks-166
-  - trojan-213108941
+  - trojan-856212267
+  - trojan-213108940
+  - trojan-168427355
   - trojan-143578
-  - shadowsocks-156
-  - shadowsocks-809724024
-  - shadowsocks-415243972
-  - shadowsocks-468218514
+  - trojan-120887
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: HK-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇭🇰 HK-2458'
+  - '[OpenRay] 🇭🇰 HK-2455'
   - '[OpenRay] 🇭🇰 HK-2358'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: JP-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇯🇵 JP-4217'
-  - '[OpenRay] 🇯🇵 JP-4168'
-  - '[OpenRay] 🇯🇵 JP-4117'
+  - '[OpenRay] 🇯🇵 JP-4205'
+  - '[OpenRay] 🇯🇵 JP-4272'
+  - '[OpenRay] 🇯🇵 JP-4183'
+  - '[OpenRay] 🇯🇵 JP-4318'
   - '[OpenRay] 🇯🇵 JP-3989'
-  - '[OpenRay] 🇯🇵 JP-4093'
-  - '[OpenRay] 🇯🇵 JP-4193'
+  - '[OpenRay] 🇯🇵 JP-4294'
+  - '[OpenRay] 🇯🇵 JP-4137'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: US-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇺🇸 US-26438'
+  - '[OpenRay] 🇺🇸 US-25455'
+  - 🇺🇸 United States, Miami | [BL]
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: AI-POOL
   type: url-test
   proxies: &id001
-  - '[OpenRay] 🇯🇵 JP-4217'
-  - '[OpenRay] 🇸🇬 SG-2614'
-  - '[OpenRay] 🇯🇵 JP-4168'
-  - '[OpenRay] 🇯🇵 JP-4117'
+  - '[OpenRay] 🇸🇬 SG-2634'
+  - '[OpenRay] 🇯🇵 JP-4205'
+  - '[OpenRay] 🇯🇵 JP-4272'
+  - '[OpenRay] 🇯🇵 JP-4183'
+  - '[OpenRay] 🇯🇵 JP-4318'
   - '[OpenRay] 🇯🇵 JP-3989'
-  - '[OpenRay] 🇯🇵 JP-4093'
-  - '[OpenRay] 🇯🇵 JP-4193'
-  - '[OpenRay] 🇭🇰 HK-2458'
+  - '[OpenRay] 🇸🇬 SG-2565'
+  - '[OpenRay] 🇯🇵 JP-4294'
+  - '[OpenRay] 🇯🇵 JP-4137'
+  - '[OpenRay] 🇭🇰 HK-2455'
   - '[OpenRay] 🇭🇰 HK-2358'
-  - '[OpenRay] 🇺🇸 US-26438'
-  - shadowsocks-163
-  - shadowsocks-696792823
-  - shadowsocks-159
-  - trojan-246566047
-  - shadowsocks-158
-  - shadowsocks-194
-  - vless-1173147422
-  - shadowsocks-193
-  - trojan-198807551
-  - shadowsocks-1118951746
-  - shadowsocks-192
-  - shadowsocks-196
-  - shadowsocks-1154628815
-  - shadowsocks-166
-  - trojan-213108941
-  - trojan-143578
-  - shadowsocks-156
-  - shadowsocks-809724024
-  - shadowsocks-415243972
-  - shadowsocks-468218514
-  - shadowsocks-468218487
+  - '[OpenRay] 🇺🇸 US-25455'
+  - 🇺🇸 United States, Miami | [BL]
   - shadowsocks-157
-  - shadowsocks-155
-  - trojan-1040387524
-  - trojan-855763679
-  - shadowsocks-208
-  - trojan-859744348
+  - trojan-1080833949
+  - trojan-1002196466
+  - trojan-912447962
+  - trojan-826756143
   - trojan-1030272172
-  - trojan-1081204195
-  - trojan-860042488
-  - trojan-855957127
-  - trojan-1173147423
-  - vless-1164808486
-  - shadowsocks-717969008
-  - shadowsocks-717969059
-  - vless-1163871241
-  - shadowsocks-696780670
-  - vless-1160568967
-  - shadowsocks-468218613
-  - vless-1165015544
+  - trojan-912445321
+  - trojan-1060914015
+  - trojan-1160538917
+  - trojan-855957152
+  - trojan-1002282332
+  - shadowsocks-194
+  - trojan-856212267
+  - trojan-213108940
+  - trojan-168427355
+  - trojan-143578
+  - trojan-120887
+  - shadowsocks-951795693
+  - shadowsocks-1154628815
+  - shadowsocks-415243972
+  - trojan-1192978766
+  - shadowsocks-166
+  - trojan-855957144
+  - vless-1191343664
+  - shadowsocks-217
+  - shadowsocks-1061764005
+  - '[OpenRay] 🇩🇪 DE-18891'
+  - shadowsocks-91981760
+  - '[OpenRay] 🇳🇱 NL-10488'
+  - shadowsocks-949634791
+  - shadowsocks-11045
+  - shadowsocks-11027
+  - '[OpenRay] 🇳🇱 NL-8690'
+  - shadowsocks-10899
+  - shadowsocks-168341641
+  - shadowsocks-274
+  - shadowsocks-11028
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: FALLBACK
